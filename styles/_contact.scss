@@ -1,0 +1,100 @@
+/* Mobile */
+#contact{
+    position: relative;
+    z-index: 0;
+}
+#contact .col-12{
+    z-index: 0;
+}
+#contact .form-control{
+    text-decoration: none;
+    z-index: 0;
+    padding: 0;
+    margin-top: 12rem;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    background-color: transparent;
+    border: 0px solid;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+}
+#contact .form-row{
+    margin: 0;
+}
+#contact .form-control:focus {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    outline: 0;
+    box-shadow:  rgb(255, 255, 255);
+}
+#contact .form-control::placeholder {
+    color: #fff;
+}
+#contact .custom-btn{
+    color: #EF6624;
+}
+#wrapper #contact{
+    height: 100%;
+}
+#contact .company-info .row{
+    padding:5rem 0;
+    margin:0;
+}
+#contact .company-info{
+    padding: 10rem 0;
+   
+}
+#contact .company-info::after{
+    content:"";
+    max-width: 100%;
+    width: 100%;
+    height: 75rem;
+    background-image: url(../images/footer-bkg.svg);
+    position: absolute;
+    z-index: -3;
+    bottom: 0;
+    left: 0%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#contact .company-info .small{
+    opacity: 0.6;
+    font-family: "Muli", sans-serif, Arial, Helvetica;
+    font-size: 2rem;
+    
+}
+#contact .company-info .logo-hor{
+    background-image: url(../images/logo-hor.svg);
+    height: 56px; 
+    width: 231px;  
+    margin: 0 auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Tablet */
+@media all and (max-width: 1200px) and (min-width: 700px) {
+    #contact .company-info{
+        text-align: left;
+    }
+    #contact .company-info::after{
+        bottom: -8%;
+    }
+}
+/* Desktop */
+@media all and (min-width: 1201px) {
+    #contact .company-info{
+        text-align: left;
+        padding: 20rem 0;
+        
+    }
+    #contact .company-info::after{
+        height: 90rem;
+        bottom: -15%;
+    }
+}
+
+

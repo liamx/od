@@ -1,0 +1,118 @@
+/*-------------------------------*/
+/*           navbar              */
+/*-------------------------------*/
+.nav-contianer{
+    position: relative;
+}
+nav{
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 100%;
+    padding: 0rem 0;
+    display:flex;
+    margin: auto;
+    min-height: 10vh;
+    transition: 0.5s;
+    background-color: rgba(35, 62, 151, 1);
+}
+#logo{
+    margin-left: 2.5vw;
+    padding-top: 2vh;
+    width: 88px;
+    height: 70px;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 80%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+}
+.nav-links .nav-item a{
+    font-family: Gotham-Ultra;
+    color:#233E97;
+    font-size: 9rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+.landing{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing h1{
+    margin: 100px;
+    font-size: 50px;
+    color:#F5BF5D;
+}
+
+/*-------------------------------*/
+/*         navbar -mobile        */
+/*-------------------------------*/
+
+
+    .line{
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        margin:5px;
+    }
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform:  translate(-5% , -50%);
+        z-index: 2;
+    }
+    .nav-links{
+        padding:150px 0;
+        position: fixed;
+        background-color:#F7AA3E;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(10px at 90% -10%);
+        -webkit-clip-path:  circle(10px at 90% -10%);
+        transition: all 0.8s ease-out;
+        pointer-events: none;
+    }
+    .nav-links.open{
+        clip-path: circle(3000px at 90% -10%);
+        -webkit-clip-path:  circle(3000px at 90% -10%);
+        pointer-events: all;
+    }
+    nav .nav-item{
+        opacity: 0;
+    }
+    .landing {
+        flex-direction: column;
+    }
+    nav .open .nav-item{
+        opacity: 1;
+        transition: all 0.5 ease 0.6s;
+    }
+
+    #logo{
+        flex: 3;
+    }
+
+/* Tablet */
+@media all and (max-width: 1200px) and (min-width: 700px) {
+    
+}
+
+/* Desktop */
+@media all and (min-width: 1201px) {
+    #logo{
+        margin-left: 4vw;
+        padding-top: 2vh;
+        width: 121px;
+        height: 95px;
+    }
+}

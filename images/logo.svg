@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="84.018" viewBox="0 0 108 84.018">
+  <g id="Text" transform="translate(-2.496 -81)">
+    <text id="orange_data" data-name="orange data" transform="translate(2.496 160.018)" fill="#fff" font-size="15.869" font-family="Audiowide-Regular, Audiowide"><tspan x="0" y="0">orange data</tspan></text>
+    <g id="Group_1" data-name="Group 1">
+      <path id="Path_1" data-name="Path 1" d="M55.779,135.978h.134c-.09,0-.178-.006-.268-.007C55.69,135.972,55.734,135.978,55.779,135.978Z" fill="#fff" style="mix-blend-mode: screen;isolation: isolate"/>
+      <path id="Path_2" data-name="Path 2" d="M56.571,81.007A6.973,6.973,0,0,1,63.42,87.97v41.038a6.973,6.973,0,0,1-6.849,6.963,27.514,27.514,0,0,0,27.277-27.482h0A27.513,27.513,0,0,0,56.571,81.007Z" fill="#fff"/>
+      <path id="Path_3" data-name="Path 3" d="M55.779,81c-.045,0-.089.006-.134.007.09,0,.178-.007.268-.007Z" fill="#fff" style="mix-blend-mode: screen;isolation: isolate"/>
+      <path id="Path_4" data-name="Path 4" d="M48.795,129.008V87.97a6.973,6.973,0,0,1,6.85-6.963,27.512,27.512,0,0,0-27.277,27.482h0a27.513,27.513,0,0,0,27.277,27.482A6.973,6.973,0,0,1,48.795,129.008Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

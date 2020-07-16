@@ -1,0 +1,195 @@
+@font-face {
+    src: url(fonts/Gotham-Ultra.otf);
+    font-family: 'Gotham-Ultra';
+    font-style: normal;
+    font-weight: 100;
+}
+@font-face {
+    src: url(fonts/Gotham-Black.otf);
+    font-family: 'Gotham-Black';
+    font-style: normal;
+    font-weight: 100;
+}
+@font-face {
+    src: url(fonts/Gotham-Medium.otf);
+    font-family: 'Gotham-Medium';
+    font-style: normal;
+    font-weight: 100;
+}
+html{
+    font-size:62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 1;
+}
+body{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-family: "Muli", sans-serif, Arial, Helvetica;
+    color:#fff;
+    font-size: 2.5rem;
+}
+h1,h2{
+    font-family: Gotham-Ultra;
+}
+//Gotham 200pt
+h1{
+    font-size: 9.375rem;
+    
+}
+//Gotham 100pt
+h2{
+    font-size: 10rem;
+    font-family: Gotham-Black;
+}
+//Gotham 70pt
+h3{
+    font-size: 4rem;
+    
+}
+//Muli Bold 36pt
+h4{
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+//Muli 45pt
+h5{
+    font-size: 2.8rem;
+}
+//Muli Bold 25pt
+h6{
+    font-size: 1.5625rem;
+    font-weight: 600;
+}
+p{
+    font-size: 2.5rem;
+}
+li{
+    font-size: 2rem;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+ul{
+    list-style: none;
+}
+#wrapper section{
+    height: 100vh;
+    width: 100%;
+}
+img{
+    width: 100%;
+}
+
+
+
+/*-------------------------------*/
+/*           section             */
+/*-------------------------------*/
+
+
+
+
+
+.blue{
+    background-color: #233E97; 
+}
+.orange{
+    background-color: #F16522;
+}
+.white{
+    background-color: #F2F0F7;
+}
+
+
+
+
+
+/* Tablet */
+@media all and (max-width: 1200px) and (min-width: 700px) {
+    //Gotham 200pt
+    h1{
+        font-size: 17rem;
+        
+    }
+    //Gotham 100pt
+    h2{
+        font-size: 12rem;
+    }
+    //Gotham 70pt
+    h3{
+        font-size: 6rem;
+        
+    }
+}
+
+/* Desktop */
+@media all and (min-width: 1201px) {
+    //Gotham 200pt
+    h1{
+        font-size: 16rem;
+        
+    }
+    //Gotham 100pt
+    h2{
+        font-size: 15rem;
+    }
+    //Gotham 70pt
+    h3{
+        font-size: 4rem;
+        
+    }
+    //Muli Bold 36pt
+    h4{
+        font-size: 2.25rem;
+        font-weight: 600;
+    }
+    //Muli 45pt
+    h5{
+        font-size: 2.8rem;
+    }
+    //Muli Bold 25pt
+    h6{
+        font-size: 1.5625rem;
+        font-weight: 600;
+    }
+}
+
+
+/* Large Desktop */
+@media all and (max-width: 1500px) and (min-width: 1201px) {
+    .sub-header{
+        font-size: 9rem;
+    }
+}
+
+/* Extra Large Desktop */
+@media all and (min-width: 1501px) {
+    .sub-header{
+        font-size: 11rem;
+    }
+}
+  
+@media screen and (max-width: 1200px){
+    html{
+        font-size: 40%;
+    }
+}
+
+@import 'home';
+@import 'navbar';
+@import 'card';
+@import 'career';
+@import 'fourValues';
+@import 'services';
+@import 'contact';
+@import 'morphSVG';
+@import 'carousel';

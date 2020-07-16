@@ -1,0 +1,239 @@
+/* Mobile */
+#wrapper #services{
+    height: 100%;
+    padding-bottom: 10rem;
+}
+#wrapper #wholeTeam{
+    height: 70vh;
+}
+#wholeTeam .sub-header{
+    padding-top: 20rem;
+}
+.section-services{
+    position: relative;
+    z-index: 0;
+}
+.section-services .action{
+    color: #fff;
+    font-family: Gotham-Medium;
+    font-size: 1.875rem;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    text-align: center;
+    width: 28rem;
+    height: 14rem;
+}
+.section-services .action::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    background-image: url(../images/getintouch.svg);
+    height: 100%; 
+    width: 100%;  
+    left: 0%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#services .slider{
+    width: 90%;
+}
+.section-services #customCarousel{
+    height: 108vh;
+}
+#customCarousel .card-content{
+    color: #71CFD8;
+    position: relative;
+}
+#customCarousel .container{
+    padding: 5rem;
+}
+#customCarousel h3{
+    font-size: 5rem;
+    font-family: "GOTHAM black", Arial, Helvetica, sans-serif;
+}
+#customCarousel p,
+#customCarousel li {
+    font-family: "Muli regular", Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.8;
+}
+#customCarousel ul{
+    padding-left: 2rem;
+}
+#customCarousel ul li{
+    list-style-type: disc;
+}
+
+/* Carousel style control */
+#services .carousel .carousel-control-prev-icon {
+    /* Arrow-left  */
+    background-image: url(../images/arrow-left.svg);
+    left: 5rem;
+}
+#services .carousel .carousel-control-next-icon {
+    /* Arrow-right  */
+    background-image: url(../images/arrow-left.svg);
+    transform: rotate(180deg);
+    right: 5rem;
+} 
+#services  .carousel-control-next-icon, .carousel-control-prev-icon {
+    /* Use to adjust size of icons */
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 50%;
+}
+#services .carousel-indicators li {
+    /* Use to adjust size of indicator */
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+#services #carouselExampleIndicators li.active{
+    background-color: #fff;
+}
+#services .carousel-indicators li:hover{
+   display: block;
+   transition: 0.2s all ease-in-out;
+   position: relative;
+   background-color:#fff;
+}
+#services #carouselExampleIndicators .circle{
+    border: 1px solid #fff;
+    background-color: transparent;
+    border-radius:50%;
+}
+#services #carouselExampleIndicators .circle:hover{
+    opacity: 1;
+    background-color:#fff;
+}
+/* Indicators styles */
+#services li:hover:after{
+    position: relative;
+    content: "";
+    height: 6rem;
+    width: 20rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#services #listFirst:hover:after{
+    background-image: url(../images/listFirst.svg);
+    position: absolute;
+    left: -12rem;
+    top: -7rem;
+}
+#services #listSecond:hover:after{
+    background-image: url(../images/listSecond.svg);
+    position: absolute;
+    left: -8rem;
+    top: -7rem;
+}
+#services #listThird:hover:after{
+    background-image: url(../images/listThird.svg);
+    position: absolute;
+    left: -6rem;
+    top: -7rem;
+}
+#services #listFourth:hover:after{
+    background-image: url(../images/listFourth.svg);
+    position: absolute;
+    left: -7.5rem;
+    top: -7rem;
+}
+#services #listFifth:hover:after{
+    background-image: url(../images/listFifth.svg);
+    position: absolute;
+    left: -10.5rem;
+    top: -7rem;
+}
+#services #listSixth:hover:after{
+    background-image: url(../images/listSixth.svg);
+    position: absolute;
+    left: -12rem;
+    top: -7rem;
+}
+/* Tablet */
+@media all and (max-width: 1200px) and (min-width: 700px) {
+    .section-services #customCarousel{
+        height: 30rem;
+    }
+    .section-services .action{
+        width: 51rem;
+        height: 26rem;
+    }
+    #services .slider{
+        width: 80%;
+    }
+    #services .carousel-inner{
+        height: 73rem;
+    }
+    #services .carousel .carousel-control-prev-icon {
+        left: 5rem;
+    }
+    #services .carousel .carousel-control-next-icon {
+        right: 5rem;
+    }
+    #customCarousel .container{
+        padding: 0;
+    }
+    #customCarousel h3{
+        font-size: 6rem;
+    }
+    #customCarousel p,
+    #customCarousel li {
+        font-size: 2.4rem;
+    }
+    #wrapper #wholeTeam{
+        height: 80vh;
+    }
+    #services .carousel-indicators{
+        bottom: -10rem;
+    }
+    #customCarousel .container{
+        padding: 5rem;
+    }
+}
+
+/* Desktop */
+@media all and (min-width: 1201px) {
+    #services .carousel-inner{
+        height: 70rem;
+    }
+    #customCarousel .container{
+        padding: 0;
+        max-width: 1400px;
+    }
+    .section-services .action{
+        width: 46rem;
+        height: 23rem;
+    }
+    #services .slider{
+        width: 100%;
+    }
+    #customCarousel h3{
+        font-size: 6.375rem;
+    }
+    #customCarousel p,
+    #customCarousel li {
+        font-size: 2.3rem;
+    }
+    #wrapper #wholeTeam{
+        height: 90vh;
+    }
+    #services .carousel-indicators{
+        bottom: -10rem;
+    }
+}
+
+  
