@@ -27,9 +27,11 @@
 
 
 /* mobile */
+
 .card-content h2{
     padding-bottom: 3rem;
     padding-top: 10rem;
+    letter-spacing: 3px;
 }
 .card-content{
     margin: auto;
@@ -38,12 +40,37 @@
     padding: 5rem 0;
     
 }
+.section-card{
+    position: relative;
+    z-index: 0;
+}
+.card-content .deco-4{
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    width: 160px;
+    height: 231px;
+    background-image: url('../images/deco-4.svg');
+    background-repeat: no-repeat;
+}
 .section-card .card-content h2{
     padding-bottom: 8rem;
 }
 .section-card .card-content h3{
-    line-height: 1.3;
+    line-height: 1.5;
 }
+
+
+
+/* hover tap icon  */
+
+.img{
+    display: none;
+}
+.img.show {
+    display: block;
+}
+/* yellow tap  */
 .tapYellow{
     cursor: pointer;
     position: relative;
@@ -83,6 +110,9 @@
     -ms-flex-align: center;
     align-items: center;
 }
+.section-value .card-content{
+    z-index: 0;
+}
 .section-value .card-content h2{
     padding: 0;
 }
@@ -96,6 +126,9 @@
 #notTooBig{
     color: #263C95;
 }
+#notTooBig .img-container{
+    width: 30%;
+}
 #notTooBig .card-content{
     z-index: 0;
 }
@@ -103,7 +136,7 @@
     width: 80%;
 }
 #notTooBig .card-content h2{
-    padding: 0;
+    padding: 5rem 0;
 }
 .center {
     display: block;
@@ -116,12 +149,14 @@
     #notTooBig .img-container{
         width: 50%;
     }
+    
+    
 }
 
 /* Desktop */
 @media all and (min-width: 1201px) {
     .section-card .card-content h3{
-        padding-right: 25%;
+        width: 80%;
     }
     .card-content{
         width:90%;
@@ -130,6 +165,7 @@
     #notTooBig .img-container{
         width: 30%;
     }
+    
 }
 
   

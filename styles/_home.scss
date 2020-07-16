@@ -1,14 +1,13 @@
 
 /* mobile */
-#wrapper .section-intro{
-    height: 100%;
+.intro-wrapper .mars-container{
+    height: 100vh;
 }
 .intro-wrapper{
     text-align: left;
     padding: 0rem 0rem;
     padding-top: 30vh;
     z-index: 1;
-    
 }
 img{
     width: 100%;
@@ -48,7 +47,6 @@ img{
     background-size: 100%;
 }
 .intro-wrapper .mars-container{
-    height: 100vh;
     position: relative;
     overflow: hidden;
     z-index: 0;

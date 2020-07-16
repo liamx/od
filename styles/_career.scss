@@ -3,7 +3,6 @@
     text-align: center;
 }
 #wrapper .section-career{
-    height: 100%;
     padding: 3rem 0;
 }
 .section-career .card-content .career-logo{
@@ -159,6 +158,12 @@
     color: #EF6624;
     font-weight: 600;
 }
+
+.custom-btn:hover{
+    background-color:#EF6624;
+    color: #fff;
+}
+
 /* Tablet */
 @media all and (max-width: 1200px) and (min-width: 700px) {
     #job-list .jobbox .card-header::after{

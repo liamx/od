@@ -42,30 +42,6 @@
     // // .addIndicators()
     // // .addTo(controller);
 
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-const links = document.querySelector(".nav-item");
-
-
-hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("open");
-});
-
-
-//scroll up hidden menu
-var lastScrollTop = 0;
-    navbar = document.getElementById("navbar");
-    window.addEventListener("scroll", function(){
-        var scrollTop = window.pageYOffset || document
-        .documentElement.scrollTop;
-        if (scrollTop > lastScrollTop){
-            navbar.style.top = "-10vh";
-        } else {
-            navbar.style.top = "0";
-        }
-        lastScrollTop = scrollTop;
-
-    })
 
 
 // //Carousel add class on hover
@@ -84,4 +60,85 @@ var lastScrollTop = 0;
 
 
 
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelector(".nav-item");
 
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+    hamburger.classList.toggle("open");
+});
+
+
+//scroll up hidden menu
+var lastScrollTop = 0;
+    navbar = document.getElementById("navbar");
+    window.addEventListener("scroll", function(){
+        var scrollTop = window.pageYOffset || document
+        .documentElement.scrollTop;
+        if (scrollTop > lastScrollTop){
+            navbar.style.top = "-80px";
+        } else {
+            navbar.style.top = "0";
+        }
+        lastScrollTop = scrollTop;
+
+    })
+
+//Service Lottie animation
+
+var animation1 = bodymovin.loadAnimation({
+    container: document.getElementById('oneAnim'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'animation/oneAnim/oneAnim.json'
+  });
+  var animation2 = bodymovin.loadAnimation({
+    container: document.getElementById('twoAnim'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'animation/twoAnim/twoAnim.json'
+  });
+  var animation3 = bodymovin.loadAnimation({
+    container: document.getElementById('threeAnim'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'animation/threeAnim/threeAnim.json'
+  });
+var animation4 = bodymovin.loadAnimation({
+    container: document.getElementById('fourAnim'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'animation/fourAnim/fourAnim.json'
+  });
+var animation5 = bodymovin.loadAnimation({
+    container: document.getElementById('fiveAnim'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'animation/fiveAnim/fiveAnim.json'
+  });
+  var animation5 = bodymovin.loadAnimation({
+    container: document.getElementById('sixAnim'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'animation/sixAnim/sixAnim.json'
+  });
+
+
+//hover img
+function mouseIn() {
+  $('.img').addClass('show');
+}
+
+function mouseOut() {
+  $('.img').removeClass('show');
+}
+
+$('.hover-me').hover(mouseIn, mouseOut);
