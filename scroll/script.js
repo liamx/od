@@ -1,9 +1,3 @@
-
-
-
-
-
-
 //////////////////////////
 
 //FIRST animation : https://assets.lottiefiles.com/datafiles/3gpFPHJI4WlLe62/data.json
