@@ -1,200 +1,295 @@
-.section-career{
-    color: #233E97; 
+.section-career {
+    color: #233e97;
     text-align: center;
 }
-#wrapper .section-career{
-    padding: 3rem 0;
-}
-.section-career .card-content .career-logo{
+.section-career .card-content .career-logo {
     padding-top: 10rem;
     width: 50rem;
     height: 50rem;
     margin: 0 auto;
 }
-.section-career .card-content p{
+.section-career .card-content p {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
-.section-career .card-content .job-list{
+.section-career .card-content .job-list {
     font-size: 2.25rem;
     font-family: Gotham-Medium;
     text-align: left;
     padding-bottom: 5rem;
 }
-/* toggle collapes style */
-#job-list {
-    padding: 3rem 0rem;
-    margin: 0;
-    font-size: 5rem;
-    background-color: #F2F0F7;
-    border: none;
-}
-#job-list .card{
-    border: none;
-}
-#job-list .card-header{
-    background-color: rgba(0,0,0,0);
-    padding: 2rem 0;
-}
-#job-list .btn-link {
-    font-size: 2.25rem;
-    text-decoration: none;
-    color: #233E97;
-}
-#job-list .card-body{
-    font-size: 2rem;
-    font-weight: 200;
-    padding: 4rem;
-}
-#job-list .btn.focus, .btn:focus {
-    box-shadow:none;
-}
-#job-list .jobbox{
-    border-bottom: 1px solid #212E60 ;
+/* Job Offer style */
+.job-list {
+    padding: 5rem 0rem;
     position: relative;
     z-index: 0;
-    background-color: #f2f0f6;
 }
-#job-list .jobbox .card-header::after{
-    content: "";
-    background-image: url(../images/plus.svg) ;
-    background-repeat: no-repeat;
-    width: 5rem;
-    height: 5rem;
+.job-opport {
+    font-size: 2.5rem;
+    font-family: Gotham-Medium;
+}
+.job-link {
+    display: flex;
+    flex-direction: column;
+}
+.job-title {
+    padding: 3rem 0rem;
+    margin: 0;
+    background-color: #f2f0f7;
+    border: none;
+    font-size: 2.25rem;
+    font-family: Gotham-Medium;
+    text-align: left;
+    padding-bottom: 3rem;
+}
+.job-wrap {
+    align-items: center;
+    color: #233e97;
+    text-decoration: none;
+    border-bottom: 0.5px solid #212e60;
+    position: relative;
+    z-index: 0;
+}
+.job-link .job-btn {
+    margin: 0em;
+    border: none;
+    color: #233e97;
+}
+.job-link .job-btn:focus {
+    outline: none;
+}
+
+/* pop up */
+
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+}
+// .job-opport{
+//     position: relative;
+//     z-index: 0;
+// }
+
+.popup .content {
     position: absolute;
-    top: 15px;
-    right: 0;
-    transform: rotate(0deg);
-    cursor: pointer;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 300px;
+    height: 600px;
+    top: 20%;
+    overflow-y: scroll;
+    z-index: 2;
+    text-align: left;
+}
+/* popup box style */
+.popup .Pop-container {
+    color: #fff;
+}
+.popup .job-header {
+    padding: 8rem 6rem;
+}
+.strike {
+    font-size: 4.375rem;
+    font-family: "Gotham-Bold";
+    position: relative;
+    z-index: 0;
+    padding: 4rem 0;
+}
+.strike::after {
+    content: "";
+    position: absolute;
     z-index: -1;
+    bottom: 24%;
+    display: block;
+    width: 88%;
+    height: 15px;
+    background: #ef6624;
+}
+.popup h3 {
+    font-size: 3.375rem;
+    font-family: "Gotham-Bold";
+    z-index: 0;
+    padding: 3rem 0;
+}
+.popup .Pop-container p,
+.popup .Pop-container ul li {
+    font-family: "Muli", sans-serif, Arial, Helvetica;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: #fff;
+}
+.popup .Pop-detail h3,
+.popup .Pop-detail p,
+.popup .Pop-detail ul li {
+    color: #000000;
+}
+.popup .Pop-detail ul li {
+    list-style-type: disc;
+    margin-left: 3rem;
+}
+.popup .Pop-detail {
+    background-color: #fff;
+    color: #000000;
+}
+.popup .apply-btn .btn {
+    background-color: #f16522;
+    width: 132px;
+    height: 48px;
+    font-size: 2.25rem;
+    color: #fff;
+    border-radius: 6px;
+    margin: 7rem 0 4rem 0;
+}
+
+.popup .Pop-container .Pop-detail {
+    padding: 8rem 6rem;
+}
+.popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+}
+.popup.active .overlay {
     display: block;
 }
-#job-list .jobbox .collapsed::after{
-    transform: rotate(45deg);
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
 }
-// Plus icon collapes animation
-#plus_icon {
-    transition: 1s;
-  }
-  
-  .circle {
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  .plus {
-    position: relative;
-    width: 20px;
-    height: 20px;
-    margin: 15px;
-    display: inline-block;
-  }
-  
-  .plus .up {
-    position: absolute;
-    width: 3px;
-    height: 20px;
-    background: #5AE075;
-    display: inline-block;
-    transform: translateX(8.5px);
-  }
-  
-  .plus .side {
-    position: absolute;
-    width: 3px;
-    height: 20px;
-    background: #5AE075;
-    display: inline-block;
-    transform: translateX(8.5px) rotate(90deg);
-  }
-  
-  .check .up {
-    position: absolute;
-    width: 3px;
-    height: 20px;
-    background: #5AE075;
-    display: inline-block;
-    transform: translateX(8.5px) rotate(45deg);
-  }
-  
-  .check .side {
-    position: absolute;
-    width: 3px;
-    height: 10px;
-    background: #5AE075;
-    display: inline-block;
-    transform: translateY(8.5px) rotate(-45deg);
-  }
-  #plus_icon.animate {
-    transform: rotate(135deg);
-  }
-  
-  
-  
-
-.section-career .send-cv p{
+.section-career .send-cv p {
     font-size: 1.85rem;
 }
-.section-career .send-cv h2{
-    font-size: 4.85rem;
+.section-career .send-cv h2 {
+    font-size: 3.5rem;
     font-family: Gotham-Black;
 }
-.send-cv .explore-logo{
+.send-cv .explore-logo {
     width: 70vw;
     height: auto;
     background-repeat: no-repeat;
     margin: 0 auto;
-    
 }
-.custom-btn{
+.custom-btn {
     font-size: 2.5rem;
     width: 30rem;
     height: 7rem;
     border-radius: 15px;
     margin: 7rem;
-    color: #EF6624;
+    color: #ef6624;
     font-weight: 600;
 }
-
-.custom-btn:hover{
-    background-color:#EF6624;
+.custom-btn:hover {
+    background-color: #ef6624;
+    color: #fff;
+}
+#contactBtn:hover {
+    background-color: #ffa67a;
     color: #fff;
 }
 
 /* Tablet */
 @media all and (max-width: 1200px) and (min-width: 700px) {
-    #job-list .jobbox .card-header::after{
-        top: 16px;
-    }
-    .section-career .send-cv p{
+    .section-career .send-cv p {
         font-size: 2.85rem;
     }
-    .section-career .send-cv h2{
+    .section-career .send-cv h2 {
         font-size: 6.85rem;
+    }
+    .popup .content {
+        width: 600px;
+        height: inherit;
+    }
+    .popup .content {
+        overflow-y: initial;
+    }
+    .popup .Pop-container p,
+    .popup .Pop-container ul li {
+        line-height: 1.8;
+    }
+    .strike {
+        font-size: 6.375rem;
+    }
+    .strike::after {
+        bottom: 33%;
+        width: 83%;
+        height: 14px;
     }
 }
 
 /* Desktop */
 @media all and (min-width: 1201px) {
-    #job-list .jobbox .card-header::after{
-        top: 36px;
-    }
-    .section-career .send-cv h2{
+    .section-career .send-cv h2 {
         font-size: 7.25rem;
     }
-    .send-cv .btn{
+    .send-cv .btn {
         font-size: 2rem;
         width: 18vw;
         height: 9vh;
         margin: 5rem;
         font-weight: 600;
     }
-    .send-cv .explore-logo{
+    .send-cv .explore-logo {
         width: 569px;
         height: 300px;
-        
+    }
+    .popup .content {
+        width: 798px;
+        height: inherit;
+    }
+    .popup .Pop-container p,
+    .popup .Pop-container ul li {
+        line-height: 1.8;
+    }
+    .popup .job-header,
+    .popup .Pop-container .Pop-detail {
+        padding: 8rem;
+    }
+    .strike {
+        font-size: 5.375rem;
+    }
+    .strike::after {
+        width: 88%;
+        height: 19px;
+        bottom: 36%;
+    }
+    .popup .close-btn {
+        cursor: pointer;
+        position: absolute;
+        right: 40px;
+        top: 40px;
+        font-size: 40px;
+    }
+    .popup .content {
+        overflow-y: initial;
+    }
+}
+/* Large Desktop */
+@media all and (min-width: 1501px) {
+    .popup .content {
+        width: 1140px;
+        height: inherit;
+    }
+    .popup .job-header,
+    .popup .Pop-container .Pop-detail {
+        padding: 8rem;
+    }
+    .strike::after {
+        width: 57%;
+        height: 19px;
     }
 }

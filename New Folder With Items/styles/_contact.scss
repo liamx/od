@@ -1,0 +1,208 @@
+/* Mobile */
+#contact{
+    position: relative;
+    z-index: 0;
+}
+
+// Input animation
+.section-contact{
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.form{
+    font-size: 26px;
+    font-family: Gotham-Medium;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    text-align: left;
+    color: #fff;
+    overflow: hidden;
+    margin: 0;
+}
+.form input,
+.form textarea{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: transparent;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+}
+.form label{
+    position: absolute; 
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.form label::after{
+    content: "";
+    position: absolute;
+    left: -2px;
+    bottom: -2px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+} 
+//textarea input style
+
+#messageInput textarea{
+    color: #fff;
+    position: relative;
+    height: 100px;
+    padding: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 2rem;
+}
+#messageInput textarea::after{
+    content: '';
+    left: -2px;
+    bottom: -2px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid red;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+#messageInput{
+    position: relative;
+}
+#messageInput label{ 
+    font-size: 26px;
+    font-family: Gotham-Medium;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #fff;
+    transform: translateX(0%);
+}
+#messageInput textarea:focus ~ label,
+#messageInput textarea:valid ~ label{
+    opacity: 0.5;
+    color: #fff;
+    font-size: 14px;
+    transform: translateY(-150%);
+}
+
+// affect the label when input is focus, label have to put under the form
+.form input:focus + .label-name .content-name, 
+.form input:valid + .label-name .content-name{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #fff;
+    opacity: 0.5;
+    transition: 0.3s all;
+}
+.form input:focus + .label-name::after, 
+.form input:valid + .label-name::after{
+    transform: translateX(0%);
+}
+
+//custom form group style
+.form-container{
+    display: inline-block;
+    width: 100%;
+}
+#messageInput, #nameInput, #emailInput{
+    margin-top: 5rem ;
+}
+.content-name{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+
+#contact .custom-btn{
+    color: #EF6624;
+}
+#wrapper #contact{
+    height: 100%;
+}
+#contact .company-info .row{
+    padding:5rem 0;
+    margin:0;
+}
+#contact .company-info{
+    padding: 10rem 0;
+   
+}
+#contact .company-info::after{
+    content:"";
+    max-width: 100%;
+    width: 100%;
+    height: 75rem;
+    background-image: url(../images/footer-bkg.svg);
+    position: absolute;
+    z-index: -3;
+    bottom: 0;
+    left: 0%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#contact .company-info .small{
+    opacity: 0.6;
+    font-family: "Muli", sans-serif, Arial, Helvetica;
+    font-size: 2rem;
+    
+}
+#contact .company-info .logo-hor{
+    background-image: url(../images/logo-hor.svg);
+    height: 56px; 
+    width: 231px;  
+    margin: 0 auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Tablet */
+@media all and (max-width: 1200px) and (min-width: 700px) {
+    #contact .company-info{
+        text-align: left;
+    }
+    #contact .company-info::after{
+        bottom: -8%;
+    }
+    
+    
+}
+/* Desktop */
+@media all and (min-width: 1201px) {
+    #contact .company-info{
+        text-align: left;
+        padding: 20rem 0;
+    }
+    #contact .company-info::after{
+        height: 90rem;
+        bottom: 0;
+    }
+    #inputName #nameInput {
+        margin-right: 2rem ;
+    }
+    #inputName #emailInput {
+        margin-left: 2rem ;
+    }
+    
+}
+
+

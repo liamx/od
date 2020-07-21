@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="357" height="101" viewBox="0 0 357 101">
+  <g id="listFifth" transform="translate(0 -1)">
+    <g id="Group_3028" data-name="Group 3028" transform="translate(-799.478 -16228)">
+      <g id="Group_2995" data-name="Group 2995" transform="translate(836.972 16263.664) rotate(-8)">
+        <rect id="Rectangle_832" data-name="Rectangle 832" width="203.027" height="54.325" rx="10" transform="matrix(0.999, 0.052, -0.052, 0.999, 40.791, 1.989)" fill="#ef6624"/>
+        <path id="Path_6376" data-name="Path 6376" d="M4283.644,1128.841l15.469,23.533,19.808-23.533Z" transform="translate(-4125.212 -1069.977)" fill="#ef6624"/>
+      </g>
+      <text id="Quality_Assurance" data-name="Quality Assurance" transform="matrix(0.996, -0.087, 0.087, 0.996, 835.478, 16283.389)" fill="#f4de3a" font-size="18" font-family="Gotham-Medium, Gotham" font-weight="500"><tspan x="63.941" y="14">Quality Assurance</tspan></text>
+    </g>
+    <rect id="Rectangle_848" data-name="Rectangle 848" width="357" height="101" transform="translate(0 1)" fill="none"/>
+  </g>
+</svg>

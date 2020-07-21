@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../practice/prototype"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "OD website 3"
+	}
+}

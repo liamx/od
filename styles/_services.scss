@@ -59,14 +59,24 @@
     padding-top: 1rem;
 }
 #servicesTab .nav-item{
-    padding: 0rem 1rem;
+    padding: 1rem 1rem;
     text-align: center;
     line-height: 1.2;
+    width: 33.3%;
 }
 
 
 
 
+/* service Ani wrap */
+.service-wrap{
+    width: 100%;
+}
+.clip, .description{
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
 /* Animation Prototype */
 #servicesTab .container{
     max-width: 80%;
@@ -80,9 +90,9 @@
 #animation  .slide-text,
 #animation  li {
     font-family: "Muli regular", Arial, Helvetica, sans-serif;
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     font-weight: 100;
-    line-height: 2;
+    line-height: 1.6;
     color: #71CFD8;
 }
 #animation  .slide-contianer{
@@ -99,11 +109,8 @@
 #animation #fourAnim,
 #animation #fiveAnim,
 #animation #sixAnim{
-    width: 130%;
-    height: 110%;
-    min-width: 650px;
-    max-width: 900px;
-    padding-right: 15rem;
+    width: 100%;
+    height: 100%;
 }
 #servicesTab .nav-pills{
     padding-top: 3rem;
@@ -119,12 +126,36 @@
         width: 51rem;
         height: 26rem;
     }
+    #servicesTab .nav-item{
+        width: inherit;
+    }
     
     #wholeTeam .sub-header{
         padding-top: 20rem;
     }
     #animation .slide-right{
         margin-top: 10rem;
+    }
+    .service-wrap{
+        display: flex;
+    }
+    .service-wrap .clip, .service-wrap .description{
+        width: 50%;
+    }
+    .service-wrap .clip{
+        height: 500px;
+        margin-right: -8rem;
+        margin-top: -5rem;
+    }
+    .service-wrap .description{
+        margin-top: 12rem;
+    }
+    #animation .slide-header{
+        font-size: 6rem;
+    }
+    #animation .slide-text{
+        font-size: 2.5rem;
+        line-height: 2;
     }
 }
 
@@ -141,6 +172,35 @@
     #wholeTeam .sub-header{
         padding-top: 20rem;
     }
+    #servicesTab .nav-item{
+        width: inherit;
+    }
+    .service-wrap{
+        display: flex;
+    }
+    .service-wrap .clip, .service-wrap .description{
+        width: 50%;
+    }
+    .service-wrap .clip{
+        height: 100rem;
+        margin-right: -8rem;
+        margin-top: -5rem;
+    }
+    .service-wrap .description{
+        margin-top: 12rem;
+    }
+    #animation .slide-header{
+        font-size: 5rem;
+    }
+    #animation .slide-text{
+        font-size: 2.5rem;
+        line-height: 2;
+    }
 }
 
-  
+  /* Desktop */
+@media all and (min-width: 1201px) {
+    #animation .slide-header{
+        font-size: 7rem;
+    }
+}

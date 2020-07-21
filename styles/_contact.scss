@@ -18,6 +18,7 @@
     width: 100%;
     height: 60px;
     position: relative;
+    z-index: 0;
     text-align: left;
     color: #fff;
     overflow: hidden;
@@ -58,6 +59,7 @@
 #messageInput textarea{
     color: #fff;
     position: relative;
+    z-index: 0;
     height: 100px;
     padding: 10px 0;
     width: 100%;
@@ -81,6 +83,7 @@
 }
 #messageInput{
     position: relative;
+    z-index: 0;
 }
 #messageInput label{ 
     font-size: 26px;
@@ -92,6 +95,7 @@
     transition: 0.5s;
     color: #fff;
     transform: translateX(0%);
+    font-size: 3rem;
 }
 #messageInput textarea:focus ~ label,
 #messageInput textarea:valid ~ label{
@@ -128,6 +132,7 @@
     bottom: 5px;
     left: 0;
     transition: all 0.3s ease;
+    font-size: 3rem;
 }
 
 
@@ -138,11 +143,11 @@
     height: 100%;
 }
 #contact .company-info .row{
-    padding:5rem 0;
+    padding: 8rem 0 5rem 0;
     margin:0;
 }
 #contact .company-info{
-    padding: 10rem 0;
+    padding-top: 10rem;
    
 }
 #contact .company-info::after{
@@ -166,14 +171,17 @@
     font-size: 2rem;
     
 }
+.logo-hor img{
+    width: 100%;
+    height: 100%;
+}
 #contact .company-info .logo-hor{
-    background-image: url(../images/logo-hor.svg);
-    height: 56px; 
-    width: 231px;  
-    margin: 0 auto;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 120px;
+    height: auto;
+    margin: auto;
+}
+.copyright{
+    padding: 5rem 0 0rem 0;
 }
 /* Tablet */
 @media all and (max-width: 1200px) and (min-width: 700px) {
@@ -181,9 +189,14 @@
         text-align: left;
     }
     #contact .company-info::after{
-        bottom: -8%;
+        bottom: 0%;
     }
-    
+    #contact .company-info .logo-hor {
+        width: 218px;
+    }
+    #nameInput{
+        margin-right: 5rem;
+    }
     
 }
 /* Desktop */
@@ -193,7 +206,7 @@
         padding: 20rem 0;
     }
     #contact .company-info::after{
-        height: 90rem;
+        height: 63rem;
         bottom: 0;
     }
     #inputName #nameInput {
@@ -202,7 +215,20 @@
     #inputName #emailInput {
         margin-left: 2rem ;
     }
-    
+    #contact .company-info .logo-hor {
+        width: 218px;
+    }
+    #contact .company-info {
+        padding: 20rem 0 0 0;
+    }
 }
-
+/* Large Desktop */
+@media all and (min-width: 1501px) {
+    .copyright {
+        padding: 5rem 0 2rem 0;
+    }
+    #contact .company-info {
+        padding: 20rem 0 0 0;
+    }
+}
 

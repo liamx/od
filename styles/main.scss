@@ -35,6 +35,8 @@ body{
     font-family: "Muli", sans-serif, Arial, Helvetica;
     color:#fff;
     font-size: 2.5rem;
+    background-color: #233E97; 
+    transition: all 0.5s ease;
 }
 h1,h2{
     font-family: Gotham-Ultra;
@@ -50,7 +52,7 @@ h2{
 }
 //Gotham 70pt
 h3{
-    font-size: 4rem;
+    font-size: 3.5rem;
     
 }
 //Muli Bold 36pt
@@ -84,14 +86,17 @@ img{
     width: 100%;
 }
 .card-content h2{
-    font-size: 10rem;
+    font-size: 9.5rem;
 }
 #fourValues h2{
     font-size: 8rem;
 }
 #notTooBig h2,
 #wholeTeam h2{
-    font-size: 6rem;
+    font-size: 5rem;
+}
+#contact h2{
+    font-size: 6.5rem;
 }
 
 /*-------------------------------*/
@@ -103,17 +108,20 @@ img{
     width: 100%;
 }
 #wrapper .section-card{
-    height: 120rem;
+    height: 136rem;
 }
 #wrapper .section-intro{
     height: 100%;
+}
+#wrapper #drop{
+    height: 100rem;
 }
 #wrapper #services{
     height: 100%;
     padding-bottom: 10rem;
 }
 #wrapper #wholeTeam{
-    height: 66rem;
+    height: 80rem;
 }
 #wrapper .section-career{
     height: 100%;
@@ -140,7 +148,6 @@ img{
     //Gotham 200pt
     h1{
         font-size: 17rem;
-        
     }
     //Gotham 100pt
     h2{
@@ -148,18 +155,23 @@ img{
     }
     //Gotham 70pt
     h3{
-        font-size: 6rem;
+        font-size: 4.5rem;
     }
     .card-content h2{
         font-size: 5.5rem;
+    }
+    .blue,
+    .orange,
+    .white{
+        padding: 0 5rem;
     }
     #wrapper section{
         height: 100%；
     }
     #wrapper #services{
-    height: 100%;
-    padding-bottom: 10rem;
-}
+        height: 100%;
+        padding-bottom: 10rem;
+    }   
     #wrapper .section-card{
         height: 140rem;
     }
@@ -223,7 +235,7 @@ img{
         height: 100%;
     }
     #wrapper .section-card{
-        height: 1000px;
+        height: 120rem;
     }
     #wrapper #notTooBig{
         height: 100vh; 
@@ -254,6 +266,18 @@ img{
 @media screen and (max-width: 1200px){
     html{
         font-size: 40%;
+    }
+    // .blue,
+    // .orange,
+    // .white{
+    //     padding: 0 2rem;
+    // }
+    .section-intro,
+    .section-card,
+    .section-services,
+    .section-career,
+    .section-contact{
+        padding: 0 3rem;
     }
 }
 

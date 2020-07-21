@@ -2,6 +2,9 @@
 .fourValues{
     padding: 5rem;
 }
+#wrapper .section-value{
+    height: 100vh;
+}
 
 /* Tablet */
 @media all and (max-width: 1200px) and (min-width: 700px) {

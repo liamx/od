@@ -1,31 +1,4 @@
 
-
-//Colourful Tape
-// :root {
-//     --mainColor: red;
-//   }
-// .tapYellow{
-//     background:
-//      linear-gradient(
-//        to bottom, var(--mainColor) 0%,
-//        var(--mainColor) 100%
-//      );
-     
-//     background-position: 0 100%;
-//     background-repeat: repeat-x;
-//     background-size: 4px 4px;
-//     text-decoration: none;
-//     transition: background-size .2s ease-in;
-    
-// }
-// .tapYellow:hover{
-//     background-size: 4px 50px;
-//     color: #fff;
-//     text-decoration: none;
-    
-// }
-
-
 /* mobile */
 
 .card-content h2{
@@ -46,10 +19,11 @@
 }
 .card-content .deco-4{
     position: absolute;
+    z-index: -1;
     bottom: 10%;
     right: 0;
     width: 160px;
-    height: 231px;
+    height: 300px;
     background-image: url('../images/deco-4.svg');
     background-repeat: no-repeat;
 }
@@ -59,44 +33,78 @@
 .section-card .card-content h3{
     line-height: 1.5;
 }
-
+//text icon
+.icon-square{
+    width: 29px;
+    height: 25px;
+}
+.icon-wave {
+    width: 49px;
+    height: 18px;
+}
+.icon-hill{
+    width: 47px;
+    height: 20px;
+}
 
 
 /* hover tap icon  */
-
-.img{
-    display: none;
+.hover-me{
+    position:relative;
+    z-index: 0;
 }
-.img.show {
+.tapR{
+    display:none;
+    position:absolute;
+    left: -11%;
+    top: -63%;
+    width: 279px;
+    height: 70px;
+    z-index: -1;
+}
+.tapY{
+    display:none;
+    position:absolute;
+    left: -12%;
+    top: -68%;
+    width: 217px;
+    height: 86px;
+    z-index: -1;
+}
+.tapY2{
+    display:none;
+    position:absolute;
+    left: -8%;
+    top: -71%;
+    width: 241px;
+    height: 86px;
+    z-index: -1;   
+}
+.tapB{
+    display:none;
+    position:absolute;
+    left: -12%;
+    top: -43%;
+    width: 115px;
+    height: 56px;
+    z-index: -1;
+}
+.hover-me:hover .tapB,
+.hover-me:hover .tapR,
+.hover-me:hover .tapY,
+.hover-me:hover .tapY2{
     display: block;
 }
-/* yellow tap  */
-.tapYellow{
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
+#hoverB:hover,
+#hoverR:hover{
+    color: #FDF400;
+}
+#hoverY:hover,
+#hoverY2:hover{
     color: #263C95;
 }
-.tapYellow::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 12rem;
-    top: -75%;
-    left: -8%;
-    z-index: -1;
-    background-image: url('../images/tapeY.png');
-    background-repeat: no-repeat;
-    transform: rotate(0deg);
-    transition: .2s ease-in;
-    z-index: -1;
-    
-}
-.tapYellow::before:hover{
-    transform: rotate(60deg);
-    -webkit-animation:spin 500ms linear;
-    -moz-animation:spin 500ms linear;
-    animation:spin 500ms linear;
+#wrapper #notTooBig{
+    height: 80vh;
 }
 .section-value,
 #notTooBig{
@@ -109,6 +117,7 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    height: 100vh;
 }
 .section-value .card-content{
     z-index: 0;
@@ -116,13 +125,12 @@
 .section-value .card-content h2{
     padding: 0;
 }
-#how{
-    background-image: url(../images/drop.svg);
-    height: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
+// .bg-active{
+//     background-color:#F16522;
+//     opacity: 1;
+// }
+
 #notTooBig{
     color: #263C95;
 }
@@ -143,16 +151,220 @@
     margin-left: auto;
     margin-right: auto;
   }
+@media all and (max-width: 362px)  {
+    .tapY{
+        left: -11%;
+        top: -25%;
+        width: 100px;
+        height: 74px;
+    }
 
+}
+@media all and (max-width: 395px)  {
+    .tapY2{
+        left: -11%;
+        top: -25%;
+        width: 100px;
+        height: 74px;
+    }
+
+}
+@media all and (max-width: 390px)  {
+    .tapR{
+        left: -11%;
+        top: -25%;
+        width: 143px;
+        height: 74px;
+    }
+
+}
+@media all and (max-width: 390px) and (min-width: 411px) {
+    .tapY{
+        left: -12%;
+        top: -35%;
+        width: 135px;
+        height: 86px;
+    }
+
+}
+@media all and (max-width: 435px) and (min-width: 424px) {
+    .tapY2{
+        left: -12%;
+        top: -31%;
+        width: 100px;
+        height: 86px;
+    }
+
+}
+@media all and (max-width: 455px) and (min-width: 404px) {
+    .tapY{
+        left: -11%;
+        top: -25%;
+        width: 130px;
+        height: 78px;
+    }
+}
+@media all and (max-width: 533px) and (min-width: 491px) {
+    .tapY2{
+        left: -12%;
+        top: -31%;
+        width: 157px;
+        height: 86px;
+    }
+
+}
+@media all and (max-width: 544px) and (min-width: 501px) {
+    .tapR{
+        left: -10%;
+        top: -74%;
+        width: 91px;
+        height: 80px;
+    }
+}
+@media all and (max-width: 559px) and (min-width: 554px) {
+    .tapY{
+        left: -11%;
+        top: -25%;
+        width: 130px;
+        height: 78px;
+    }
+
+}
+@media all and (max-width: 649px) and (min-width: 600px) {
+    .tapY2{
+        left: -12%;
+        top: -31%;
+        width: 121px;
+        height: 86px;
+    }
+
+}
 /* Tablet */
 @media all and (max-width: 1200px) and (min-width: 700px) {
+    .section-card .card-content h3{
+        width: 90%;
+    }
+    #wrapper #notTooBig{
+        height: 130rem;
+    }
     #notTooBig .img-container{
         width: 50%;
     }
-    
+    .icon-square{
+        width: 39px;
+        height: 49px;
+    }
+    .icon-wave{
+        width: 82px;
+        height: 32px;
+    }
+    .icon-hill{
+        width: 72px;
+        height: 32px;
+    }
+    .tapR{
+        left: -13%;
+        top: -86%;
+        width: 371px;
+        height: 100px;
+    }
+    .tapY{
+        left: -12%;
+        top: -50%;
+        width: 314px;
+        height: 91px;
+    }
+    .tapB{
+        left: -12%;
+        top: -38%;
+        width: 158px;
+        height: 66px;
+    }
+    .tapY2{
+        left: -14%;
+        top: -56%;
+        width: 319px;
+        height: 95px;
+    }
+    #drop-desktop{
+        display: block;
+    }
+    #howAnim{
+        top: 20%;
+    }
     
 }
+@media all and (max-width: 757px) and (min-width: 701px) {
+    .tapR{
+        left: -10%;
+        top: -36%;
+        width: 104px;
+        height: 80px;
+    }
+}
+@media all and (max-width: 746px) and (min-width: 701px) {
+    .tapY2{
+        left: -12%;
+        top: -31%;
+        width: 157px;
+        height: 86px;
+    }
 
+}
+@media all and (max-width: 911px) and (min-width: 839px) {
+    .tapY2{
+        left: -12%;
+        top: -31%;
+        width: 157px;
+        height: 86px;
+    }
+
+}
+@media all and (max-width: 1156px) and (min-width: 1092px) {
+    .tapY2{
+        left: -12%;
+        top: -31%;
+        width: 157px;
+        height: 86px;
+    }
+
+}
+// @media all and (max-width: 974px) and (min-width: 831px) {
+//     .tapY2{
+//         left: -12%;
+//         top: -31%;
+//         width: 157px;
+//         height: 86px;
+//     }
+
+// }
+// @media all and (max-width: 801px) and (min-width: 789px) {
+//     .tapY{
+//         left: -12%;
+//         top: -21%;
+//         width: 161px;
+//         height: 81px;
+//     }
+    
+// }
+// @media all and (max-width: 919px) and (min-width: 905px) {
+//     .tapY{
+//         left: -11%;
+//         top: -25%;
+//         width: 158px;
+//         height: 101px;
+//     }
+    
+// }
+@media all and (max-width: 1200px) and (min-width: 1103px) {
+    .tapY{
+        left: -11%;
+        top: -25%;
+        width: 158px;
+        height: 101px;
+    }
+    
+}
 /* Desktop */
 @media all and (min-width: 1201px) {
     .section-card .card-content h3{
@@ -162,11 +374,90 @@
         width:90%;
         padding: 0;
     }
+    #wrapper #notTooBig{
+        height: 100rem;
+    }
     #notTooBig .img-container{
         width: 30%;
+    }
+    .icon-square{
+        width: 39px;
+        height: 49px;
+    }
+    .icon-wave{
+        width: 82px;
+        height: 32px;
+    }
+    .icon-hill{
+        width: 72px;
+        height: 32px;
+    }
+    .tapR{
+        left: -12%;
+        top: -37%;
+        width: 500px;
+        height: 100px;
+    }
+    .tapY{
+        left: -12%;
+        top: -37%;
+        width: 431px;
+        height: 100px;
+    }
+    .tapY2{
+        left: -10%;
+        top: -49%;
+        width: 437px;
+        height: 122px;
+    }
+    .tapB{
+        left: -12%;
+        top: -38%;
+        width: 217px;
+        height: 86px;
+    }
+    #howAnim{
+        top: 20%;
+    }
+    #drop-desktop{
+        display: block;
+    }
+}
+@media all and (max-width: 1226px) and (min-width: 1201px) {
+    .tapY2{
+        left: -26%;
+        top: -20%;
+        width: 287px;
+        height: 115px;
+    }
+    
+}
+@media all and (max-width: 1264px) and (min-width: 1201px) {
+    .tapR{
+        left: 1%;
+        top: -36%;
+        width: 340px;
+        height: 123px;
+    }
+    
+}
+@media all and (max-width: 1519px) and (min-width: 1386px) {
+    .tapY2{
+        left: -26%;
+        top: -20%;
+        width: 251px;
+        height: 115px;
+    }
+    
+}
+@media all and (max-width: 1406px) and (min-width: 1385px) {
+    .tapY{
+        left: -19%;
+        top: -25%;
+        width: 234px;
+        height: 123px;
     }
     
 }
 
-  
 

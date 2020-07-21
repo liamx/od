@@ -1,0 +1,146 @@
+/* Mobile */
+
+
+.section-services{
+    position: relative;
+    z-index: 0;
+}
+.section-services .action{
+    color: #fff;
+    font-family: Gotham-Medium;
+    font-size: 1.875rem;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    text-align: center;
+    width: 28rem;
+    height: 14rem;
+    text-decoration: none;
+}
+.section-services .action::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    background-image: url(../images/getintouch.svg);
+    height: 100%; 
+    width: 100%;  
+    left: 0%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Dynamic Tabs*/
+
+#servicesTab .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: #F16522;
+    border-radius: 0.8rem;
+    transition: 0.5s;
+}
+#servicesTab .nav-link:hover{
+    background-color: #FDEB95;
+    border-radius: 0.8rem;
+}
+#servicesTab .nav-link{
+    font-size: 1.8rem;
+    line-height: 1.2;
+    padding: 1rem 2rem;
+    font-family: "GOTHAM Medium", Arial, Helvetica, sans-serif;
+}
+#servicesTab #animation ul li{
+    list-style-type: disc;
+}
+#servicesTab #animation ul{
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+#servicesTab .nav-item{
+    padding: 0rem 1rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+
+
+
+/* Animation Prototype */
+#servicesTab .container{
+    max-width: 80%;
+}
+#animation .slide-header{
+    font-size: 5rem;
+    font-family: "GOTHAM black", Arial, Helvetica, sans-serif;
+    color: #71CFD8;
+    padding-bottom: 3rem;
+}
+#animation  .slide-text,
+#animation  li {
+    font-family: "Muli regular", Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 100;
+    line-height: 2;
+    color: #71CFD8;
+}
+#animation  .slide-contianer{
+    margin: auto;
+}
+#fourAnim{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#animation #oneAnim,
+#animation #twoAnim,
+#animation #threeAnim,
+#animation #fourAnim,
+#animation #fiveAnim,
+#animation #sixAnim{
+    width: 130%;
+    height: 110%;
+    min-width: 650px;
+    max-width: 900px;
+    padding-right: 15rem;
+}
+#servicesTab .nav-pills{
+    padding-top: 3rem;
+}
+
+
+/* Tablet */
+@media all and (max-width: 1200px) and (min-width: 700px) {
+    .section-services #customCarousel{
+        height: 30rem;
+    }
+    .section-services .action{
+        width: 51rem;
+        height: 26rem;
+    }
+    
+    #wholeTeam .sub-header{
+        padding-top: 20rem;
+    }
+    #animation .slide-right{
+        margin-top: 10rem;
+    }
+}
+
+/* Desktop */
+@media all and (min-width: 1201px) {
+    
+    .section-services .action{
+        width: 46rem;
+        height: 23rem;
+    }
+    #animation .slide-right{
+        margin-top: 20rem;
+    }
+    #wholeTeam .sub-header{
+        padding-top: 20rem;
+    }
+}
+
+  
