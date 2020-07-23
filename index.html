@@ -41,12 +41,12 @@
                                 <span></span>
                             </div>
                             <ul class="nav-links">
-                                <li class="nav-item"><a href="mydiv">WHO</a></li>
-                                <li class="nav-item"><a href="#">HOW</a></li>
-                                <li class="nav-item"><a href="#">SERVICES</a></li>
-                                <li class="nav-item"><a href="#">CAREER</a></li>
-                                <li class="nav-item"><a href="#">CONTACT</a></li>
-                            </ul>
+                                <li><a class="nav-item" href="#nav1">WHO</a></li>
+                                <li><a class="nav-item" href="#nav2">HOW</a></li>
+                                <li><a class="nav-item" href="#nav3">SERVICES</a></li>
+                                <li><a class="nav-item" href="#nav4">CAREER</a></li>
+                                <li><a class="nav-item" href="#nav5">CONTACT</a></li>
+                            </div>
                         </nav>
                     </div>
                     <!-- fixed navigation -->
@@ -60,12 +60,13 @@
                                 <div class="jupiter"></div>
                                 <div class="astro"></div>
                                 <div class="spaceship"></div>
+                                <!-- <div class="clip"><div id="introAnim"></div></div> -->
                             </div>
                         </div>
                     </section>
                     <!-- WHO!? -->
-                    <section class="section-intro blue" id="mydiv"></section>
-                    <section class="section-card orange">
+                    <section class="section-intro blue"></section>
+                    <section class="section-card orange" id="nav1">
                         <div class="card-content">
                             <h2>WHO?!</h2>
                             <div id="AnimOne"></div>
@@ -113,7 +114,7 @@
                                         </g>
                                     </g>
                                 </svg>
-                                all-in-one software development firm making <span href="" class="hover-me" id="hoverR">excellent digital things<img class="tapR" src="images/tapeR.png" /></span> . We know what it’s like to start small with a
+                                all-in-one software development firm making <span href="" class="hover-me" id="hoverR">excellent digital things<img class="tapR" src="images/tapeR.png" /><img class="tapRG" src="images/tapeRG.png" /></span>. We know what it’s like to start small with a
                                 big dream, so we are here to help you reach your goals by deploying the
                                 <svg class="icon-wave" xmlns="http://www.w3.org/2000/svg" width="82" height="32" viewBox="0 0 82 32">
                                     <g id="Group_3217" data-name="Group 3217" transform="translate(-677 -2777)">
@@ -126,7 +127,7 @@
                                 </svg>
                                 cutting-edge technology to create the advanced digital stuff.<br />
                                 <br />
-                                Whether you’re just getting started or need assistance with <span href="" class="hover-me" id="hoverY">advanced features<img class="tapY" src="images/tapeY.png" /></span> , our ⚙️ engineer and 🎨 design team
+                                Whether you’re just getting started or need assistance with <span href="" class="hover-me" id="hoverY">advanced features<img class="tapY" src="images/tapeY.png" /><img class="tapYP" src="images/tapeP.png" /></span> , our ⚙️ engineer and 🎨 design team
                                 are here for you.
                             </h3>
                         </div>
@@ -146,7 +147,7 @@
                         <div id="dropAnim" class="animation"></div>
                     </section>
                     <section class="section-card how orange" id="how">
-                        <div class="card-content">
+                        <div class="card-content" id="nav2">
                             <h2>HOW?!</h2>
                             <h3>
                                 We know people are always the core of a team. Everything
@@ -263,8 +264,8 @@
                                         </g>
                                     </g>
                                 </svg>
-                                else flows from here. That’s why we were a team of 🧑🏻‍🚀🧑🏻‍🔧👨🏻‍🔬👩🏻‍💻👨🏻‍🎨 makers, thinkers, <span href="" class="hover-me" id="hoverB">explorers<img class="tapB" src="images/tapeB.png" /></span> and inventors
-                                working at the intersection of <span href="" class="hover-me" id="hoverY">creative and digital<img class="tapY2" src="images/tapeY.png" /></span>.
+                                else flows from here. That’s why we were a team of 🧑🏻‍🚀🧑🏻‍🔧👨🏻‍🔬👩🏻‍💻👨🏻‍🎨 makers, thinkers, <span href="" class="hover-me" id="hoverB">explorers<img class="tapB" src="images/tapeB.png" /><img class="tapBY" src="images/tapeBY.png" /></span> and inventors
+                                working at the intersection of <span href="" class="hover-me" id="hoverY">creative and digital<img class="tapY2" src="images/tapeY.png" /><img class="tapY2P" src="images/tapeP.png" /></span>.
                             </h3>
                         </div>
                     </section>
@@ -280,7 +281,7 @@
                         </div>
                     </section>
                     <!-- Services -->
-                    <section class="section-services blue">
+                    <section class="section-services blue" id="nav3">
                         <div class="card-content">
                             <h2 class="text-center">SERVICES</h2>
                             <!-- Service Dynamic Tab  -->
@@ -457,15 +458,14 @@
                                 Starting your business dream here, <br />
                                 getting started with Orange Data.
                             </p>
-                            <button type="button" class="btn btn-link action">Get in touch now</button>
+                            <button type="button" class="btn btn-link action"><a href="#nav5"><span>Get </span><span>in </span><span>touch </span><span>now</span></a></button>
                         </div>
                     </section>
                     <!-- Career -->
-                    <section class="section-career white">
+                    <section class="section-career white" id="nav4">
                         <div class="card-content">
                             <!-- Way to go team!-->
                             <div class="career-logo">
-                                <!-- <div class="clip"><div id="wayToGoAnim"></div></div> -->
                                 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                                 <lottie-player
                                     id="wayToGoAnim"
@@ -481,71 +481,200 @@
                                 <h3 class="job-opport">Job Opportunity</h3>
 
                                 <div class="job-list" id="job-list">
+                                    <!-- Analyst Programmer -->
                                     <div class="job-link">
-                                        <div class="job-wrap d-flex justify-content-between">
-                                            <h3 class="job-title">PROGRAMMER</h3>
-                                            <button onclick="togglePopup()" class="job-btn fas fa-chevron-right flex-shrink-1 bd-highlight"></button>
-                                        </div>
-                                    </div>
-                                    <div class="job-link">
-                                        <div class="job-wrap d-flex justify-content-between">
-                                            <h3 class="job-title">UI DESIGNER</h3>
-                                            <button onclick="togglePopup()" class="job-btn fas fa-chevron-right flex-shrink-1 bd-highlight"></button>
-                                        </div>
-                                    </div>
-                                    <div class="job-link">
-                                        <div class="job-wrap d-flex justify-content-between">
-                                            <h3 class="job-title">WEB DESIGNER</h3>
-                                            <button onclick="togglePopup()" class="job-btn fas fa-chevron-right flex-shrink-1 bd-highlight"></button>
-                                        </div>
-                                    </div>
-                                    <div class="job-link">
-                                        <div class="job-wrap d-flex bd-highlight" style="position: relative; z-index:0;">
-                                            <h3 class="job-title w-100 bd-highlight">MARKETING</h3>
-                                            <!-- Trigger the popup with a button -->
-                                            <button onclick="togglePopup()" class="job-btn fas fa-chevron-right flex-shrink-1 bd-highlight"></button>
-                                            <div class="popup" id="popup-1">
-                                                <div class="overlay"></div>
-                                                <div class="content">
-                                                    <div class="close-btn" onclick="togglePopup()"><i class="fas fa-times"></i></div>
-                                                    <div class="Pop-container">
-                                                        <div class="job-header blue">
-                                                            <h1 class="strike">Analyst Programmer</h1>
-                                                            <h3>Job Highlights</h3>
-                                                            <p>
-                                                                A Director at Orange Data owns the big picture of our design work, and is responsible for overall quality while ensuring the team executing the work is set up for success.
-                                                                Things in our world are constantly changing so you must be fast, highly adaptive, and comfortable with ambiguity……
-                                                            </p>
-                                                        </div>
-                                                        <div class="Pop-detail">
-                                                            <h3>Responsibilities</h3>
-                                                            <ul>
-                                                                <li>Co-Manage a +50-person design team and mentor our Design Leads.</li>
-                                                                <li>Drive the overall Design team’s operations and strategy.</li>
-                                                                <li>Collaborate with the Client Partnerships team to pitch engagements to clients.</li>
-                                                                <li>Assist in scoping out the timeline and requirements of design engagements.</li>
-                                                            </ul>
-                                                            <h3>What we’re looking for</h3>
-                                                            <ul>
-                                                                <li>Communicate design direction, decisions</li>
-                                                                <li>Fluency in design and prototyping tools</li>
-                                                                <li>Experience working in collaborative environment</li>
-                                                                <li>Preferably background in agency/consultancy</li>
-                                                            </ul>
-                                                            <h3>Requirements</h3>
-                                                            <ul>
-                                                                <li>University fresh graduate</li>
-                                                                <li>Strong client skills with ability to deliver solutions</li>
-                                                                <li>Proven organization skills and attention to details</li>
-                                                                <li>Strong self-motivation with good analytical skills</li>
-                                                            </ul>
-                                                            <div class="d-flex justify-content-center apply-btn">
-                                                                <button type="button" class="btn">Apply</button>
-                                                            </div>
+                                        <div class="job-wrap">
+                                            <div class="popup_main popup  d-flex bd-highlight">
+                                                <h3 class="job-title  w-100 bd-highlight">Analyst Programmer</h3>
+                                                <button class="open_popup arrow45 job-btn flex-shrink-1 bd-highlight"></button>
+                                                <div class="popup_body">
+                                                  <div class="popup_back"></div>
+                                                    <div class="popup_contain Pop-container">
+                                                      <div class="popup_close close-btn"><i ><img class="fas fa-times" src="./images/close-icon.svg" /></i></div>
+                                                      <div class="job-header blue">
+                                                        <h1 class="strike">Analyst Programmer</h1>
+                                                        <h3>Job Highlights</h3>
+                                                        <p>
+                                                            A Director at Orange Data owns the big picture of our design work, and is responsible for overall quality while ensuring the team executing the work is set up for success.
+                                                            Things in our world are constantly changing so you must be fast, highly adaptive, and comfortable with ambiguity……
+                                                        </p>
+                                                    </div>
+                                                    <div class="Pop-detail">
+                                                        <h3>Responsibilities</h3>
+                                                        <ul>
+                                                            <li>Co-Manage a +50-person design team and mentor our Design Leads.</li>
+                                                            <li>Drive the overall Design team’s operations and strategy.</li>
+                                                            <li>Collaborate with the Client Partnerships team to pitch engagements to clients.</li>
+                                                            <li>Assist in scoping out the timeline and requirements of design engagements.</li>
+                                                        </ul>
+                                                        <h3>What we’re looking for</h3>
+                                                        <ul>
+                                                            <li>Communicate design direction, decisions</li>
+                                                            <li>Fluency in design and prototyping tools</li>
+                                                            <li>Experience working in collaborative environment</li>
+                                                            <li>Preferably background in agency/consultancy</li>
+                                                        </ul>
+                                                        <h3>Requirements</h3>
+                                                        <ul>
+                                                            <li>University fresh graduate</li>
+                                                            <li>Strong client skills with ability to deliver solutions</li>
+                                                            <li>Proven organization skills and attention to details</li>
+                                                            <li>Strong self-motivation with good analytical skills</li>
+                                                        </ul>
+                                                        <div class="d-flex justify-content-center apply-btn">
+                                                            <button type="button" class="btn">Apply</button>
                                                         </div>
                                                     </div>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <!-- UI Designer -->
+                                    <div class="job-link">
+                                        <div class="job-wrap">
+                                            <div class="popup_main popup  d-flex bd-highlight">
+                                                <h3 class="job-title  w-100 bd-highlight">UI Designer</h3>
+                                                <button class="open_popup arrow45 job-btn flex-shrink-1 bd-highlight"></button>
+                                                <div class="popup_body">
+                                                  <div class="popup_back"></div>
+                                                    <div class="popup_contain Pop-container">
+                                                      <div class="popup_close close-btn"><i ><img class="fas fa-times" src="./images/close-icon.svg" /></i></div>
+                                                      <div class="job-header blue">
+                                                        <h1 class="strike">UI Designer</h1>
+                                                        <h3>Job Highlights</h3>
+                                                        <p>
+                                                            A Director at Orange Data owns the big picture of our design work, and is responsible for overall quality while ensuring the team executing the work is set up for success.
+                                                            Things in our world are constantly changing so you must be fast, highly adaptive, and comfortable with ambiguity……
+                                                        </p>
+                                                    </div>
+                                                    <div class="Pop-detail">
+                                                        <h3>Responsibilities</h3>
+                                                        <ul>
+                                                            <li>Co-Manage a +50-person design team and mentor our Design Leads.</li>
+                                                            <li>Drive the overall Design team’s operations and strategy.</li>
+                                                            <li>Collaborate with the Client Partnerships team to pitch engagements to clients.</li>
+                                                            <li>Assist in scoping out the timeline and requirements of design engagements.</li>
+                                                        </ul>
+                                                        <h3>What we’re looking for</h3>
+                                                        <ul>
+                                                            <li>Communicate design direction, decisions</li>
+                                                            <li>Fluency in design and prototyping tools</li>
+                                                            <li>Experience working in collaborative environment</li>
+                                                            <li>Preferably background in agency/consultancy</li>
+                                                        </ul>
+                                                        <h3>Requirements</h3>
+                                                        <ul>
+                                                            <li>University fresh graduate</li>
+                                                            <li>Strong client skills with ability to deliver solutions</li>
+                                                            <li>Proven organization skills and attention to details</li>
+                                                            <li>Strong self-motivation with good analytical skills</li>
+                                                        </ul>
+                                                        <div class="d-flex justify-content-center apply-btn">
+                                                            <button type="button" class="btn">Apply</button>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <!-- Web Designer  -->
+                                    <div class="job-link">
+                                        <div class="job-wrap">
+                                            <div class="popup_main popup  d-flex bd-highlight">
+                                                <h3 class="job-title  w-100 bd-highlight">Web Designer </h3>
+                                                <button class="open_popup arrow45 job-btn flex-shrink-1 bd-highlight"></button>
+                                                <div class="popup_body">
+                                                  <div class="popup_back"></div>
+                                                    <div class="popup_contain Pop-container">
+                                                      <div class="popup_close close-btn"><i ><img class="fas fa-times" src="./images/close-icon.svg" /></i></div>
+                                                      <div class="job-header blue">
+                                                        <h1 class="strike">Web Designer </h1>
+                                                        <h3>Job Highlights</h3>
+                                                        <p>
+                                                            A Director at Orange Data owns the big picture of our design work, and is responsible for overall quality while ensuring the team executing the work is set up for success.
+                                                            Things in our world are constantly changing so you must be fast, highly adaptive, and comfortable with ambiguity……
+                                                        </p>
+                                                    </div>
+                                                    <div class="Pop-detail">
+                                                        <h3>Responsibilities</h3>
+                                                        <ul>
+                                                            <li>Co-Manage a +50-person design team and mentor our Design Leads.</li>
+                                                            <li>Drive the overall Design team’s operations and strategy.</li>
+                                                            <li>Collaborate with the Client Partnerships team to pitch engagements to clients.</li>
+                                                            <li>Assist in scoping out the timeline and requirements of design engagements.</li>
+                                                        </ul>
+                                                        <h3>What we’re looking for</h3>
+                                                        <ul>
+                                                            <li>Communicate design direction, decisions</li>
+                                                            <li>Fluency in design and prototyping tools</li>
+                                                            <li>Experience working in collaborative environment</li>
+                                                            <li>Preferably background in agency/consultancy</li>
+                                                        </ul>
+                                                        <h3>Requirements</h3>
+                                                        <ul>
+                                                            <li>University fresh graduate</li>
+                                                            <li>Strong client skills with ability to deliver solutions</li>
+                                                            <li>Proven organization skills and attention to details</li>
+                                                            <li>Strong self-motivation with good analytical skills</li>
+                                                        </ul>
+                                                        <div class="d-flex justify-content-center apply-btn">
+                                                            <button type="button" class="btn">Apply</button>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <!-- MARKETING -->
+                                    <div class="job-link">
+                                        <div class="job-wrap">
+                                            <div class="popup_main popup  d-flex bd-highlight">
+                                                <h3 class="job-title  w-100 bd-highlight">MARKETING</h3>
+                                                <button class="open_popup arrow45 job-btn flex-shrink-1 bd-highlight"></button>
+                                                <div class="popup_body">
+                                                  <div class="popup_back"></div>
+                                                    <div class="popup_contain Pop-container">
+                                                      <div class="popup_close close-btn"><i ><img class="fas fa-times" src="./images/close-icon.svg" /></i></div>
+                                                      <div class="job-header blue">
+                                                        <h1 class="strike">Analyst Programmer</h1>
+                                                        <h3>Job Highlights</h3>
+                                                        <p>
+                                                            A Director at Orange Data owns the big picture of our design work, and is responsible for overall quality while ensuring the team executing the work is set up for success.
+                                                            Things in our world are constantly changing so you must be fast, highly adaptive, and comfortable with ambiguity……
+                                                        </p>
+                                                    </div>
+                                                    <div class="Pop-detail">
+                                                        <h3>Responsibilities</h3>
+                                                        <ul>
+                                                            <li>Co-Manage a +50-person design team and mentor our Design Leads.</li>
+                                                            <li>Drive the overall Design team’s operations and strategy.</li>
+                                                            <li>Collaborate with the Client Partnerships team to pitch engagements to clients.</li>
+                                                            <li>Assist in scoping out the timeline and requirements of design engagements.</li>
+                                                        </ul>
+                                                        <h3>What we’re looking for</h3>
+                                                        <ul>
+                                                            <li>Communicate design direction, decisions</li>
+                                                            <li>Fluency in design and prototyping tools</li>
+                                                            <li>Experience working in collaborative environment</li>
+                                                            <li>Preferably background in agency/consultancy</li>
+                                                        </ul>
+                                                        <h3>Requirements</h3>
+                                                        <ul>
+                                                            <li>University fresh graduate</li>
+                                                            <li>Strong client skills with ability to deliver solutions</li>
+                                                            <li>Proven organization skills and attention to details</li>
+                                                            <li>Strong self-motivation with good analytical skills</li>
+                                                        </ul>
+                                                        <div class="d-flex justify-content-center apply-btn">
+                                                            <button type="button" class="btn">Apply</button>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                              </div>
                                         </div>
                                     </div>
                                 </div>
@@ -577,7 +706,7 @@
                         <div class="card-content"></div>
                     </section>
                     <section class="section-contact orange" id="contact">
-                        <div class="card-content">
+                        <div class="card-content" id="nav5">
                             <h2 class="sub-header text-center">Get in Touch with us!</h2>
                             <!-- form input box -->
                             <div class="form-container d-lg-flex flex-row" id="inputName">

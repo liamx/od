@@ -1,10 +1,10 @@
 {
 	"folders": [
 		{
-			"path": "../practice/prototype"
+			"path": "."
 		},
 		{
-			"path": "."
+			"path": "../practice/scroll magic"
 		}
 	],
 	"settings": {

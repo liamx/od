@@ -3,9 +3,9 @@
     text-align: center;
 }
 .section-career .card-content .career-logo {
-    padding-top: 10rem;
-    width: 50rem;
-    height: 50rem;
+    padding-top: 0rem;
+    width: 51rem;
+    height: 54rem;
     margin: 0 auto;
 }
 .section-career .card-content p {
@@ -35,12 +35,12 @@
 .job-title {
     padding: 3rem 0rem;
     margin: 0;
-    background-color: #f2f0f7;
     border: none;
     font-size: 2.25rem;
     font-family: Gotham-Medium;
     text-align: left;
     padding-bottom: 3rem;
+    cursor: pointer;
 }
 .job-wrap {
     align-items: center;
@@ -54,9 +54,16 @@
     margin: 0em;
     border: none;
     color: #233e97;
+    background-color: transparent;
 }
 .job-link .job-btn:focus {
     outline: none;
+}
+.arrow45{
+    background-image: url(../images/arrow45.svg);
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 25px;
 }
 
 /* pop up */
@@ -83,10 +90,11 @@
     background: #fff;
     width: 300px;
     height: 600px;
-    top: 20%;
+    top: 50%;
     overflow-y: scroll;
     z-index: 2;
     text-align: left;
+    
 }
 /* popup box style */
 .popup .Pop-container {
@@ -156,10 +164,9 @@
     position: absolute;
     right: 20px;
     top: 20px;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     color: #fff;
-    font-size: 25px;
     font-weight: 600;
     line-height: 30px;
     text-align: center;
@@ -171,6 +178,49 @@
     transition: all 300ms ease-in-out;
     transform: translate(-50%, -50%) scale(1);
 }
+
+/* pop up test */
+.popup{
+    align-items: center;
+
+}
+  .popup_body{
+    display:none;
+    position:fixed;
+    top:0;left:0;right:0;bottom:0;
+    -webkit-transition: 300ms;
+      -moz-transition: 300ms;
+      -o-transition: 300ms;
+      -ms-transition: 300ms;
+      transition: 300ms;
+  }
+  .popup_body_show{
+    display:block;
+    -webkit-transition: 300ms;
+      -moz-transition: 300ms;
+      -o-transition: 300ms;
+      -ms-transition: 300ms;
+      transition: 300ms;
+  }
+  .popup_back{
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    left:0;right:0;top:0;bottom:0;
+  }
+  .popup_contain{
+    position:relative;
+    background:#fff;
+    min-width:300px;
+    max-width:80%;
+    margin:100px auto 50px;
+    min-height:150px;
+    height: 80vh;
+    overflow-y: scroll;
+  }
+  .popup h3{
+    font-size: 2.25rem;
+  }
+
 .section-career .send-cv p {
     font-size: 1.85rem;
 }
@@ -204,6 +254,10 @@
 
 /* Tablet */
 @media all and (max-width: 1200px) and (min-width: 700px) {
+    .section-career .card-content .career-logo {
+        width: 70rem;
+        height: 63rem;
+    }
     .section-career .send-cv p {
         font-size: 2.85rem;
     }
@@ -212,10 +266,7 @@
     }
     .popup .content {
         width: 600px;
-        height: inherit;
-    }
-    .popup .content {
-        overflow-y: initial;
+        height: 100vh;
     }
     .popup .Pop-container p,
     .popup .Pop-container ul li {
@@ -233,6 +284,10 @@
 
 /* Desktop */
 @media all and (min-width: 1201px) {
+    .section-career .card-content .career-logo {
+        width: 64rem;
+        height: 58rem;
+    }
     .section-career .send-cv h2 {
         font-size: 7.25rem;
     }
@@ -249,7 +304,7 @@
     }
     .popup .content {
         width: 798px;
-        height: inherit;
+        height: 100vh;
     }
     .popup .Pop-container p,
     .popup .Pop-container ul li {
@@ -272,17 +327,15 @@
         position: absolute;
         right: 40px;
         top: 40px;
-        font-size: 40px;
-    }
-    .popup .content {
-        overflow-y: initial;
+        width: 30px;
+        height: 30px;
     }
 }
 /* Large Desktop */
 @media all and (min-width: 1501px) {
     .popup .content {
         width: 1140px;
-        height: inherit;
+        height: 100vh;
     }
     .popup .job-header,
     .popup .Pop-container .Pop-detail {

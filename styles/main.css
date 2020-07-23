@@ -238,7 +238,7 @@ img {
   }
   #notTooBig h2,
   #wholeTeam h2 {
-    font-size: 11rem;
+    font-size: 10rem;
   }
   #wrapper section {
     height: 100%;
@@ -392,7 +392,7 @@ nav {
   background-color: #F16522;
 }
 
-.nav-links .nav-item a {
+.nav-links .nav-item {
   font-family: Gotham-Ultra;
   color: #233E97;
   font-size: 9rem;
@@ -400,7 +400,7 @@ nav {
   text-decoration: none;
 }
 
-.nav-links .nav-item a:hover {
+.nav-links .nav-item:hover {
   color: #ffffff;
 }
 
@@ -622,8 +622,8 @@ nav .open .nav-item {
   z-index: 0;
 }
 
-.tapR {
-  display: none;
+.tapR,
+.tapRG {
   position: absolute;
   left: -11%;
   top: -63%;
@@ -632,8 +632,8 @@ nav .open .nav-item {
   z-index: -1;
 }
 
+.tapYP,
 .tapY {
-  display: none;
   position: absolute;
   left: -12%;
   top: -68%;
@@ -642,8 +642,8 @@ nav .open .nav-item {
   z-index: -1;
 }
 
-.tapY2 {
-  display: none;
+.tapY2,
+.tapY2P {
   position: absolute;
   left: -8%;
   top: -71%;
@@ -652,8 +652,8 @@ nav .open .nav-item {
   z-index: -1;
 }
 
+.tapBY,
 .tapB {
-  display: none;
   position: absolute;
   left: -12%;
   top: -43%;
@@ -662,25 +662,62 @@ nav .open .nav-item {
   z-index: -1;
 }
 
-.hover-me:hover .tapB,
-.hover-me:hover .tapR,
-.hover-me:hover .tapY,
-.hover-me:hover .tapY2 {
+.tapY,
+.tapY2,
+.tapR,
+.tapB {
   display: block;
 }
 
-#hoverB:hover,
-#hoverR:hover {
+.tapYP,
+.tapY2P,
+.tapRG,
+.tapBY {
+  display: none;
+}
+
+.hover-me:hover .tapY2,
+.hover-me:hover .tapY,
+.hover-me:hover .tapB,
+.hover-me:hover .tapR {
+  display: none;
+}
+
+.hover-me:hover .tapY2P,
+.hover-me:hover .tapYP,
+.hover-me:hover .tapBY,
+.hover-me:hover .tapRG {
+  display: block;
+}
+
+#hoverY {
+  color: #263C95;
+}
+
+#hoverR,
+#hoverB {
   color: #FDF400;
 }
 
-#hoverY:hover,
+#hoverY {
+  color: #EA048A;
+}
+
+#hoverY:hover {
+  color: #FDF400;
+}
+
+#hoverB:hover {
+  color: #EA048A;
+}
+
+#hoverR:hover,
 #hoverY2:hover {
   color: #263C95;
 }
 
 #wrapper #notTooBig {
-  height: 80vh;
+  height: 90vh;
 }
 
 .section-value,
@@ -730,7 +767,8 @@ nav .open .nav-item {
 }
 
 @media all and (max-width: 362px) {
-  .tapY {
+  .tapY,
+  .tapYP {
     left: -11%;
     top: -25%;
     width: 100px;
@@ -739,7 +777,8 @@ nav .open .nav-item {
 }
 
 @media all and (max-width: 395px) {
-  .tapY2 {
+  .tapY2,
+  .tapY2P {
     left: -11%;
     top: -25%;
     width: 100px;
@@ -748,7 +787,8 @@ nav .open .nav-item {
 }
 
 @media all and (max-width: 390px) {
-  .tapR {
+  .tapR,
+  .tapRG {
     left: -11%;
     top: -25%;
     width: 143px;
@@ -757,7 +797,8 @@ nav .open .nav-item {
 }
 
 @media all and (max-width: 390px) and (min-width: 411px) {
-  .tapY {
+  .tapY,
+  .tapYP {
     left: -12%;
     top: -35%;
     width: 135px;
@@ -766,7 +807,8 @@ nav .open .nav-item {
 }
 
 @media all and (max-width: 435px) and (min-width: 424px) {
-  .tapY2 {
+  .tapY2,
+  .tapY2P {
     left: -12%;
     top: -31%;
     width: 100px;
@@ -775,7 +817,8 @@ nav .open .nav-item {
 }
 
 @media all and (max-width: 455px) and (min-width: 404px) {
-  .tapY {
+  .tapY,
+  .tapYP {
     left: -11%;
     top: -25%;
     width: 130px;
@@ -784,7 +827,8 @@ nav .open .nav-item {
 }
 
 @media all and (max-width: 533px) and (min-width: 491px) {
-  .tapY2 {
+  .tapY2,
+  .tapY2P {
     left: -12%;
     top: -31%;
     width: 157px;
@@ -793,7 +837,8 @@ nav .open .nav-item {
 }
 
 @media all and (max-width: 544px) and (min-width: 501px) {
-  .tapR {
+  .tapR,
+  .tapRG {
     left: -10%;
     top: -74%;
     width: 91px;
@@ -802,7 +847,8 @@ nav .open .nav-item {
 }
 
 @media all and (max-width: 559px) and (min-width: 554px) {
-  .tapY {
+  .tapY,
+  .tapYP {
     left: -11%;
     top: -25%;
     width: 130px;
@@ -810,8 +856,9 @@ nav .open .nav-item {
   }
 }
 
-@media all and (max-width: 649px) and (min-width: 600px) {
-  .tapY2 {
+@media all and (max-width: 653px) and (min-width: 600px) {
+  .tapY2,
+  .tapY2P {
     left: -12%;
     top: -31%;
     width: 121px;
@@ -842,25 +889,29 @@ nav .open .nav-item {
     width: 72px;
     height: 32px;
   }
-  .tapR {
+  .tapR,
+  .tapRG {
     left: -13%;
     top: -86%;
     width: 371px;
     height: 100px;
   }
-  .tapY {
+  .tapY,
+  .tapYP {
     left: -12%;
     top: -50%;
     width: 314px;
     height: 91px;
   }
-  .tapB {
+  .tapB,
+  .tapBY {
     left: -12%;
     top: -38%;
     width: 158px;
     height: 66px;
   }
-  .tapY2 {
+  .tapY2,
+  .tapY2P {
     left: -14%;
     top: -56%;
     width: 319px;
@@ -875,7 +926,8 @@ nav .open .nav-item {
 }
 
 @media all and (max-width: 757px) and (min-width: 701px) {
-  .tapR {
+  .tapR,
+  .tapRG {
     left: -10%;
     top: -36%;
     width: 104px;
@@ -883,8 +935,9 @@ nav .open .nav-item {
   }
 }
 
-@media all and (max-width: 746px) and (min-width: 701px) {
-  .tapY2 {
+@media all and (max-width: 746px) and (min-width: 700px) {
+  .tapY2,
+  .tapY2P {
     left: -12%;
     top: -31%;
     width: 157px;
@@ -893,7 +946,8 @@ nav .open .nav-item {
 }
 
 @media all and (max-width: 911px) and (min-width: 839px) {
-  .tapY2 {
+  .tapY2,
+  .tapY2P {
     left: -12%;
     top: -31%;
     width: 157px;
@@ -901,8 +955,9 @@ nav .open .nav-item {
   }
 }
 
-@media all and (max-width: 1156px) and (min-width: 1092px) {
-  .tapY2 {
+@media all and (max-width: 1101px) and (min-width: 1078px) {
+  .tapY2,
+  .tapY2P {
     left: -12%;
     top: -31%;
     width: 157px;
@@ -911,7 +966,8 @@ nav .open .nav-item {
 }
 
 @media all and (max-width: 1200px) and (min-width: 1103px) {
-  .tapY {
+  .tapY,
+  .tapYP {
     left: -11%;
     top: -25%;
     width: 158px;
@@ -946,24 +1002,28 @@ nav .open .nav-item {
     width: 72px;
     height: 32px;
   }
-  .tapR {
+  .tapR,
+  .tapRG {
     left: -12%;
     top: -37%;
     width: 500px;
     height: 100px;
   }
-  .tapY {
+  .tapY,
+  .tapYP {
     left: -12%;
     top: -37%;
     width: 431px;
     height: 100px;
   }
-  .tapY2 {
+  .tapY2,
+  .tapY2P {
     left: -10%;
     top: -49%;
     width: 437px;
     height: 122px;
   }
+  .tapBY,
   .tapB {
     left: -12%;
     top: -38%;
@@ -979,7 +1039,8 @@ nav .open .nav-item {
 }
 
 @media all and (max-width: 1226px) and (min-width: 1201px) {
-  .tapY2 {
+  .tapY2,
+  .tapY2P {
     left: -26%;
     top: -20%;
     width: 287px;
@@ -988,7 +1049,8 @@ nav .open .nav-item {
 }
 
 @media all and (max-width: 1264px) and (min-width: 1201px) {
-  .tapR {
+  .tapR,
+  .tapRG {
     left: 1%;
     top: -36%;
     width: 340px;
@@ -997,20 +1059,12 @@ nav .open .nav-item {
 }
 
 @media all and (max-width: 1519px) and (min-width: 1386px) {
-  .tapY2 {
+  .tapY2,
+  .tapY2P {
     left: -26%;
     top: -20%;
     width: 251px;
     height: 115px;
-  }
-}
-
-@media all and (max-width: 1406px) and (min-width: 1385px) {
-  .tapY {
-    left: -19%;
-    top: -25%;
-    width: 234px;
-    height: 123px;
   }
 }
 
@@ -1020,9 +1074,9 @@ nav .open .nav-item {
 }
 
 .section-career .card-content .career-logo {
-  padding-top: 10rem;
-  width: 50rem;
-  height: 50rem;
+  padding-top: 0rem;
+  width: 51rem;
+  height: 54rem;
   margin: 0 auto;
 }
 
@@ -1063,12 +1117,12 @@ nav .open .nav-item {
 .job-title {
   padding: 3rem 0rem;
   margin: 0;
-  background-color: #f2f0f7;
   border: none;
   font-size: 2.25rem;
   font-family: Gotham-Medium;
   text-align: left;
   padding-bottom: 3rem;
+  cursor: pointer;
 }
 
 .job-wrap {
@@ -1086,10 +1140,18 @@ nav .open .nav-item {
   margin: 0em;
   border: none;
   color: #233e97;
+  background-color: transparent;
 }
 
 .job-link .job-btn:focus {
   outline: none;
+}
+
+.arrow45 {
+  background-image: url(../images/arrow45.svg);
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 25px;
 }
 
 /* pop up */
@@ -1112,7 +1174,7 @@ nav .open .nav-item {
   background: #fff;
   width: 300px;
   height: 600px;
-  top: 20%;
+  top: 50%;
   overflow-y: scroll;
   z-index: 2;
   text-align: left;
@@ -1196,10 +1258,9 @@ nav .open .nav-item {
   position: absolute;
   right: 20px;
   top: 20px;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   color: #fff;
-  font-size: 25px;
   font-weight: 600;
   line-height: 30px;
   text-align: center;
@@ -1214,6 +1275,54 @@ nav .open .nav-item {
   transition: all 300ms ease-in-out;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
+}
+
+/* pop up test */
+.popup {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup_body {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.popup_body_show {
+  display: block;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.popup_back {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.popup_contain {
+  position: relative;
+  background: #fff;
+  min-width: 300px;
+  max-width: 80%;
+  margin: 100px auto 50px;
+  min-height: 150px;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.popup h3 {
+  font-size: 2.25rem;
 }
 
 .section-career .send-cv p {
@@ -1254,6 +1363,10 @@ nav .open .nav-item {
 
 /* Tablet */
 @media all and (max-width: 1200px) and (min-width: 700px) {
+  .section-career .card-content .career-logo {
+    width: 70rem;
+    height: 63rem;
+  }
   .section-career .send-cv p {
     font-size: 2.85rem;
   }
@@ -1262,10 +1375,7 @@ nav .open .nav-item {
   }
   .popup .content {
     width: 600px;
-    height: inherit;
-  }
-  .popup .content {
-    overflow-y: initial;
+    height: 100vh;
   }
   .popup .Pop-container p,
   .popup .Pop-container ul li {
@@ -1283,6 +1393,10 @@ nav .open .nav-item {
 
 /* Desktop */
 @media all and (min-width: 1201px) {
+  .section-career .card-content .career-logo {
+    width: 64rem;
+    height: 58rem;
+  }
   .section-career .send-cv h2 {
     font-size: 7.25rem;
   }
@@ -1299,7 +1413,7 @@ nav .open .nav-item {
   }
   .popup .content {
     width: 798px;
-    height: inherit;
+    height: 100vh;
   }
   .popup .Pop-container p,
   .popup .Pop-container ul li {
@@ -1322,10 +1436,8 @@ nav .open .nav-item {
     position: absolute;
     right: 40px;
     top: 40px;
-    font-size: 40px;
-  }
-  .popup .content {
-    overflow-y: initial;
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -1333,7 +1445,7 @@ nav .open .nav-item {
 @media all and (min-width: 1501px) {
   .popup .content {
     width: 1140px;
-    height: inherit;
+    height: 100vh;
   }
   .popup .job-header,
   .popup .Pop-container .Pop-detail {
@@ -1383,6 +1495,11 @@ nav .open .nav-item {
   text-decoration: none;
 }
 
+.section-services .action a {
+  padding: 5rem;
+  opacity: 0.7;
+}
+
 .section-services .action::after {
   content: "";
   position: absolute;
@@ -1395,6 +1512,46 @@ nav .open .nav-item {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.section-services .action::before {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  left: 34%;
+  bottom: 42%;
+  background-color: #fff;
+  position: absolute;
+  z-index: 0;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.action a:hover {
+  -webkit-text-decoration: transparent;
+          text-decoration: transparent;
+  color: #fff;
+  opacity: 1;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.section-services .action:hover::before {
+  width: 58%;
+  height: 1px;
+  left: 21%;
+  bottom: 40%;
+}
+
+/* neon light text */
+.action a span {
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.action a:hover span {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 120px #fff, 0 0 160px #fff;
 }
 
 /* Dynamic Tabs*/
@@ -1569,6 +1726,24 @@ nav .open .nav-item {
   #animation .slide-text {
     font-size: 2.5rem;
     line-height: 2;
+  }
+  .section-services .action a {
+    padding: 12rem;
+  }
+  .action a:hover span:nth-child(1) {
+    margin-right: 2px;
+  }
+  .action a:hover span:nth-child(2) {
+    margin-right: 2px;
+  }
+  .action a:hover span:nth-child(3) {
+    margin-left: 2px;
+  }
+  .section-services .action:hover::before {
+    width: 31%;
+    height: 2px;
+    left: 34%;
+    bottom: 42%;
   }
 }
 
