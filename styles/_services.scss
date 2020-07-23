@@ -62,12 +62,6 @@
     transition: width 0.5s;
 }
 
-.section-services .action:hover::before {
-    width: 58%;
-    height: 1px;
-    left: 21%;
-    bottom: 40%;
-}
 /* neon light text */
 .action a span{
     -webkit-transition: width 0.5s;
@@ -260,12 +254,7 @@
     .action a:hover span:nth-child(3){
         margin-left:2px;
     }
-    .section-services .action:hover::before{
-        width: 31%;
-        height: 2px;
-        left: 34%;
-        bottom: 42%;
-    }
+
 }
 
   /* Desktop */

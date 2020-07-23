@@ -1155,37 +1155,12 @@ nav .open .nav-item {
 }
 
 /* pop up */
-.popup .overlay {
-  position: fixed;
-  top: 0px;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-  display: none;
-}
-
-.popup .content {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(0);
-          transform: translate(-50%, -50%) scale(0);
-  background: #fff;
-  width: 300px;
-  height: 600px;
-  top: 50%;
-  overflow-y: scroll;
-  z-index: 2;
-  text-align: left;
-}
-
 /* popup box style */
-.popup .Pop-container {
+.popup_body .Pop-container {
   color: #fff;
 }
 
-.popup .job-header {
+.popup_body .job-header {
   padding: 8rem 6rem;
 }
 
@@ -1208,38 +1183,38 @@ nav .open .nav-item {
   background: #ef6624;
 }
 
-.popup h3 {
-  font-size: 3.375rem;
+.popup_body h3 {
+  font-size: 2.25rem;
   font-family: "Gotham-Bold";
   z-index: 0;
   padding: 3rem 0;
 }
 
-.popup .Pop-container p,
-.popup .Pop-container ul li {
+.popup_body .Pop-container p,
+.popup_body .Pop-container ul li {
   font-family: "Muli", sans-serif, Arial, Helvetica;
   font-size: 2.5rem;
   line-height: 1.5;
   color: #fff;
 }
 
-.popup .Pop-detail h3,
-.popup .Pop-detail p,
-.popup .Pop-detail ul li {
+.popup_body .Pop-detail h3,
+.popup_body .Pop-detail p,
+.popup_body .Pop-detail ul li {
   color: #000000;
 }
 
-.popup .Pop-detail ul li {
+.popup_body .Pop-detail ul li {
   list-style-type: disc;
   margin-left: 3rem;
 }
 
-.popup .Pop-detail {
+.popup_body .Pop-detail {
   background-color: #fff;
   color: #000000;
 }
 
-.popup .apply-btn .btn {
+.popup_body .apply-btn .btn {
   background-color: #f16522;
   width: 132px;
   height: 48px;
@@ -1249,11 +1224,11 @@ nav .open .nav-item {
   margin: 7rem 0 4rem 0;
 }
 
-.popup .Pop-container .Pop-detail {
+.Pop-container .Pop-detail {
   padding: 8rem 6rem;
 }
 
-.popup .close-btn {
+.popup_body .close-btn {
   cursor: pointer;
   position: absolute;
   right: 20px;
@@ -1266,17 +1241,6 @@ nav .open .nav-item {
   text-align: center;
 }
 
-.popup.active .overlay {
-  display: block;
-}
-
-.popup.active .content {
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-}
-
 /* pop up test */
 .popup {
   -webkit-box-align: center;
@@ -1287,6 +1251,7 @@ nav .open .nav-item {
 .popup_body {
   display: none;
   position: fixed;
+  z-index: 99999 !important;
   top: 0;
   left: 0;
   right: 0;
@@ -1321,8 +1286,14 @@ nav .open .nav-item {
   overflow-y: scroll;
 }
 
-.popup h3 {
-  font-size: 2.25rem;
+#grandparent {
+  position: relative;
+  z-index: 0;
+}
+
+#child {
+  position: absolute;
+  z-index: 10;
 }
 
 .section-career .send-cv p {
@@ -1537,13 +1508,6 @@ nav .open .nav-item {
   transition: width 0.5s;
 }
 
-.section-services .action:hover::before {
-  width: 58%;
-  height: 1px;
-  left: 21%;
-  bottom: 40%;
-}
-
 /* neon light text */
 .action a span {
   -webkit-transition: width 0.5s;
@@ -1738,12 +1702,6 @@ nav .open .nav-item {
   }
   .action a:hover span:nth-child(3) {
     margin-left: 2px;
-  }
-  .section-services .action:hover::before {
-    width: 31%;
-    height: 2px;
-    left: 34%;
-    bottom: 42%;
   }
 }
 

@@ -55,6 +55,7 @@
     border: none;
     color: #233e97;
     background-color: transparent;
+    
 }
 .job-link .job-btn:focus {
     outline: none;
@@ -68,39 +69,13 @@
 
 /* pop up */
 
-.popup .overlay {
-    position: fixed;
-    top: 0px;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-    display: none;
-}
-// .job-opport{
-//     position: relative;
-//     z-index: 0;
-// }
 
-.popup .content {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    background: #fff;
-    width: 300px;
-    height: 600px;
-    top: 50%;
-    overflow-y: scroll;
-    z-index: 2;
-    text-align: left;
-    
-}
+
 /* popup box style */
-.popup .Pop-container {
+.popup_body .Pop-container {
     color: #fff;
 }
-.popup .job-header {
+.popup_body .job-header {
     padding: 8rem 6rem;
 }
 .strike {
@@ -120,33 +95,33 @@
     height: 15px;
     background: #ef6624;
 }
-.popup h3 {
-    font-size: 3.375rem;
+.popup_body h3 {
+    font-size: 2.25rem;
     font-family: "Gotham-Bold";
     z-index: 0;
     padding: 3rem 0;
 }
-.popup .Pop-container p,
-.popup .Pop-container ul li {
+.popup_body .Pop-container p,
+.popup_body .Pop-container ul li {
     font-family: "Muli", sans-serif, Arial, Helvetica;
     font-size: 2.5rem;
     line-height: 1.5;
     color: #fff;
 }
-.popup .Pop-detail h3,
-.popup .Pop-detail p,
-.popup .Pop-detail ul li {
+.popup_body .Pop-detail h3,
+.popup_body .Pop-detail p,
+.popup_body .Pop-detail ul li {
     color: #000000;
 }
-.popup .Pop-detail ul li {
+.popup_body .Pop-detail ul li {
     list-style-type: disc;
     margin-left: 3rem;
 }
-.popup .Pop-detail {
+.popup_body .Pop-detail {
     background-color: #fff;
     color: #000000;
 }
-.popup .apply-btn .btn {
+.popup_body .apply-btn .btn {
     background-color: #f16522;
     width: 132px;
     height: 48px;
@@ -156,10 +131,10 @@
     margin: 7rem 0 4rem 0;
 }
 
-.popup .Pop-container .Pop-detail {
+.Pop-container .Pop-detail {
     padding: 8rem 6rem;
 }
-.popup .close-btn {
+.popup_body .close-btn {
     cursor: pointer;
     position: absolute;
     right: 20px;
@@ -171,22 +146,17 @@
     line-height: 30px;
     text-align: center;
 }
-.popup.active .overlay {
-    display: block;
-}
-.popup.active .content {
-    transition: all 300ms ease-in-out;
-    transform: translate(-50%, -50%) scale(1);
-}
+
+
 
 /* pop up test */
 .popup{
     align-items: center;
-
 }
   .popup_body{
     display:none;
     position:fixed;
+    z-index: 99999!important;
     top:0;left:0;right:0;bottom:0;
     -webkit-transition: 300ms;
       -moz-transition: 300ms;
@@ -196,6 +166,7 @@
   }
   .popup_body_show{
     display:block;
+    
     -webkit-transition: 300ms;
       -moz-transition: 300ms;
       -o-transition: 300ms;
@@ -217,10 +188,26 @@
     height: 80vh;
     overflow-y: scroll;
   }
-  .popup h3{
-    font-size: 2.25rem;
-  }
+//z-index problem
+// .job-list,
+// .job-link,
+// .job-wrap,
+// .popup_main,
+// .job-title{
+//     z-index: 0;
+// }
+// .popup_contain{
+//     z-index: 99999!important;
+// }
+#grandparent{
+    position: relative;
+    z-index: 0;
+}
 
+#child{
+    position: absolute;
+    z-index: 10;
+}
 .section-career .send-cv p {
     font-size: 1.85rem;
 }

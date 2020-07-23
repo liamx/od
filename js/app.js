@@ -117,52 +117,37 @@ var animation5 = bodymovin.loadAnimation({
   autoplay: true,
   path: 'animation/wayToGoAnim/wayToGoAnim.json'
 });
-// lottie
+// Way To Go lottie
 LottieInteractivity.create({
   mode:"scroll",
   player:'#wayToGoAnim',
   actions: [
     {
-      visibility:[0, 0.1],
+      visibility:[0, 0.4],
       type: "stop",
-      frames: [0,100]
+      frames: [0]
     },
     {
-      visibility:[0.1, 0.5],
+      visibility:[0.4, 0.9],
       type: "seek",
-      frames: [0,100]
+      frames: [0,180]
     },
     {
-      visibility:[0.5, 1],
-      type: "stop",
-      frames: [100,101]
+      visibility:[ 1],
+      type: "loop",
+      frames: [180]
     }
   ]  
 });
 
 //popup job
-// function togglePopup(){
-//   document.getElementById("popup-1").classList.toggle("active");
-// }
-// function togglePopupb(){
-//   document.getElementById("ab").classList.toggle("active");
-// }
 
 
-//popup close when clicking outside
-// $(document).ready(function(){
-//   $('.overlay').on('click', function(){
-//     $('.popup').removeClass('active');
-//   })
-// });
-
-
-//popup test
 $(".job-title").click(function () {
-  $(this).parent(".popup_main").children(".popup_body").addClass("popup_body_show");
-  });
+  $(".popup_body").addClass("popup_body_show");
+    });
 $(".open_popup").click(function () {
-  $(this).parent(".popup_main").children(".popup_body").addClass("popup_body_show");
+  $(".popup_body").addClass("popup_body_show");
   });
 $(".popup_close").click(function () {
   $(".popup_body").removeClass("popup_body_show");
