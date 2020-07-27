@@ -19,7 +19,18 @@ $(document).ready(function(){
 });
 
 
+//scrollup WHO/ HOW
+// function scrollAppear(){
+//   var introText = document.querySelector('.scrollup');
+//   var introPosition = introText.getBoundingClientRect().top;
+//   var screenPosition = window.innerHeight/1.2;
 
+//   if(introPosition < screenPosition){
+//       introText.classList.add('scrollup-appear');
+//   }
+// }
+//   console.log('introPosition');
+//   window.addEventListener('scroll', scrollAppear);
 
 
 
@@ -39,7 +50,6 @@ var lastScrollTop = 0;
     })
 
 //Service Lottie animation
-
 var animation1 = bodymovin.loadAnimation({
     container: document.getElementById('oneAnim'),
     renderer: 'svg',
@@ -103,20 +113,33 @@ var animation6 = bodymovin.loadAnimation({
 //drop orange animation
 //this has a duration and animates the playhead on the Lottie animation for a smoother result
 ScrollLottie({
+  target: '#five',
+  path: 'animation/fiveAnim/fiveAnim.json', 
+  duration: 3, 
+  speed: 'medium'
+ })
+
+ ScrollLottie({
   target: '#dropAnim',
   path: 'animation/dropAnim/dropAnim.json', 
   duration: 3, 
   speed: 'medium'
  })
 
+
+
+
+
+ 
 //way to go
-var animation5 = bodymovin.loadAnimation({
-  container: document.getElementById('wayToGoAnim'),
-  renderer: 'svg',
-  loop: false,
-  autoplay: true,
-  path: 'animation/wayToGoAnim/wayToGoAnim.json'
-});
+// var animation5 = bodymovin.loadAnimation({
+//   container: document.getElementById('wayToGoAnim'),
+//   renderer: 'svg',
+//   loop: false,
+//   autoplay: true,
+//   path: 'animation/wayToGoAnim/wayToGoAnim.json'
+// });
+
 // Way To Go lottie
 LottieInteractivity.create({
   mode:"scroll",
@@ -142,16 +165,15 @@ LottieInteractivity.create({
 
 //popup job
 
+jQuery(document).ready(function () {
 
-$(".job-title").click(function () {
-  $(".popup_body").addClass("popup_body_show");
-    });
-$(".open_popup").click(function () {
-  $(".popup_body").addClass("popup_body_show");
+  
+  //use onComplete event to modify inline css 
+  $("#ModalPopup").fancybox({
+      'modal': true,
+      'onComplete': function () {
+          $(".compensate-for-scrollbar").css({ 'margin-right': '0'});
+      }
   });
-$(".popup_close").click(function () {
-  $(".popup_body").removeClass("popup_body_show");
-  });
-$(".popup_back").click(function () {
-  $(".popup_body").removeClass("popup_body_show");
-  });
+
+});

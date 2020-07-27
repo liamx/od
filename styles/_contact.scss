@@ -58,6 +58,8 @@
 
 #messageInput textarea{
     color: #fff;
+    font-size: 26px;
+    font-family: Gotham-Medium;
     position: relative;
     z-index: 0;
     height: 100px;
@@ -71,16 +73,7 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     margin-bottom: 2rem;
 }
-#messageInput textarea::after{
-    content: '';
-    left: -2px;
-    bottom: -2px;
-    height: 100%;
-    width: 100%;
-    border-bottom: 2px solid red;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-}
+
 #messageInput{
     position: relative;
     z-index: 0;
@@ -106,6 +99,7 @@
 }
 
 // affect the label when input is focus, label have to put under the form
+
 .form input:focus + .label-name .content-name, 
 .form input:valid + .label-name .content-name{
     transform: translateY(-150%);
@@ -134,8 +128,6 @@
     transition: all 0.3s ease;
     font-size: 3rem;
 }
-
-
 #contact .custom-btn{
     color: #EF6624;
 }
@@ -169,19 +161,27 @@
     opacity: 0.6;
     font-family: "Muli", sans-serif, Arial, Helvetica;
     font-size: 2rem;
-    
 }
 .logo-hor img{
     width: 100%;
     height: 100%;
 }
 #contact .company-info .logo-hor{
-    width: 120px;
+    width: 70px;
     height: auto;
     margin: auto;
 }
+.company-info{
+    padding-top: 5rem;
+}
+.contact-info{
+    padding-top: 5rem;
+}
+.contact-info p{
+    font-size: 2.3rem;
+}
 .copyright{
-    padding: 5rem 0 0rem 0;
+    padding: 5rem 0 2rem 0;
 }
 /* Tablet */
 @media all and (max-width: 1200px) and (min-width: 700px) {
@@ -192,7 +192,7 @@
         bottom: 0%;
     }
     #contact .company-info .logo-hor {
-        width: 218px;
+        width: 90px;
     }
     #nameInput{
         margin-right: 5rem;
@@ -216,10 +216,10 @@
         margin-left: 2rem ;
     }
     #contact .company-info .logo-hor {
-        width: 218px;
+        width: 90px;
     }
     #contact .company-info {
-        padding: 20rem 0 0 0;
+        padding: 10rem 0 0 0;
     }
 }
 /* Large Desktop */
@@ -228,7 +228,7 @@
         padding: 5rem 0 2rem 0;
     }
     #contact .company-info {
-        padding: 20rem 0 0 0;
+        padding: 10rem 0 0 0;
     }
 }
 

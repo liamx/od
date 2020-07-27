@@ -19,8 +19,8 @@ nav{
 }
 #logo{
     margin-left: 5vw;
-    margin-top: 1rem;
-    width: 60px;
+    margin-top: 1.5rem;
+    width: 143px;
     height: 60px;
 }
 
@@ -178,8 +178,8 @@ nav{
 @media all and (max-width: 1200px) and (min-width: 700px) {
     #logo{
         margin-left: 5vw;
-        margin-top: 2rem;
-        width: 65px;
+        margin-top: 9px;
+        width: 143px;
         height: 65px;
     }
 }
@@ -187,8 +187,8 @@ nav{
 /* Desktop */
 @media all and (min-width: 1201px) {
     #logo{
-        margin-left: 4vw;
-        width: 121px;
-        height: 65px;
+        margin-left: 5vw;
+        margin-top: 9px;
+        width: 175px;
     }
 }

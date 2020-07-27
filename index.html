@@ -16,7 +16,8 @@
         <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-
+        <!-- fancybox -->
+	    <link rel="stylesheet" type="text/css" href="./styles/jquery.fancybox.min.css">  
         <link rel="stylesheet" href="./styles/main.css" />
         <title>OD Website</title>
     </head>
@@ -31,7 +32,7 @@
                         <nav id="navbar">
                             <h3>
                                 <div id="logo">
-                                    <a href="" class="logo-wrap"><img src="./images/logo.svg" /> </a>
+                                    <a href="" class="logo-wrap"><img src="./images/logo-hor.svg" /> </a>
                                 </div>
                             </h3>
                             <div class="hamburger" id="nav-icon3">
@@ -57,10 +58,10 @@
                                 <h1>WE STAY AHEAD</h1>
                             </div>
                             <div class="mars-container">
-                                <div class="jupiter"></div>
+                                <!-- <div class="jupiter"></div>
                                 <div class="astro"></div>
-                                <div class="spaceship"></div>
-                                <!-- <div class="clip"><div id="introAnim"></div></div> -->
+                                <div class="spaceship"></div> -->
+                                <div id="five" class="animation"></div>
                             </div>
                         </div>
                     </section>
@@ -283,7 +284,7 @@
                     <!-- Services -->
                     <section class="section-services blue" id="nav3">
                         <div class="card-content">
-                            <h2 class="text-center">SERVICES</h2>
+                            <h2 class="text-center" id="service">SERVICES</h2>
                             <!-- Service Dynamic Tab  -->
                             <div id="servicesTab">
                                 <ul class="nav nav-pills d-flex justify-content-center" id="pills-tab" role="tablist">
@@ -479,43 +480,39 @@
                             <!-- Job Opportunity -->
                             <div>
                                 <h3 class="job-opport">Job Opportunity</h3>
-
                                 <div class="job-list" id="job-list">
-                                    <!-- MARKETING -->
-                                    <!-- <div class="job-link">
+                                    <!-- Programmer -->
+                                    <div class="job-link">
                                         <div class="job-wrap">
-                                            <div class="popup_main popup  d-flex bd-highlight">
-                                                <h3 class="job-title  w-100 bd-highlight">MARKETING</h3>
-                                                <button class="open_popup arrow45 job-btn flex-shrink-1 bd-highlight"></button>
-                                                <div class="popup_body">
-                                                  <div class="popup_back"></div>
-                                                    <div class="popup_contain Pop-container">
-                                                      <div class="popup_close close-btn"><i ><img class="fas fa-times" src="./images/close-icon.svg" /></i></div>
-                                                      <div class="job-header blue">
-                                                        <h1 class="strike">Analyst Programmer</h1>
-                                                        <h3>Job Highlights</h3>
-                                                        <p>
+                                            <div class="popup d-flex bd-highlight">
+                                                <h3 class="job-title w-100 bd-highlight" data-fancybox data-src="#Programmer" href="javascript:;">Programmer</h3>
+                                                <button class="arrow45 flex-shrink-1 bd-highlight" data-fancybox data-src="#Programmer" href="javascript:;" ></button>
+                                                  <div class="Pop-container" style="display:none;" id="Programmer">
+                                                    <div class="job-header blue">
+                                                        <h1 class="strike" data-selectable="true">Analyst Programmer</h1>
+                                                        <h3 class="strike-sub" data-selectable="true">Job Highlights</h3>
+                                                        <p data-selectable="true">
                                                             A Director at Orange Data owns the big picture of our design work, and is responsible for overall quality while ensuring the team executing the work is set up for success.
                                                             Things in our world are constantly changing so you must be fast, highly adaptive, and comfortable with ambiguity……
                                                         </p>
                                                     </div>
                                                     <div class="Pop-detail">
-                                                        <h3>Responsibilities</h3>
-                                                        <ul>
+                                                        <h3 class="strike-sub" data-selectable="true">Responsibilities</h3>
+                                                        <ul data-selectable="true">
                                                             <li>Co-Manage a +50-person design team and mentor our Design Leads.</li>
                                                             <li>Drive the overall Design team’s operations and strategy.</li>
                                                             <li>Collaborate with the Client Partnerships team to pitch engagements to clients.</li>
                                                             <li>Assist in scoping out the timeline and requirements of design engagements.</li>
                                                         </ul>
-                                                        <h3>What we’re looking for</h3>
-                                                        <ul>
+                                                        <h3 class="strike-sub" data-selectable="true">What we’re looking for</h3>
+                                                        <ul data-selectable="true">
                                                             <li>Communicate design direction, decisions</li>
                                                             <li>Fluency in design and prototyping tools</li>
                                                             <li>Experience working in collaborative environment</li>
                                                             <li>Preferably background in agency/consultancy</li>
                                                         </ul>
-                                                        <h3>Requirements</h3>
-                                                        <ul>
+                                                        <h3 class="strike-sub" data-selectable="true">Requirements</h3>
+                                                        <ul data-selectable="true">
                                                             <li>University fresh graduate</li>
                                                             <li>Strong client skills with ability to deliver solutions</li>
                                                             <li>Proven organization skills and attention to details</li>
@@ -525,40 +522,154 @@
                                                             <button type="button" class="btn">Apply</button>
                                                         </div>
                                                     </div>
-                                                    </div>
+                                                    <p data-selectable="true">Sometimes you would want to disable "touch" feature. <br />For example, when you want to make your content selectable.</p>
+                                                    
                                                 </div>
                                               </div>
                                         </div>
-                                    </div> -->
-                                    <!-- MARKETING -->
+                                    </div>
+                                    <!-- UI Designer -->
                                     <div class="job-link">
                                         <div class="job-wrap">
-                                            <div class="popup_main popup  d-flex bd-highlight">
-                                                <h3 class="job-title  w-100 bd-highlight">Analyst Programmer</h3>
-                                                <button class="open_popup arrow45 job-btn flex-shrink-1 bd-highlight"></button>
-                                                
+                                            <div class="popup d-flex bd-highlight">
+                                                <h3 class="job-title w-100 bd-highlight" data-fancybox data-src="#UIDesigner" href="javascript:;">UI Designer</h3>
+                                                <button class="arrow45 flex-shrink-1 bd-highlight" data-fancybox data-src="#UIDesigner" href="javascript:;" ></button>
+                                                  <div class="Pop-container" style="display:none;" id="UIDesigner">
+                                                    <div class="job-header blue">
+                                                        <h1 class="strike" data-selectable="true">UI Designer</h1>
+                                                        <h3 class="strike-sub" data-selectable="true">Job Highlights</h3>
+                                                        <p data-selectable="true">
+                                                            A Director at Orange Data owns the big picture of our design work, and is responsible for overall quality while ensuring the team executing the work is set up for success.
+                                                            Things in our world are constantly changing so you must be fast, highly adaptive, and comfortable with ambiguity……
+                                                        </p>
+                                                    </div>
+                                                    <div class="Pop-detail">
+                                                        <h3 class="strike-sub" data-selectable="true">Responsibilities</h3>
+                                                        <ul data-selectable="true">
+                                                            <li>Co-Manage a +50-person design team and mentor our Design Leads.</li>
+                                                            <li>Drive the overall Design team’s operations and strategy.</li>
+                                                            <li>Collaborate with the Client Partnerships team to pitch engagements to clients.</li>
+                                                            <li>Assist in scoping out the timeline and requirements of design engagements.</li>
+                                                        </ul>
+                                                        <h3 class="strike-sub" data-selectable="true">What we’re looking for</h3>
+                                                        <ul data-selectable="true">
+                                                            <li>Communicate design direction, decisions</li>
+                                                            <li>Fluency in design and prototyping tools</li>
+                                                            <li>Experience working in collaborative environment</li>
+                                                            <li>Preferably background in agency/consultancy</li>
+                                                        </ul>
+                                                        <h3 class="strike-sub" data-selectable="true">Requirements</h3>
+                                                        <ul data-selectable="true">
+                                                            <li>University fresh graduate</li>
+                                                            <li>Strong client skills with ability to deliver solutions</li>
+                                                            <li>Proven organization skills and attention to details</li>
+                                                            <li>Strong self-motivation with good analytical skills</li>
+                                                        </ul>
+                                                        <div class="d-flex justify-content-center apply-btn">
+                                                            <button type="button" class="btn">Apply</button>
+                                                        </div>
+                                                    </div>
+                                                    <p data-selectable="true">Sometimes you would want to disable "touch" feature. <br />For example, when you want to make your content selectable.</p>
+                                                    
+                                                </div>
                                               </div>
                                         </div>
                                     </div>
+                                    <!-- Web Designer -->
                                     <div class="job-link">
                                         <div class="job-wrap">
-                                            <div class="popup_main popup  d-flex bd-highlight">
-                                                <h3 class="job-title  w-100 bd-highlight">UI Designer</h3>
-                                                <button class="open_popup arrow45 job-btn flex-shrink-1 bd-highlight"></button>
-                                                
+                                            <div class="popup d-flex bd-highlight">
+                                                <h3 class="job-title w-100 bd-highlight" data-fancybox data-src="#WebDesigner" href="javascript:;">Web Designer</h3>
+                                                <button class="arrow45 flex-shrink-1 bd-highlight" data-fancybox data-src="#WebDesigner" href="javascript:;" ></button>
+                                                  <div class="Pop-container" style="display:none;" id="WebDesigner">
+                                                    <div class="job-header blue">
+                                                        <h1 class="strike" data-selectable="true">Web Designer</h1>
+                                                        <h3 class="strike-sub" data-selectable="true">Job Highlights</h3>
+                                                        <p data-selectable="true">
+                                                            A Director at Orange Data owns the big picture of our design work, and is responsible for overall quality while ensuring the team executing the work is set up for success.
+                                                            Things in our world are constantly changing so you must be fast, highly adaptive, and comfortable with ambiguity……
+                                                        </p>
+                                                    </div>
+                                                    <div class="Pop-detail">
+                                                        <h3 class="strike-sub" data-selectable="true">Responsibilities</h3>
+                                                        <ul data-selectable="true">
+                                                            <li>Co-Manage a +50-person design team and mentor our Design Leads.</li>
+                                                            <li>Drive the overall Design team’s operations and strategy.</li>
+                                                            <li>Collaborate with the Client Partnerships team to pitch engagements to clients.</li>
+                                                            <li>Assist in scoping out the timeline and requirements of design engagements.</li>
+                                                        </ul>
+                                                        <h3 class="strike-sub" data-selectable="true">What we’re looking for</h3>
+                                                        <ul data-selectable="true">
+                                                            <li>Communicate design direction, decisions</li>
+                                                            <li>Fluency in design and prototyping tools</li>
+                                                            <li>Experience working in collaborative environment</li>
+                                                            <li>Preferably background in agency/consultancy</li>
+                                                        </ul>
+                                                        <h3 class="strike-sub" data-selectable="true">Requirements</h3>
+                                                        <ul data-selectable="true">
+                                                            <li>University fresh graduate</li>
+                                                            <li>Strong client skills with ability to deliver solutions</li>
+                                                            <li>Proven organization skills and attention to details</li>
+                                                            <li>Strong self-motivation with good analytical skills</li>
+                                                        </ul>
+                                                        <div class="d-flex justify-content-center apply-btn">
+                                                            <button type="button" class="btn">Apply</button>
+                                                        </div>
+                                                    </div>
+                                                    <p data-selectable="true">Sometimes you would want to disable "touch" feature. <br />For example, when you want to make your content selectable.</p>
+                                                    
+                                                </div>
                                               </div>
                                         </div>
                                     </div>
+                                    <!-- Marketing -->
                                     <div class="job-link">
                                         <div class="job-wrap">
-                                            <div class="popup_main popup  d-flex bd-highlight">
-                                                <h3 class="job-title  w-100 bd-highlight">Web Designer</h3>
-                                                <button class="open_popup arrow45 job-btn flex-shrink-1 bd-highlight"></button>
-                                                
+                                            <div class="popup d-flex bd-highlight">
+                                                <h3 class="job-title w-100 bd-highlight" data-fancybox data-src="#Marketing" href="javascript:;">Marketing</h3>
+                                                <button class="arrow45 flex-shrink-1 bd-highlight" data-fancybox data-src="#Marketing" href="javascript:;" ></button>
+                                                  <div class="Pop-container" style="display:none;" id="Marketing">
+                                                    <div class="job-header blue">
+                                                        <h1 class="strike" data-selectable="true">Marketing</h1>
+                                                        <h3 class="strike-sub" data-selectable="true">Job Highlights</h3>
+                                                        <p data-selectable="true">
+                                                            A Director at Orange Data owns the big picture of our design work, and is responsible for overall quality while ensuring the team executing the work is set up for success.
+                                                            Things in our world are constantly changing so you must be fast, highly adaptive, and comfortable with ambiguity……
+                                                        </p>
+                                                    </div>
+                                                    <div class="Pop-detail">
+                                                        <h3 class="strike-sub" data-selectable="true">Responsibilities</h3>
+                                                        <ul data-selectable="true">
+                                                            <li>Co-Manage a +50-person design team and mentor our Design Leads.</li>
+                                                            <li>Drive the overall Design team’s operations and strategy.</li>
+                                                            <li>Collaborate with the Client Partnerships team to pitch engagements to clients.</li>
+                                                            <li>Assist in scoping out the timeline and requirements of design engagements.</li>
+                                                        </ul>
+                                                        <h3 class="strike-sub" data-selectable="true">What we’re looking for</h3>
+                                                        <ul data-selectable="true">
+                                                            <li>Communicate design direction, decisions</li>
+                                                            <li>Fluency in design and prototyping tools</li>
+                                                            <li>Experience working in collaborative environment</li>
+                                                            <li>Preferably background in agency/consultancy</li>
+                                                        </ul>
+                                                        <h3 class="strike-sub" data-selectable="true">Requirements</h3>
+                                                        <ul data-selectable="true">
+                                                            <li>University fresh graduate</li>
+                                                            <li>Strong client skills with ability to deliver solutions</li>
+                                                            <li>Proven organization skills and attention to details</li>
+                                                            <li>Strong self-motivation with good analytical skills</li>
+                                                        </ul>
+                                                        <div class="d-flex justify-content-center apply-btn">
+                                                            <button type="button" class="btn">Apply</button>
+                                                        </div>
+                                                    </div>
+                                                    <p data-selectable="true">Sometimes you would want to disable "touch" feature. <br />For example, when you want to make your content selectable.</p>
+                                                    
+                                                </div>
                                               </div>
                                         </div>
                                     </div>
-                                    <div class="job-link">
+                                    <!-- <div class="job-link">
                                         <div class="job-wrap">
                                             <div class="popup_main popup  d-flex bd-highlight">
                                                 <h3 class="job-title  w-100 bd-highlight">Marketing</h3>
@@ -566,7 +677,7 @@
                                                 
                                               </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="popup_body">
                                         <div class="popup_back"></div>
                                           <div class="popup_contain Pop-container">
@@ -650,8 +761,8 @@
                                 </div>
                                 <div class="form" id="emailInput">
                                     <div class="contact-input">
-                                        <input type="email" name="email" autocomplete="off" required />
-                                        <label for="email" class="label-name">
+                                        <input type="text" name="name" autocomplete="off" required />
+                                        <label for="name" class="label-name">
                                             <span class="content-name">Email</span>
                                         </label>
                                     </div>
@@ -668,25 +779,25 @@
                             </div>
                             <div class="company-info">
                                 <div class="logo-hor">
-                                    <img src="images/logo-hor.svg" />
+                                    <img src="images/logo.svg" />
                                 </div>
-                                <div class="row">
-                                    <div class="col-12 col-md-6">
+                                <div class="d-flex justify-content-around contact-info" >
+                                    <div class="p-2 bd-highlight">
                                         <span class="small">Our Address:</span>
                                         <p>
-                                            Rm705B, 7/F, Tower B, Manulife Financial Centre,<br />
-                                            223-231 Wai Yip Street, Kwun Tong, Kowloon, Hong Kong
+                                            Rm705B, 7/F, Tower B, <br />Manulife Financial Centre,
+                                            223-231 Wai Yip Street,<br />Kwun Tong, Kowloon, Hong Kong
                                         </p>
                                     </div>
-                                    <div class="col-12 col-md-3">
+                                    <div class="p-2 bd-highlight">
                                         <span class="small">Recruitment :</span>
                                         <p>hr@orangedata.info</p>
+                                        <div >
+                                            <span class="small">Business & Sales:</span>
+                                            <p>info@orangedata.info</p>
+                                        </div>
                                     </div>
-                                    <div class="col-12 col-md-3">
-                                        <span class="small">Business & Sales:</span>
-                                        <p>info@orangedata.info</p>
-                                    </div>
-                                </div>
+                                  </div>
                                 <h6 class="copyright text-center">Copyright © 2020 Orange Data Ltd. All rights reserved.</h6>
                             </div>
                         </div>
@@ -701,13 +812,7 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-        <!-- Scroll Magic -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha512-HzAEuXwhLxwm/Jj+5ecdjzrRVrjuh2ZeIxyT1Ln37TO5pWNMnKBuU7cfd1wvRQ/k86w1oC174Yk1T7aRlBpIcA==" crossorigin="anonymous"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"
-            integrity="sha512-Ey+nIg+Ue8gUAaCNjR1KHR8nwDjWn9QXoQbynR/X+V66s6u1oqynnuRQ8zSgg5f5gBNb2Bzsu1pItCi3sPkbfA=="
-            crossorigin="anonymous"
-        ></script> -->
+        
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
@@ -715,6 +820,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js" integrity="sha512-FOw+bgWRx/Kk1SAVkNO8CiXx9FFP7kFq+hcYWruJRdqjhzB39Yt/CVFgcFIXfTH0+oSZNUMEQNq1XI9+nMAW0Q==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/ScrollTrigger.min.js" integrity="sha512-vu5YjaFVfKZxQ1SZ5LGRlOfK6XmZIT1whWgpBYKu5kMXzkY/TdABJGLUJHHNsEpYaahxRnuhkjItCQFBEJagHg==" crossorigin="anonymous"></script>
 
+        <script src="js/jquery.fancybox.min.js"></script>
         <script src="js/ScrollLottie.js" type="text/javascript"></script>
         <script src="js/lottie.js" type="text/javascript"></script>
         <script src="js/app.js"></script>

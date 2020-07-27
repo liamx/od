@@ -2,12 +2,9 @@
 	"folders": [
 		{
 			"path": "."
-		},
-		{
-			"path": "../practice/scroll magic"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "OD website 3"
+		"liveServer.settings.multiRootWorkspaceName": "test"
 	}
 }

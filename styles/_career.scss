@@ -50,21 +50,19 @@
     position: relative;
     z-index: 0;
 }
-.job-link .job-btn {
-    margin: 0em;
-    border: none;
-    color: #233e97;
-    background-color: transparent;
-    
-}
-.job-link .job-btn:focus {
-    outline: none;
-}
+
 .arrow45{
     background-image: url(../images/arrow45.svg);
     background-repeat: no-repeat;
     width: 28px;
     height: 25px;
+    margin: 0em;
+    border: none;
+    color: #233e97;
+    background-color: transparent;
+}
+.arrow45:focus{
+    outline: none;
 }
 
 /* pop up */
@@ -72,10 +70,8 @@
 
 
 /* popup box style */
-.popup_body .Pop-container {
-    color: #fff;
-}
-.popup_body .job-header {
+
+.job-header {
     padding: 8rem 6rem;
 }
 .strike {
@@ -95,6 +91,9 @@
     height: 15px;
     background: #ef6624;
 }
+.strike-sub{
+    padding: 5rem 0;
+}
 .popup_body h3 {
     font-size: 2.25rem;
     font-family: "Gotham-Bold";
@@ -108,20 +107,23 @@
     line-height: 1.5;
     color: #fff;
 }
-.popup_body .Pop-detail h3,
-.popup_body .Pop-detail p,
-.popup_body .Pop-detail ul li {
+.Pop-detail h3,
+.Pop-detail p,
+.Pop-detail ul li {
     color: #000000;
 }
-.popup_body .Pop-detail ul li {
+.Pop-detail ul li {
     list-style-type: disc;
     margin-left: 3rem;
+    line-height: 1.8;
 }
-.popup_body .Pop-detail {
+
+.Pop-detail {
     background-color: #fff;
     color: #000000;
+    padding: 0 8rem;
 }
-.popup_body .apply-btn .btn {
+.apply-btn .btn {
     background-color: #f16522;
     width: 132px;
     height: 48px;
@@ -130,11 +132,12 @@
     border-radius: 6px;
     margin: 7rem 0 4rem 0;
 }
-
-.Pop-container .Pop-detail {
-    padding: 8rem 6rem;
+.Pop-container{
+    padding: 0;
+    margin: 5rem;
 }
-.popup_body .close-btn {
+
+.close-btn {
     cursor: pointer;
     position: absolute;
     right: 20px;
@@ -149,6 +152,29 @@
 
 
 
+/* fancy box */
+ .compensate-for-scrollbar{
+    margin-right: 0!important;
+}
+
+.fancybox-button svg{
+    display: none;
+}
+.fancybox-button {
+    background-image: url(../images/close-icon.svg);
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 25px;
+    margin: 0em;
+    border: none;
+    background-color: transparent;
+}
+.fancybox-slide--html .fancybox-close-small {
+    padding: 2rem;
+    margin: 0rem;
+    right: 30px;
+    top: 30px;
+}
 /* pop up test */
 .popup{
     align-items: center;
@@ -188,26 +214,9 @@
     height: 80vh;
     overflow-y: scroll;
   }
-//z-index problem
-// .job-list,
-// .job-link,
-// .job-wrap,
-// .popup_main,
-// .job-title{
-//     z-index: 0;
-// }
-// .popup_contain{
-//     z-index: 99999!important;
-// }
-#grandparent{
-    position: relative;
-    z-index: 0;
-}
 
-#child{
-    position: absolute;
-    z-index: 10;
-}
+
+ 
 .section-career .send-cv p {
     font-size: 1.85rem;
 }
@@ -267,6 +276,9 @@
         width: 83%;
         height: 14px;
     }
+    .Pop-container{
+        max-width: 798px;
+    }
 }
 
 /* Desktop */
@@ -297,12 +309,11 @@
     .popup .Pop-container ul li {
         line-height: 1.8;
     }
-    .popup .job-header,
-    .popup .Pop-container .Pop-detail {
+    .job-header{
         padding: 8rem;
     }
     .strike {
-        font-size: 5.375rem;
+        font-size: 6.375rem;
     }
     .strike::after {
         width: 88%;
@@ -317,6 +328,12 @@
         width: 30px;
         height: 30px;
     }
+    .job-opport {
+        padding-top: 15rem;
+    }
+    .Pop-container{
+        max-width: 900px;
+    }
 }
 /* Large Desktop */
 @media all and (min-width: 1501px) {
@@ -324,12 +341,17 @@
         width: 1140px;
         height: 100vh;
     }
-    .popup .job-header,
-    .popup .Pop-container .Pop-detail {
-        padding: 8rem;
+    .Pop-detail {
+        padding: 0 8rem;
     }
     .strike::after {
         width: 57%;
         height: 19px;
+    }
+    .job-opport {
+        padding-top: 15rem;
+    }
+    .Pop-container{
+        max-width: 1140px;
     }
 }
