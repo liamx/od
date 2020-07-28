@@ -1,13 +1,20 @@
 
 /* mobile */
 .intro-wrapper .mars-container{
-    height: inherit;
+    height: 800px;
 }
 .intro-wrapper{
     text-align: left;
     padding: 0rem 0rem;
     padding-top: 30vh;
     z-index: 1;
+}
+.mars-container{
+    display: block;
+    height: 550px;
+}
+.intro-video{
+    display: none;
 }
 img{
     width: 100%;
@@ -38,7 +45,7 @@ img{
 .mars-container .spaceship{
     position: absolute;
     right: 43%;
-    bottom: -73%;
+    bottom: -75%;
     z-index: 2;
     background-image: url(../images/spaceship.svg);
     height: 100%;
@@ -55,9 +62,20 @@ img{
 
 /* Tablet */
 @media all and (max-width: 1200px) and (min-width: 700px) {
-    
+    .mars-container{
+        display: none;
+    }
+    .intro-video{
+        display: block;
+    }
 }
 
 /* Desktop */
 @media all and (min-width: 1201px) {
+    .mars-container{
+        display: none;
+    }
+    .intro-video{
+        display: block;
+    }
 }

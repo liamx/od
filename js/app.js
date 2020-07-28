@@ -1,9 +1,31 @@
 
-
 //Navbar toggle
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelector(".nav-item");
+
+
+//scroll up hidden menu
+
+// var lastScrollTop = 0;
+//     navbar = document.getElementById("navbar");
+    
+//     window.addEventListener("scroll", function scrollUp(){
+//         var scrollTop = window.pageYOffset || document
+//         .documentElement.scrollTop;
+//         if (scrollTop > lastScrollTop){
+//             navbar.style.top = "-80px";
+//             navLinks.style.top = "0px";
+            
+//         } else {
+//             navbar.style.top = "0";
+//         }
+//         lastScrollTop = scrollTop;
+
+//     })
+
+
+  
 
 
 hamburger.addEventListener("click", () => {
@@ -18,36 +40,36 @@ $(document).ready(function(){
   })
 });
 
+//Intersection Observer for intro scroll
+// const sectionOne = document.querySelector(".Pop-detail");
 
-//scrollup WHO/ HOW
-// function scrollAppear(){
-//   var introText = document.querySelector('.scrollup');
-//   var introPosition = introText.getBoundingClientRect().top;
-//   var screenPosition = window.innerHeight/1.2;
-
-//   if(introPosition < screenPosition){
-//       introText.classList.add('scrollup-appear');
-//   }
-// }
-//   console.log('introPosition');
-//   window.addEventListener('scroll', scrollAppear);
+// const popUp = document.querySelector(".Pop-container");
 
 
 
-//scroll up hidden menu
-var lastScrollTop = 0;
-    navbar = document.getElementById("navbar");
-    window.addEventListener("scroll", function(){
-        var scrollTop = window.pageYOffset || document
-        .documentElement.scrollTop;
-        if (scrollTop > lastScrollTop){
-            navbar.style.top = "-80px";
-        } else {
-            navbar.style.top = "0";
-        }
-        lastScrollTop = scrollTop;
 
-    })
+// const sectionOneOptions = {
+//   root: null, // it is the viewport
+//   threshold: 0.2, // if 1 = 100% content must be inside, 0 any pieces inside can fire
+//   rootMargin: "900px"
+// };
+
+// const sectionOneObserver = new IntersectionObserver(function
+//   (entries, sectionOneobserver){
+//     entries.forEach(entry => {
+//       if(entry. isIntersecting){
+//         console.log("is intersecting!");
+//         popUp.classList.add("active");
+//       } else {
+//         console.log("is not intersecting!");
+//         popUp.classList.remove("active");
+//       };
+//     });
+//   }, sectionOneOptions);
+
+//   sectionOneObserver.observe(sectionOne);
+
+
 
 //Service Lottie animation
 var animation1 = bodymovin.loadAnimation({
@@ -128,52 +150,26 @@ ScrollLottie({
 
 
 
-
-
- 
-//way to go
-// var animation5 = bodymovin.loadAnimation({
-//   container: document.getElementById('wayToGoAnim'),
-//   renderer: 'svg',
-//   loop: false,
-//   autoplay: true,
-//   path: 'animation/wayToGoAnim/wayToGoAnim.json'
-// });
-
 // Way To Go lottie
 LottieInteractivity.create({
   mode:"scroll",
   player:'#wayToGoAnim',
   actions: [
     {
-      visibility:[0, 0.4],
+      visibility:[0, 0.3],
       type: "stop",
       frames: [0]
     },
     {
-      visibility:[0.4, 0.9],
+      visibility:[0.3, 0.5],
       type: "seek",
-      frames: [0,180]
+      frames: [0,130]
     },
     {
-      visibility:[ 1],
-      type: "loop",
-      frames: [180]
+      visibility:[ 0.5,1],
+      type: "stop",
+      frames: [130,180]
     }
   ]  
 });
 
-//popup job
-
-jQuery(document).ready(function () {
-
-  
-  //use onComplete event to modify inline css 
-  $("#ModalPopup").fancybox({
-      'modal': true,
-      'onComplete': function () {
-          $(".compensate-for-scrollbar").css({ 'margin-right': '0'});
-      }
-  });
-
-});

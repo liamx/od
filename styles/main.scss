@@ -16,6 +16,12 @@
     font-style: normal;
     font-weight: 100;
 }
+@font-face {
+    src: url('../fonts/Gotham-Bold.otf');
+    font-family: 'Gotham-Bold';
+    font-style: normal;
+    font-weight: 100;
+}
 html{
     font-size:62.5%;
 }
@@ -37,6 +43,7 @@ body{
     font-size: 2.5rem;
     background-color: #233E97; 
     transition: all 0.5s ease;
+    
 }
 h1,h2{
     font-family: Gotham-Ultra;
@@ -91,7 +98,9 @@ img{
 #fourValues h2{
     font-size: 8rem;
 }
-#notTooBig h2,
+#notTooBig h2{
+    font-size: 3.5rem;
+}
 #wholeTeam h2{
     font-size: 5rem;
 }
@@ -109,6 +118,9 @@ img{
 }
 #wrapper .section-card{
     height: 136rem;
+}
+#wrapper #how{
+    height: 100rem;
 }
 #wrapper .section-intro{
     height: 100%;
@@ -175,6 +187,9 @@ img{
     #wrapper .section-card{
         height: 140rem;
     }
+    #wrapper #how{
+        height: 100rem;
+    }
     #wrapper #wholeTeam{
         height: 100rem;
     }
@@ -187,9 +202,14 @@ img{
     #fourValues h2{
         font-size: 12rem;
     }
-    #notTooBig h2,
+    #notTooBig h2{
+        font-size: 8rem;
+    }
     #wholeTeam h2{
         font-size: 9rem;
+    }
+    #wrapper #how{
+        height: 100rem;
     }
 }
 
@@ -227,24 +247,30 @@ img{
     #fourValues h2{
         font-size: 12rem;
     }
-    #notTooBig h2,
+    #notTooBig h2{
+        font-size: 6rem;
+    }
     #wholeTeam h2{
         font-size: 10rem;
     }
     #wrapper section{
         height: 100%;
+        
     }
     #wrapper .section-card{
         height: 120rem;
     }
     #wrapper #notTooBig{
-        height: 100vh; 
-     }
+        height: 110rem; 
+    }
     #wrapper #wholeTeam{
         height: 90rem;
     }
     #wrapper .section-value{
         height: 100vh;
+    }
+    #wrapper #how{
+        height: 88rem;
     }
 }
 

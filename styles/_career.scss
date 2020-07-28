@@ -61,6 +61,9 @@
     color: #233e97;
     background-color: transparent;
 }
+.arrow45:hover{
+    background-image: url(../images/arrow45-o.svg);
+}
 .arrow45:focus{
     outline: none;
 }
@@ -72,11 +75,11 @@
 /* popup box style */
 
 .job-header {
-    padding: 8rem 6rem;
+    padding: 8rem 12rem;
 }
 .strike {
     font-size: 4.375rem;
-    font-family: "Gotham-Bold";
+    font-family: Gotham-Bold;
     position: relative;
     z-index: 0;
     padding: 4rem 0;
@@ -85,11 +88,23 @@
     content: "";
     position: absolute;
     z-index: -1;
-    bottom: 24%;
+    height: 12px;
+    bottom: 34%;
     display: block;
-    width: 88%;
-    height: 15px;
+    width: 100%;
     background: #ef6624;
+}
+#Programmer .strike::after{
+    width: 297px;
+}
+#UIDesigner .strike::after{
+    width: 175px;
+}
+#WebDesigner .strike::after{
+    width: 207px;
+}
+#Marketing .strike::after{
+    width: 147px;
 }
 .strike-sub{
     padding: 5rem 0;
@@ -121,20 +136,30 @@
 .Pop-detail {
     background-color: #fff;
     color: #000000;
-    padding: 0 8rem;
+    padding: 0 12rem;
 }
 .apply-btn .btn {
     background-color: #f16522;
-    width: 132px;
-    height: 48px;
-    font-size: 2.25rem;
     color: #fff;
-    border-radius: 6px;
+    border-radius: 15px;
     margin: 7rem 0 4rem 0;
+    font-size: 2rem;
+    width: 20rem;
+    height: 7rem;
+    font-weight: 600;
+    border: transparent;
+    box-shadow: none;
+}
+.apply-btn:focus .btn,
+.apply-btn:hover .btn {
+    background-color: #233E97;
+    color: #fff;
+    border: transparent;
+    box-shadow: none;
 }
 .Pop-container{
     padding: 0;
-    margin: 5rem;
+    margin: 0rem;
 }
 
 .close-btn {
@@ -153,27 +178,41 @@
 
 
 /* fancy box */
- .compensate-for-scrollbar{
-    margin-right: 0!important;
-}
-
 .fancybox-button svg{
     display: none;
 }
 .fancybox-button {
     background-image: url(../images/close-icon.svg);
     background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-position: 50% 50%;
     width: 28px;
     height: 25px;
     margin: 0em;
     border: none;
     background-color: transparent;
 }
+.Pop-container{
+    position: relative;
+}
 .fancybox-slide--html .fancybox-close-small {
-    padding: 2rem;
-    margin: 0rem;
-    right: 30px;
-    top: 30px;
+    z-index: 0;
+    width: 45px;
+    height: 45px;
+    right: 8vw;
+    top: 6vh;
+    position: fixed!important;
+    z-index: 0;
+    border-radius: 50%;
+    background-color: #233e97;
+}
+
+.fancybox-can-pan .fancybox-content, .fancybox-can-swipe .fancybox-content {
+    cursor: inherit;
+}
+.fancybox-slide--current{
+    position: relative!important;
+    z-index: 0;
 }
 /* pop up test */
 .popup{
@@ -230,24 +269,66 @@
     background-repeat: no-repeat;
     margin: 0 auto;
 }
+.custom-btn  a:hover {
+    color: #fff;
+    text-decoration: none;
+}
 .custom-btn {
     font-size: 2.5rem;
     width: 30rem;
     height: 7rem;
     border-radius: 15px;
     margin: 7rem;
-    color: #ef6624;
+    background-color: #263C95;
+    color: #fff;
     font-weight: 600;
 }
 .custom-btn:hover {
     background-color: #ef6624;
     color: #fff;
+    border-color: transparent;
 }
 #contactBtn:hover {
     background-color: #ffa67a;
     color: #fff;
 }
 
+/* Tablet */
+@media all and (max-width: 388px) {
+    #Programmer .strike::after{
+        width: 184px;
+        bottom: 29px;
+    }
+    #WebDesigner .strike::after{
+        width: 133px;
+        bottom: 29px;
+    }
+}
+/* Tablet */
+@media all and (max-width: 456px) {
+    #Programmer .strike::after{
+        width: 173px;
+        bottom: 28px;
+    }
+    #WebDesigner .strike::after{
+        width: 204px;
+        bottom: 28px;
+    }
+}
+/* Tablet */
+@media all and (min-width: 700px) {
+    .fancybox-slide--html .fancybox-close-small {
+        right: 9vw;
+        top: 8vh;
+    }
+}
+/* Tablet */
+@media all and (min-width: 900px) {
+    .fancybox-slide--html .fancybox-close-small {
+        right: 5%;
+        top: 8vh;
+    }
+}
 /* Tablet */
 @media all and (max-width: 1200px) and (min-width: 700px) {
     .section-career .card-content .career-logo {
@@ -271,14 +352,26 @@
     .strike {
         font-size: 6.375rem;
     }
-    .strike::after {
-        bottom: 33%;
-        width: 83%;
-        height: 14px;
+    #Programmer .strike::after{
+        width: 427px;
+    }
+    #UIDesigner .strike::after{
+        width: 244px;
+    }
+    #WebDesigner .strike::after{
+        width: 300px
+    }
+    #Marketing .strike::after{
+        width: 215px;
     }
     .Pop-container{
         max-width: 798px;
+        padding: 0;
+        margin: 5rem;
+        
     }
+    
+    
 }
 
 /* Desktop */
@@ -292,9 +385,9 @@
     }
     .send-cv .btn {
         font-size: 2rem;
-        width: 18vw;
-        height: 9vh;
-        margin: 5rem;
+        width: 30rem;
+        height: 7rem;
+        margin: 6rem 0 12rem 0;
         font-weight: 600;
     }
     .send-cv .explore-logo {
@@ -310,15 +403,25 @@
         line-height: 1.8;
     }
     .job-header{
-        padding: 8rem;
+        padding: 12rem;
     }
     .strike {
-        font-size: 6.375rem;
+        font-size: 6rem;
     }
-    .strike::after {
-        width: 88%;
-        height: 19px;
-        bottom: 36%;
+    .strike::after{
+        height: 21px;
+    }
+    #Programmer .strike::after{
+        width: 96%;
+    }
+    #UIDesigner .strike::after{
+        width: 372px;
+    }
+    #WebDesigner .strike::after{
+        width: 435px;
+    }
+    #Marketing .strike::after{
+        width: 315px;
     }
     .popup .close-btn {
         cursor: pointer;
@@ -334,6 +437,13 @@
     .Pop-container{
         max-width: 900px;
     }
+    .fancybox-slide--html .fancybox-close-small {
+        right: 9vw;
+        top: 8vh;
+    }
+    .fancybox-slide--html{
+        padding-top:44px
+    }
 }
 /* Large Desktop */
 @media all and (min-width: 1501px) {
@@ -342,7 +452,7 @@
         height: 100vh;
     }
     .Pop-detail {
-        padding: 0 8rem;
+        padding: 0 12rem;
     }
     .strike::after {
         width: 57%;
@@ -353,5 +463,18 @@
     }
     .Pop-container{
         max-width: 1140px;
+    }
+    .fancybox-slide--html .fancybox-close-small {
+        right: 6vw;
+        top: 8vh;
+    }
+    .strike::after{
+        height: 20px;
+    }
+    #Programmer .strike::after{
+        width: 71%;
+    }
+    #WebDesigner .strike::after{
+        width: 430px;
     }
 }

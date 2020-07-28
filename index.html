@@ -18,13 +18,14 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
         <!-- fancybox -->
 	    <link rel="stylesheet" type="text/css" href="./styles/jquery.fancybox.min.css">  
+        <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css" />
         <link rel="stylesheet" href="./styles/main.css" />
         <title>OD Website</title>
+        <link rel="shortcut icon" type="image/svg" href="images/favicon.svg">
     </head>
     <body>
-        <header></header>
-
         <div id="wrapper">
+            
             <main>
                 <div>
                     <!-- Navigation - Fixed Top -->
@@ -32,7 +33,7 @@
                         <nav id="navbar">
                             <h3>
                                 <div id="logo">
-                                    <a href="" class="logo-wrap"><img src="./images/logo-hor.svg" /> </a>
+                                    <a href="" class="logo-wrap"><img src="./images/logo-ver.svg" /> </a>
                                 </div>
                             </h3>
                             <div class="hamburger" id="nav-icon3">
@@ -41,14 +42,15 @@
                                 <span></span>
                                 <span></span>
                             </div>
-                            <ul class="nav-links">
+                            <ul class="nav-links" >
                                 <li><a class="nav-item" href="#nav1">WHO</a></li>
                                 <li><a class="nav-item" href="#nav2">HOW</a></li>
                                 <li><a class="nav-item" href="#nav3">SERVICES</a></li>
                                 <li><a class="nav-item" href="#nav4">CAREER</a></li>
                                 <li><a class="nav-item" href="#nav5">CONTACT</a></li>
-                            </div>
+                            </ul>
                         </nav>
+                        
                     </div>
                     <!-- fixed navigation -->
                     <section class="section-intro blue">
@@ -58,9 +60,15 @@
                                 <h1>WE STAY AHEAD</h1>
                             </div>
                             <div class="mars-container">
-                                <!-- <div class="jupiter"></div>
-                                <div class="astro"></div>
-                                <div class="spaceship"></div> -->
+                                <div class="intro-still">
+                                    <div class="jupiter"></div>
+                                    <div class="astro"></div>
+                                    <div class="spaceship"></div>
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="intro-video">
                                 <div id="five" class="animation"></div>
                             </div>
                         </div>
@@ -68,10 +76,22 @@
                     <!-- WHO!? -->
                     <section class="section-intro blue"></section>
                     <section class="section-card orange" id="nav1">
-                        <div class="card-content">
+                        <div class="card-content" 
+                            data-sal="slide-up"
+                            data-sal-delay="500"
+                            data-sal-easing="ease-out-cubic"
+                            style="--sal-duration: 2s; --sal-delay: 2s;"
+                        >
                             <h2>WHO?!</h2>
                             <div id="AnimOne"></div>
-                            <div class="deco-4"></div>
+                            <div class="deco-wrap">
+                                <div class="deco-4"
+                                    data-sal="fade"
+                                    data-sal-delay="1500"
+                                    data-sal-easing="ease-out-cubic"
+                                    style="--sal-duration: 2s; --sal-delay: 3s;"
+                                ></div>
+                            </div>
                             <h3>
                                 Hi! 🍊Orange Data is an
                                 <svg class="icon-square" xmlns="http://www.w3.org/2000/svg" width="42.551" height="52.008" viewBox="0 0 42.551 52.008">
@@ -115,8 +135,8 @@
                                         </g>
                                     </g>
                                 </svg>
-                                all-in-one software development firm making <span href="" class="hover-me" id="hoverR">excellent digital things<img class="tapR" src="images/tapeR.png" /><img class="tapRG" src="images/tapeRG.png" /></span>. We know what it’s like to start small with a
-                                big dream, so we are here to help you reach your goals by deploying the
+                                all-in-one software development firm <br class="breakline"/>making <span href="" class="hover-me" id="hoverR">excellent digital things<img class="tapR" src="images/tapeR.png" /><img class="tapRG" src="images/tapeRG.png" /></span>. We know what it’s like to start small<br class="breakline"/> with a
+                                big dream, so we are here to help you reach your goals by deploying <br class="breakline"/>the <span class="web-br">
                                 <svg class="icon-wave" xmlns="http://www.w3.org/2000/svg" width="82" height="32" viewBox="0 0 82 32">
                                     <g id="Group_3217" data-name="Group 3217" transform="translate(-677 -2777)">
                                         <g id="Group_558" data-name="Group 558" transform="translate(-178 20.268)">
@@ -126,8 +146,7 @@
                                         </g>
                                     </g>
                                 </svg>
-                                cutting-edge technology to create the advanced digital stuff.<br />
-                                <br />
+                                cutting-edge</span> technology to create the advanced digital stuff.<br class="breakline"/>
                                 Whether you’re just getting started or need assistance with <span href="" class="hover-me" id="hoverY">advanced features<img class="tapY" src="images/tapeY.png" /><img class="tapYP" src="images/tapeP.png" /></span> , our ⚙️ engineer and 🎨 design team
                                 are here for you.
                             </h3>
@@ -137,21 +156,27 @@
                     <section class="section-value blue" id="fourValues">
                         <div class="card-content text-center">
                             <h2 class="sub-header">FOUR CORE VALUES</h2>
-                            <div class="fourValues">
-                                <img src="images/fourValues.svg" />
+                            <div class="fourValues-m">
+                                <img src="images/fourValues-m.svg" />
                             </div>
                         </div>
                     </section>
-                    <!-- HOW!?-->
+                    <!-- animation-->
                     <section id="drop-desktop">
                         <!-- lottie orange drop animation -->
                         <div id="dropAnim" class="animation"></div>
                     </section>
+                    <!-- HOW!?-->
                     <section class="section-card how orange" id="how">
-                        <div class="card-content" id="nav2">
+                        <div class="card-content" id="nav2"
+                            data-sal="slide-up"
+                            data-sal-delay="500"
+                            data-sal-easing="ease-out-cubic"
+                            style="--sal-duration: 2s; --sal-delay: 2s;"
+                        >
                             <h2>HOW?!</h2>
                             <h3>
-                                We know people are always the core of a team. Everything
+                                We know people are always the core of a team. <br class="web-br">Everything
                                 <svg class="icon-hill" xmlns="http://www.w3.org/2000/svg" width="76.776" height="37.232" viewBox="0 0 76.776 37.232">
                                     <g id="Group_3218" data-name="Group 3218" transform="translate(-417.88 -8046.805)">
                                         <g id="Group_2842" data-name="Group 2842" transform="translate(-4765.246 6607.595)">
@@ -265,12 +290,12 @@
                                         </g>
                                     </g>
                                 </svg>
-                                else flows from here. That’s why we were a team of 🧑🏻‍🚀🧑🏻‍🔧👨🏻‍🔬👩🏻‍💻👨🏻‍🎨 makers, thinkers, <span href="" class="hover-me" id="hoverB">explorers<img class="tapB" src="images/tapeB.png" /><img class="tapBY" src="images/tapeBY.png" /></span> and inventors
-                                working at the intersection of <span href="" class="hover-me" id="hoverY">creative and digital<img class="tapY2" src="images/tapeY.png" /><img class="tapY2P" src="images/tapeP.png" /></span>.
+                                else flows from here. <br class="breakline"/>That’s why we were a team of 🧑🏻‍🚀🧑🏻‍🔧👨🏻‍🔬👩🏻‍💻👨🏻‍🎨 makers,<br class="breakline"/> thinkers, <span href="" class="hover-me" id="hoverB">explorers<img class="tapB" src="images/tapeB.png" /><img class="tapBY" src="images/tapeBY.png" /></span> and inventors
+                                working at the <br class="breakline"/>intersection of <span href="" class="hover-me" id="hoverY">creative and digital<img class="tapY2" src="images/tapeY.png" /><img class="tapY2P" src="images/tapeP.png" /></span>.
                             </h3>
                         </div>
                     </section>
-                    <!-- WHO!? -->
+                    <!-- Not too big -->
                     <section class="white text-center" id="notTooBig">
                         <div class="card-content">
                             <h3>NOT TOO BIG</h3>
@@ -335,9 +360,9 @@
                                                     <div class="clip"><div id="oneAnim"></div></div>
                                                     <!-- description  -->
                                                     <div class="description">
-                                                        <h3 class="slide-header">THE JOURNEY FROM IDEA TO PRODUCT</h3>
+                                                        <h3 class="slide-header">THE JOURNEY FROM <br class="breakline"/>IDEA TO PRODUCT</h3>
                                                         <p class="slide-text">
-                                                            From conceptualization, design, development and marketing, we transform an idea to a new product. We always put our biggest effort to generate the most suitable solutions on time
+                                                            From conceptualization, design, development <br class="breakline"/>and marketing, we transform an idea to a new product. <br class="breakline"/>We always put our biggest effort to generate the most <br class="breakline"/>suitable solutions on time
                                                             and stay within your budget.
                                                         </p>
                                                         <ul>
@@ -360,8 +385,8 @@
                                                     <div class="clip"><div id="twoAnim"></div></div>
                                                     <!-- description  -->
                                                     <div class="description">
-                                                        <h3 class="slide-header">FROM COMPLEX TO SIMPLE</h3>
-                                                        <p class="slide-text">Providing distinct IT solutions with multiple innovative technologies to enhance your business and to create more opportunities.</p>
+                                                        <h3 class="slide-header">FROM COMPLEX<br class="breakline"/> TO SIMPLE</h3>
+                                                        <p class="slide-text">Providing distinct IT solutions with multiple innovative <br class="breakline"/>technologies to enhance your business and to create<br class="breakline"/> more opportunities.</p>
                                                         <ul>
                                                             <li class="slide-text">Web & Graphic & 3D Computer Graphics</li>
                                                             <li class="slide-text">eCommerce</li>
@@ -379,8 +404,8 @@
                                                     <div class="clip"><div id="threeAnim"></div></div>
                                                     <!-- description  -->
                                                     <div class="description">
-                                                        <h3 class="slide-header">STRUCTURE, CONTROL AND OPERATION</h3>
-                                                        <p class="slide-text">Minimizing downtime and maintaining business productivity is the main goal of IT Infrastructure Management service.</p>
+                                                        <h3 class="slide-header">STRUCTURE,<br class="breakline"/> CONTROL AND OPERATION</h3>
+                                                        <p class="slide-text">Minimizing downtime and maintaining business productivity <br class="breakline"/>is the main goal of IT Infrastructure Management service.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -393,10 +418,10 @@
                                                     <div class="clip"><div id="fourAnim"></div></div>
                                                     <!-- description  -->
                                                     <div class="description">
-                                                        <h3 class="slide-header">OPTIMISED FOR EVERY EXPERIENCE</h3>
+                                                        <h3 class="slide-header">OPTIMISED FOR<br class="breakline"/> EVERY EXPERIENCE</h3>
                                                         <p class="slide-text">
-                                                            Individuals nowadays buy products or services, but also buy into the idea or the experience. Thus​, we maximise user engagement through responsive design, intuitive navigation and
-                                                            the commitment to web accessibility that delivers an optimal experience across every device.
+                                                            Individuals nowadays buy products or services, but also<br class="breakline"/> buy into the idea or the experience. Thus​, we maximise user<br class="breakline"/> engagement through responsive design, intuitive navigation<br class="breakline"/> and
+                                                            the commitment to web accessibility that delivers an optimal<br class="breakline"/> experience across every device.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -411,7 +436,7 @@
                                                     <!-- description  -->
                                                     <div class="description">
                                                         <h3 class="slide-header">CONTENT, CONNECT AND SPREAD</h3>
-                                                        <p class="slide-text">By promoting and advertising your products using online marketing statics, we will effectively boostthe sales and market position of your company.</p>
+                                                        <p class="slide-text">By promoting and advertising your products using online <br class="breakline"/>marketing statics, we will effectively boostthe sales and<br class="breakline"/> market position of your company.</p>
                                                         <ul>
                                                             <li class="slide-text">Research & Insights</li>
                                                             <li class="slide-text">SEO</li>
@@ -468,14 +493,14 @@
                             <!-- Way to go team!-->
                             <div class="career-logo">
                                 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                                <lottie-player
-                                    id="wayToGoAnim"
-                                    src="https://assets1.lottiefiles.com/packages/lf20_SOfVfC/way_to_go_animation/way_to_go_animation.json"
-                                    background="transparent"
-                                    speed="1"
-                                    style="width: 100%; height: 100%;"
-                                    loop
-                                ></lottie-player>
+                                <lottie-player 
+                                id="wayToGoAnim" 
+                                src="https://assets1.lottiefiles.com/packages/lf20_kjzY5J/Way to go_animation/data.json"  
+                                background="transparent"  
+                                speed="1" 
+                                style="width: 100%; height: 100%;"
+                                loop></lottie-player>
+                                
                             </div>
                             <!-- Job Opportunity -->
                             <div>
@@ -486,7 +511,6 @@
                                         <div class="job-wrap">
                                             <div class="popup d-flex bd-highlight">
                                                 <h3 class="job-title w-100 bd-highlight" data-fancybox data-src="#Programmer" href="javascript:;">Programmer</h3>
-                                                <button class="arrow45 flex-shrink-1 bd-highlight" data-fancybox data-src="#Programmer" href="javascript:;" ></button>
                                                   <div class="Pop-container" style="display:none;" id="Programmer">
                                                     <div class="job-header blue">
                                                         <h1 class="strike" data-selectable="true">Analyst Programmer</h1>
@@ -525,6 +549,8 @@
                                                     <p data-selectable="true">Sometimes you would want to disable "touch" feature. <br />For example, when you want to make your content selectable.</p>
                                                     
                                                 </div>
+                                                <div></div>
+                                                <button class="arrow45 flex-shrink-1 bd-highlight"  data-fancybox data-src="#Programmer" href="javascript:;" ></button>
                                               </div>
                                         </div>
                                     </div>
@@ -669,15 +695,6 @@
                                               </div>
                                         </div>
                                     </div>
-                                    <!-- <div class="job-link">
-                                        <div class="job-wrap">
-                                            <div class="popup_main popup  d-flex bd-highlight">
-                                                <h3 class="job-title  w-100 bd-highlight">Marketing</h3>
-                                                <button class="open_popup arrow45 job-btn flex-shrink-1 bd-highlight"></button>
-                                                
-                                              </div>
-                                        </div>
-                                    </div> -->
                                     <div class="popup_body">
                                         <div class="popup_back"></div>
                                           <div class="popup_contain Pop-container">
@@ -738,7 +755,9 @@
                                 <div class="explore-logo">
                                     <img src="images/explore.svg" alt="explore" />
                                 </div>
-                                <button type="button" class="custom-btn btn btn-light">Send your CV</button>
+                                <button type="button" class="custom-btn btn btn-light">
+                                    <a href = "mailto: hr@orangedata.info">Send your CV</a>    
+                                </button>
                             </div>
                         </div>
                     </section>
@@ -775,7 +794,7 @@
                             <!-- /.form input box -->
                             <h6 class="text-center p-4">* Personal data collected will be used for recruitment purpose only.</h6>
                             <div class="text-center">
-                                <button type="button" class="custom-btn btn btn-light text-center" id="contactBtn">Send Email</button>
+                                <button type="button" class="custom-btn btn btn-light text-center" id="contactBtn">Send Message</button>
                             </div>
                             <div class="company-info">
                                 <div class="logo-hor">
@@ -823,6 +842,10 @@
         <script src="js/jquery.fancybox.min.js"></script>
         <script src="js/ScrollLottie.js" type="text/javascript"></script>
         <script src="js/lottie.js" type="text/javascript"></script>
+        <script src="./node_modules/sal.js/dist/sal.js"></script>
         <script src="js/app.js"></script>
+        <script>
+             sal();
+        </script>
     </body>
 </html>

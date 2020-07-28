@@ -3,6 +3,7 @@
 /*-------------------------------*/
 .nav-contianer{
     position: relative;
+    z-index: 2;
 }
 nav{
     position: fixed;
@@ -12,16 +13,16 @@ nav{
     padding: 0rem 0;
     display:flex;
     margin: auto;
-    height: 80px;
+    height: 60px;
     transition: 0.5s;
     z-index: 3;
     background-color: rgba(35, 62, 151, 1);
+    
 }
 #logo{
     margin-left: 5vw;
-    margin-top: 1.5rem;
-    width: 143px;
-    height: 60px;
+    width: 100px;
+    margin-top: 16px;
 }
 
 .nav-links{
@@ -69,10 +70,11 @@ nav{
     }
     // collapes hamburger
     /* Icon 3 */
+    
    .hamburger {
-        width: 30px;
+        width: 18px;
         height: 45px;
-        top: 35%;
+        top: 36%;
         right: 5%;
         z-index: 2;
         transform:  translate(5% , -50%);
@@ -91,7 +93,7 @@ nav{
     .hamburger span {
         display: block;
         position: absolute;
-        height: 4px;
+        height: 2px;
         width: 100%;
         background: #fff;
         border-radius: 9px;
@@ -109,19 +111,17 @@ nav{
     #nav-icon3 span:nth-child(1) {
         top: 0px;
     }
-    
     #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
-        top: 10px;
+        top: 7px;
     }
-    
     #nav-icon3 span:nth-child(4) {
-        top: 20px;
+        top: 14px;
     }
-    
     #nav-icon3.open span:nth-child(1) {
         top: 10px;
         width: 0%;
         left: 50%;
+        opacity: 0;
     }
     
     #nav-icon3.open span:nth-child(2) {
@@ -129,6 +129,7 @@ nav{
         -moz-transform: rotate(45deg);
         -o-transform: rotate(45deg);
         transform: rotate(45deg);
+        opacity: 1;
     }
     
     #nav-icon3.open span:nth-child(3) {
@@ -136,12 +137,18 @@ nav{
         -moz-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
         transform: rotate(-45deg);
+        opacity: 1;
     }
     
     #nav-icon3.open span:nth-child(4) {
         top: 18px;
         width: 0%;
         left: 50%;
+    }
+
+    header{
+        position: relative;
+        z-index: 0;
     }
     .nav-links{
         padding:150px 0;
@@ -153,6 +160,9 @@ nav{
         -webkit-clip-path:  circle(10px at 90% -10%);
         transition: all 0.8s ease-out;
         pointer-events: none;
+    }
+    .hamburger.open{
+        opacity: 1;
     }
     .nav-links.open{
         clip-path: circle(3000px at 90% -10%);
@@ -178,9 +188,46 @@ nav{
 @media all and (max-width: 1200px) and (min-width: 700px) {
     #logo{
         margin-left: 5vw;
-        margin-top: 9px;
-        width: 143px;
-        height: 65px;
+        width: 116px;
+        margin-top: 14px;
+    }
+    nav{
+        height: 70px;
+    }
+    .hamburger {
+        width: 30px;
+        height: 45px;
+        top: 33%;
+        right: 5%;
+    }
+    .hamburger span {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: #fff;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+    }
+    #nav-icon3 span:nth-child(1) {
+        top: 0px;
+    }
+    #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+        top: 10px;
+    }
+    #nav-icon3 span:nth-child(4) {
+        top: 20px;
+    }
+    #nav-icon3.open span:nth-child(1) {
+        top: 10px;
+        width: 0%;
+        left: 50%;
+    }
+    #nav-icon3.open span:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
     }
 }
 
@@ -188,7 +235,46 @@ nav{
 @media all and (min-width: 1201px) {
     #logo{
         margin-left: 5vw;
-        margin-top: 9px;
-        width: 175px;
+        width: 130px;
+        margin-top: 6px;
+    }
+    nav{
+        height: 70px;
+        padding-bottom: 1.5rem;
+    }
+    .hamburger {
+        width: 30px;
+        height: 45px;
+        top: 33%;
+        right: 5%;
+    }
+    .hamburger span {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: #fff;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+    }
+    #nav-icon3 span:nth-child(1) {
+        top: 0px;
+    }
+    #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+        top: 10px;
+    }
+    #nav-icon3 span:nth-child(4) {
+        top: 20px;
+    }
+    #nav-icon3.open span:nth-child(1) {
+        top: 10px;
+        width: 0%;
+        left: 50%;
+    }
+    #nav-icon3.open span:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
     }
 }

@@ -128,8 +128,23 @@
     transition: all 0.3s ease;
     font-size: 3rem;
 }
+.btn.focus, .btn:focus{
+    box-shadow: transparent!important;
+    border-color: transparent;
+}
 #contact .custom-btn{
     color: #EF6624;
+    background-color: #fff;
+    box-shadow: transparent;
+}
+#contact .custom-btn:hover{
+    color: #fff;
+    background-color: #F7AA3E;
+    border-color: transparent;
+    box-shadow: transparent;
+}
+#contact .custom-btn:focus{
+    box-shadow: transparent;
 }
 #wrapper #contact{
     height: 100%;
