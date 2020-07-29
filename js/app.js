@@ -122,21 +122,21 @@ var animation5 = bodymovin.loadAnimation({
   autoplay: true,
   path: 'animation/notTooBigAnim/notTooBigAnim.json'
 });
-//intro
-var animation6 = bodymovin.loadAnimation({
-  container: document.getElementById('introAnim'),
-  renderer: 'svg',
-  loop: true,
-  autoplay: true,
-  path: 'animation/introAnim/introAnim.json'
-});
+// intro
+// var animation6 = bodymovin.loadAnimation({
+//   container: document.getElementById('introAnim'),
+//   renderer: 'svg',
+//   loop: true,
+//   autoplay: true,
+//   path: 'animation/introAnim/introAnim.json'
+// });
 
 
 //drop orange animation
 //this has a duration and animates the playhead on the Lottie animation for a smoother result
 ScrollLottie({
-  target: '#five',
-  path: 'animation/fiveAnim/fiveAnim.json', 
+  target: '#introAnim',
+  path: 'animation/introAnim/introAnim.json', 
   duration: 3, 
   speed: 'medium'
  })
@@ -173,3 +173,37 @@ LottieInteractivity.create({
   ]  
 });
 
+// Email validation
+
+function validation()
+{
+  var form = document.getElementById("emailInput");
+  var email = document.getElementById("email").value;
+  var text = document.getElementById("emailText");
+  var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+  if (email.match(pattern))
+  {
+    form.classList.add("valid");
+    form.classList.remove("invalid");
+    text.innerHTML = "Your Email address is Valid.";
+    text.style.color = "#fff";
+    console.log("valid")
+  }
+  else 
+  {
+    form.classList.remove("valid");
+    form.classList.add("invalid");
+    text.innerHTML = "Please Enter Valid Email Address";
+    text.style.color = "#263C95";
+    console.log("invalid")
+  }
+  if (email == "")
+  {
+    form.classList.remove("valid");
+    form.classList.remove("invalid");
+    text.innerHTML = "";
+    text.style.color = "#00ff00";
+  }
+
+}

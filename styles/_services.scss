@@ -260,7 +260,9 @@
     .section-services .action a{
         padding: 12rem;
     }
-    
+    .breakline{
+        display: block;
+    }
 }
 /* Desktop */
 @media all and (min-width: 1501px) {
@@ -281,9 +283,7 @@
     .service-wrap .description {
         margin-top: 8rem;
     }
-    .breakline{
-        display: block;
-    }
+    
 }
 /* Desktop */
 @media all and (min-width: 1921px) {
