@@ -107,7 +107,7 @@ var animation5 = bodymovin.loadAnimation({
     autoplay: true,
     path: 'animation/fiveAnim/fiveAnim.json'
   });
-var animation5 = bodymovin.loadAnimation({
+var animation6 = bodymovin.loadAnimation({
   container: document.getElementById('sixAnim'),
   renderer: 'svg',
   loop: true,
@@ -115,12 +115,27 @@ var animation5 = bodymovin.loadAnimation({
   path: 'animation/sixAnim/sixAnim.json'
 });
 //not too big
-var animation5 = bodymovin.loadAnimation({
+var animation7 = bodymovin.loadAnimation({
   container: document.getElementById('notTooBigAnim'),
   renderer: 'svg',
   loop: true,
   autoplay: true,
   path: 'animation/notTooBigAnim/notTooBigAnim.json'
+});
+//arrow down
+var animation8 = bodymovin.loadAnimation({
+  container: document.getElementById('arrowAnim'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'animation/arrowAnim/arrowAnim.json'
+});
+var animation8 = bodymovin.loadAnimation({
+  container: document.getElementById('arrowAnim2'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'animation/arrowAnim/arrowAnim.json'
 });
 // intro
 // var animation6 = bodymovin.loadAnimation({
@@ -186,7 +201,7 @@ function validation()
   {
     form.classList.add("valid");
     form.classList.remove("invalid");
-    text.innerHTML = "Your Email address is Valid.";
+    text.innerHTML = "Your Email address is valid";
     text.style.color = "#fff";
     console.log("valid")
   }
@@ -194,16 +209,16 @@ function validation()
   {
     form.classList.remove("valid");
     form.classList.add("invalid");
-    text.innerHTML = "Please Enter Valid Email Address";
-    text.style.color = "#263C95";
+    text.innerHTML = "Please enter valid Email address";
+    text.style.color = "#fff";
     console.log("invalid")
   }
   if (email == "")
   {
     form.classList.remove("valid");
     form.classList.remove("invalid");
-    text.innerHTML = "";
-    text.style.color = "#00ff00";
+    text.innerHTML = "Email";
+    text.style.color = "#fff";
   }
 
 }

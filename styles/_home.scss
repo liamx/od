@@ -1,8 +1,6 @@
 
 /* mobile */
-.intro-wrapper .mars-container{
-    height: 800px;
-}
+
 .intro-wrapper{
     text-align: left;
     padding: 0rem 0rem;
@@ -11,7 +9,7 @@
 }
 .mars-container{
     display: block;
-    height: 550px;
+    height: 800px;
 }
 .intro-video{
     display: none;
@@ -19,6 +17,10 @@
 img{
     width: 100%;
     height: 100%;
+}
+.mars-container{
+    position: relative;
+    z-index: 0;
 }
 .mars-container .jupiter{
     position: absolute;
@@ -33,7 +35,7 @@ img{
 }
 .mars-container .astro{
     position: absolute;
-    right: -7%;
+    right: 0%;
     top: 0%;
     z-index: 0;
     background-image: url(../images/mars.svg);
@@ -47,27 +49,18 @@ img{
     right: 43%;
     bottom: -75%;
     z-index: 2;
-    background-image: url(../images/spaceship.svg);
+    background-image: url(../images/spaceship2.svg);
     height: 100%;
     width: 7rem;
     background-repeat: no-repeat;
     background-size: 100%;
 }
-.intro-wrapper .mars-container{
-    position: relative;
-    overflow: hidden;
-    z-index: 0;
-}
-.transition{
-    position: relative;
-    width: 100%;
-    height: 50rem;
-}
+
 .spaceship-2{
     display: none;
     position: absolute;
     right: 47%;
-    top: -318px;
+    top: 0;
     z-index: 2;
     background-image: url(../images/spaceship2.svg);
     height: 100%;
@@ -79,15 +72,16 @@ img{
 /* Tablet */
 @media all and (max-width: 1200px) and (min-width: 700px) {
     .mars-container{
-        display: none;
+        display: block;
+        height: 150rem;
     }
     .intro-video{
-        display: block;
+        display: none;
     }
     .spaceship-2{
-        display: block;
+        display: none;
         right: 47%;
-        top: -119px;
+        top: 0px;
     }
 }
 
@@ -102,6 +96,6 @@ img{
     .spaceship-2{
         display: block;
         right: 47%;
-        top: -187px;
+        top: 0px;
     }
 }

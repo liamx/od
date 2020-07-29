@@ -229,7 +229,7 @@ img {
     height: 100rem;
   }
   #wrapper .section-intro {
-    height: 200rem;
+    height: 208rem;
   }
 }
 
@@ -315,10 +315,6 @@ img {
 }
 
 /* mobile */
-.intro-wrapper .mars-container {
-  height: 800px;
-}
-
 .intro-wrapper {
   text-align: left;
   padding: 0rem 0rem;
@@ -328,7 +324,7 @@ img {
 
 .mars-container {
   display: block;
-  height: 550px;
+  height: 800px;
 }
 
 .intro-video {
@@ -338,6 +334,11 @@ img {
 img {
   width: 100%;
   height: 100%;
+}
+
+.mars-container {
+  position: relative;
+  z-index: 0;
 }
 
 .mars-container .jupiter {
@@ -354,7 +355,7 @@ img {
 
 .mars-container .astro {
   position: absolute;
-  right: -7%;
+  right: 0%;
   top: 0%;
   z-index: 0;
   background-image: url(../images/mars.svg);
@@ -369,30 +370,18 @@ img {
   right: 43%;
   bottom: -75%;
   z-index: 2;
-  background-image: url(../images/spaceship.svg);
+  background-image: url(../images/spaceship2.svg);
   height: 100%;
   width: 7rem;
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
-.intro-wrapper .mars-container {
-  position: relative;
-  overflow: hidden;
-  z-index: 0;
-}
-
-.transition {
-  position: relative;
-  width: 100%;
-  height: 50rem;
-}
-
 .spaceship-2 {
   display: none;
   position: absolute;
   right: 47%;
-  top: -318px;
+  top: 0;
   z-index: 2;
   background-image: url(../images/spaceship2.svg);
   height: 100%;
@@ -404,15 +393,16 @@ img {
 /* Tablet */
 @media all and (max-width: 1200px) and (min-width: 700px) {
   .mars-container {
-    display: none;
+    display: block;
+    height: 150rem;
   }
   .intro-video {
-    display: block;
+    display: none;
   }
   .spaceship-2 {
-    display: block;
+    display: none;
     right: 47%;
-    top: -119px;
+    top: 0px;
   }
 }
 
@@ -427,7 +417,7 @@ img {
   .spaceship-2 {
     display: block;
     right: 47%;
-    top: -187px;
+    top: 0px;
   }
 }
 
@@ -645,7 +635,7 @@ nav .open .nav-item {
 @media all and (max-width: 1200px) and (min-width: 700px) {
   #logo {
     margin-left: 5vw;
-    width: 116px;
+    width: 140px;
     margin-top: 14px;
   }
   nav {
@@ -737,10 +727,6 @@ nav .open .nav-item {
 }
 
 /* mobile */
-.web-br {
-  display: block;
-}
-
 .card-content h2 {
   padding-bottom: 3rem;
   padding-top: 10rem;
@@ -758,23 +744,35 @@ nav .open .nav-item {
 #nav1 {
   position: relative;
   z-index: 0;
+  padding-top: 10rem;
 }
 
 .deco-wrap {
   position: absolute;
   z-index: -1;
-  bottom: 10%;
+  bottom: 3%;
   right: 0;
   width: 89px;
   height: 144px;
 }
 
+.deco-wrap-2 {
+  position: absolute;
+  z-index: -1;
+  bottom: -37%;
+  right: 0;
+  width: 89px;
+  height: 144px;
+}
+
+#nav2 {
+  position: relative;
+  z-index: 0;
+}
+
 .card-content .deco-4 {
   width: 100%;
   height: 100%;
-  background-size: contain;
-  background-image: url("../images/deco-4.svg");
-  background-repeat: no-repeat;
 }
 
 .section-card .card-content h2 {
@@ -786,6 +784,10 @@ nav .open .nav-item {
 }
 
 #drop-desktop {
+  display: none;
+}
+
+.breakline-card {
   display: none;
 }
 
@@ -810,32 +812,22 @@ nav .open .nav-item {
   z-index: 0;
 }
 
-.tapR,
-.tapRG {
-  position: absolute;
-  left: -11%;
-  top: -63%;
-  width: 279px;
-  height: 70px;
-  z-index: -1;
-}
-
 .tapYP,
 .tapY {
   position: absolute;
-  left: -12%;
+  left: -11%;
   top: -68%;
-  width: 217px;
+  width: 281px;
   height: 86px;
   z-index: -1;
 }
 
-.tapY2,
-.tapY2P {
+.tapY2P,
+.tapY2 {
   position: absolute;
-  left: -8%;
-  top: -71%;
-  width: 241px;
+  left: -11%;
+  top: -68%;
+  width: 104px;
   height: 86px;
   z-index: -1;
 }
@@ -850,31 +842,34 @@ nav .open .nav-item {
   z-index: -1;
 }
 
+.tapY3,
+.tapY3P {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  width: 86px;
+}
+
 .tapY,
 .tapY2,
-.tapR,
 .tapB {
   display: block;
 }
 
 .tapYP,
 .tapY2P,
-.tapRG,
 .tapBY {
   display: none;
 }
 
-.hover-me:hover .tapY2,
 .hover-me:hover .tapY,
-.hover-me:hover .tapB,
-.hover-me:hover .tapR {
+.hover-me:hover .tapY2,
+.hover-me:hover .tapB {
   display: none;
 }
 
-.hover-me:hover .tapY2P,
 .hover-me:hover .tapYP,
-.hover-me:hover .tapBY,
-.hover-me:hover .tapRG {
+.hover-me:hover .tapY2P,
+.hover-me:hover .tapBY {
   display: block;
 }
 
@@ -899,8 +894,7 @@ nav .open .nav-item {
   color: #EA048A;
 }
 
-#hoverR:hover,
-#hoverY2:hover {
+#hoverR:hover {
   color: #263C95;
 }
 
@@ -954,103 +948,23 @@ nav .open .nav-item {
   margin-right: auto;
 }
 
-@media all and (max-width: 362px) {
+@media all and (max-width: 388px) {
   .tapY,
   .tapYP {
     left: -11%;
     top: -25%;
-    width: 100px;
+    width: 191px;
     height: 74px;
   }
 }
 
-@media all and (max-width: 395px) {
-  .tapY2,
-  .tapY2P {
+@media all and (max-width: 547px) and (min-width: 500px) {
+  .tapY,
+  .tapYP {
     left: -11%;
     top: -25%;
-    width: 100px;
+    width: 114px;
     height: 74px;
-  }
-}
-
-@media all and (max-width: 390px) {
-  .tapR,
-  .tapRG {
-    left: -11%;
-    top: -33%;
-    width: 188px;
-    height: 74px;
-  }
-}
-
-@media all and (max-width: 390px) and (min-width: 411px) {
-  .tapY,
-  .tapYP {
-    left: -12%;
-    top: -35%;
-    width: 135px;
-    height: 86px;
-  }
-}
-
-@media all and (max-width: 435px) and (min-width: 424px) {
-  .tapY2,
-  .tapY2P {
-    left: -12%;
-    top: -31%;
-    width: 100px;
-    height: 86px;
-  }
-}
-
-@media all and (max-width: 455px) and (min-width: 404px) {
-  .tapY,
-  .tapYP {
-    left: -11%;
-    top: -25%;
-    width: 130px;
-    height: 78px;
-  }
-}
-
-@media all and (max-width: 533px) and (min-width: 491px) {
-  .tapY2,
-  .tapY2P {
-    left: -12%;
-    top: -31%;
-    width: 157px;
-    height: 86px;
-  }
-}
-
-@media all and (max-width: 544px) and (min-width: 501px) {
-  .tapR,
-  .tapRG {
-    left: -10%;
-    top: -44%;
-    width: 91px;
-    height: 80px;
-  }
-}
-
-@media all and (max-width: 559px) and (min-width: 554px) {
-  .tapY,
-  .tapYP {
-    left: -11%;
-    top: -25%;
-    width: 130px;
-    height: 78px;
-  }
-}
-
-@media all and (max-width: 653px) and (min-width: 600px) {
-  .tapY2,
-  .tapY2P {
-    left: -12%;
-    top: -31%;
-    width: 121px;
-    height: 86px;
   }
 }
 
@@ -1077,19 +991,20 @@ nav .open .nav-item {
     width: 72px;
     height: 32px;
   }
-  .tapR,
-  .tapRG {
-    left: -13%;
-    top: -86%;
-    width: 371px;
-    height: 100px;
-  }
   .tapY,
   .tapYP {
-    left: -12%;
+    left: -9%;
     top: -50%;
-    width: 314px;
-    height: 91px;
+    width: 363px;
+  }
+  .tapY2P,
+  .tapY2 {
+    top: -51%;
+    width: 136px;
+  }
+  .tapY3,
+  .tapY3P {
+    width: 108px;
   }
   .tapB,
   .tapBY {
@@ -1098,103 +1013,56 @@ nav .open .nav-item {
     width: 158px;
     height: 66px;
   }
-  .tapY2,
-  .tapY2P {
-    left: -12%;
-    top: -55%;
-    width: 329px;
-    height: 95px;
-  }
   #drop-desktop {
     display: block;
   }
   #howAnim {
     top: 20%;
   }
-}
-
-@media all and (max-width: 757px) and (min-width: 701px) {
-  .tapR,
-  .tapRG {
-    left: -10%;
-    top: -36%;
-    width: 104px;
-    height: 80px;
+  .web-br {
+    display: inline-block;
+  }
+  .deco-wrap {
+    bottom: 12%;
+    right: 0;
+    width: 132px;
+    height: 110px;
+  }
+  .deco-wrap-2 {
+    bottom: -30rem;
+    right: 5%;
+    width: 132px;
+    height: 110px;
   }
 }
 
-@media all and (max-width: 746px) and (min-width: 700px) {
-  .tapY2,
-  .tapY2P {
-    left: -12%;
-    top: -31%;
-    width: 157px;
-    height: 86px;
-  }
-}
-
-@media all and (max-width: 773px) and (min-width: 756px) {
-  .tapR,
-  .tapRG {
-    left: -10%;
-    top: -32%;
-    width: 245px;
-    height: 80px;
-  }
-}
-
-@media all and (max-width: 911px) and (min-width: 839px) {
-  .tapY2,
-  .tapY2P {
-    left: -12%;
-    top: -31%;
-    width: 157px;
-    height: 86px;
-  }
-}
-
-@media all and (max-width: 1101px) and (min-width: 1078px) {
-  .tapY2,
-  .tapY2P {
-    left: -12%;
-    top: -31%;
-    width: 157px;
-    height: 86px;
-  }
-  .tapY, .tapYP {
-    left: -14%;
-    top: -24%;
-    width: 175px;
-  }
-}
-
-@media all and (max-width: 1158px) and (min-width: 1102px) {
-  .tapY2,
-  .tapY2P {
-    left: -1%;
-    top: -34%;
-    width: 137px;
-    height: 95px;
-  }
-}
-
-@media all and (max-width: 1112px) and (min-width: 1092px) {
+@media all and (max-width: 755px) and (min-width: 701px) {
   .tapY,
   .tapYP {
     left: -11%;
     top: -25%;
-    width: 158px;
-    height: 101px;
+    width: 140px;
+    height: 92px;
   }
 }
 
-@media all and (max-width: 1200px) and (min-width: 1103px) {
+@media all and (max-width: 764px) and (min-width: 756px) {
   .tapY,
   .tapYP {
     left: -11%;
     top: -25%;
-    width: 158px;
-    height: 101px;
+    width: 140px;
+    height: 92px;
+  }
+}
+
+@media all and (max-width: 755px) and (min-width: 701px) {
+  .tapY,
+  .tapYP {
+    left: -11%;
+    top: -25%;
+    width: 140px;
+    height: 92px;
   }
 }
 
@@ -1226,26 +1094,22 @@ nav .open .nav-item {
     width: 72px;
     height: 32px;
   }
-  .tapR,
-  .tapRG {
-    left: -12%;
-    top: -37%;
-    width: 500px;
-    height: 100px;
-  }
   .tapY,
   .tapYP {
-    left: -12%;
-    top: -37%;
-    width: 431px;
-    height: 100px;
+    left: -11%;
+    top: -47%;
+    width: 520px;
+    height: 119px;
   }
-  .tapY2,
-  .tapY2P {
-    left: -10%;
-    top: -49%;
-    width: 437px;
-    height: 122px;
+  .tapY2P,
+  .tapY2 {
+    top: -58%;
+    height: 128px;
+    width: 186px;
+  }
+  .tapY3,
+  .tapY3P {
+    width: 147px;
   }
   .tapBY,
   .tapB {
@@ -1264,42 +1128,32 @@ nav .open .nav-item {
     display: inline-block;
   }
   .deco-wrap {
-    position: absolute;
-    z-index: -1;
-    bottom: 10%;
+    bottom: -7rem;
     right: 10%;
-    width: 117px;
+    width: 211px;
+    height: 500px;
+  }
+  .deco-wrap-2 {
+    bottom: -30rem;
+    right: 5%;
+    width: 211px;
     height: 500px;
   }
 }
 
-@media all and (max-width: 1226px) and (min-width: 1201px) {
-  .tapY2,
-  .tapY2P {
-    left: -26%;
-    top: -20%;
-    width: 287px;
-    height: 115px;
+@media all and (max-width: 1263px) and (min-width: 1201px) {
+  .tapY,
+  .tapYP {
+    left: -11%;
+    top: -16%;
+    width: 343px;
+    height: 107px;
   }
 }
 
-@media all and (max-width: 1264px) and (min-width: 1201px) {
-  .tapR,
-  .tapRG {
-    left: 1%;
-    top: -36%;
-    width: 340px;
-    height: 123px;
-  }
-}
-
-@media all and (max-width: 1519px) and (min-width: 1386px) {
-  .tapY2,
-  .tapY2P {
-    left: -26%;
-    top: -20%;
-    width: 251px;
-    height: 115px;
+@media all and (min-width: 1920px) {
+  .breakline-card {
+    display: block;
   }
 }
 
@@ -1849,7 +1703,8 @@ nav .open .nav-item {
   display: block;
 }
 
-.fourValues-m img {
+.fourValues-m img,
+.fourValues-t img {
   width: 100%;
   height: 100%;
 }
@@ -2240,7 +2095,7 @@ nav .open .nav-item {
   height: 100%;
   color: #fff;
   background-color: transparent;
-  padding-top: 20px;
+  padding-top: 24px;
   border: none;
   outline: none;
 }
@@ -2344,6 +2199,37 @@ nav .open .nav-item {
 
 #messageInput, #nameInput, #emailInput {
   margin-top: 5rem;
+}
+
+.contact-input {
+  position: relative;
+  z-index: 0;
+}
+
+.invalid .contact-input:before {
+  position: absolute;
+  content: '';
+  right: 12px;
+  top: 12px;
+  width: 24px;
+  height: 24px;
+  color: red;
+  border-radius: 50%;
+  background: url(../images/invalid.svg);
+  background-size: cover;
+}
+
+.valid .contact-input:before {
+  position: absolute;
+  content: '';
+  right: 12px;
+  top: 12px;
+  width: 24px;
+  height: 24px;
+  color: red;
+  border-radius: 50%;
+  background: url(../images/valid.svg);
+  background-size: cover;
 }
 
 .content-name {

@@ -30,7 +30,7 @@
     height: 100%;
     color: #fff;
     background-color: transparent;
-    padding-top: 20px;
+    padding-top: 24px;
     border: none;
     outline: none;
 }
@@ -120,6 +120,36 @@
 }
 #messageInput, #nameInput, #emailInput{
     margin-top: 5rem ;
+}
+
+//email validation
+.contact-input{
+    position: relative;
+    z-index: 0;
+}
+.invalid .contact-input:before{
+    position: absolute;
+    content: '';
+    right: 12px;
+    top: 12px;
+    width: 24px;
+    height: 24px;
+    color: red;
+    border-radius: 50%;
+    background: url(../images/invalid.svg);
+    background-size: cover;
+}
+.valid .contact-input:before{
+    position: absolute;
+    content: '';
+    right: 12px;
+    top: 12px;
+    width: 24px;
+    height: 24px;
+    color: red;
+    border-radius: 50%;
+    background: url(../images/valid.svg);
+    background-size: cover;
 }
 .content-name{
     position: absolute;
