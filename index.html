@@ -17,15 +17,19 @@
         <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
         <!-- fancybox -->
-	    <link rel="stylesheet" type="text/css" href="./styles/jquery.fancybox.min.css">  
+        <link rel="stylesheet" type="text/css" href="./styles/jquery.fancybox.min.css">  
+         <!-- Compiled and minified CSS -->
+       
         <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css" />
         <link rel="stylesheet" href="./styles/main.css" />
         <title>OD Website</title>
         <link rel="shortcut icon" type="image/svg" href="images/favicon.svg">
+
+        
     </head>
     <body>
-        <div id="wrapper">
             
+        <div id="wrapper">
             <main>
                 <div>
                     <!-- Navigation - Fixed Top -->
@@ -67,7 +71,7 @@
                                 </div>
                             </div>
                             <div class="intro-video">
-                                <!-- lottie orange drop animation -->
+                                <!-- lottie intro animation -->
                                 <div id="introAnim" class="animation"></div>
                             </div>
                         </div>
@@ -75,12 +79,11 @@
                     <!-- WHO!? -->
                     <section class="section-card orange" id="nav1" 
                         data-sal="slide-up"
-                        data-sal-delay="300"
+                        data-sal-delay="500"
                         data-sal-easing="ease-out-cubic"
                         style="--sal-duration: 2s; --sal-delay: 2s;"
                     >
                         <div class="card-content">
-                            
                             <h2>WHO?!</h2>
                             <div id="AnimOne"></div>
                             <div class="spaceship-2"></div>
@@ -153,21 +156,28 @@
                         </div>
                     </section>
                     <!-- Four Core Values-->
-                    <section class="section-value blue" id="fourValues">
+                    <!-- <section class="section-value blue" id="fourValues">
                         <div class="card-content text-center">
                             <h2 class="sub-header">FOUR CORE VALUES</h2>
                             <div class="fourValues-m">
                                 <img src="images/fourValues-m.svg" />
                             </div>
-                            <!-- <div class="fourValues-t">
+                            <div class="fourValues-t">
                                 <img src="images/fourValues-t.svg" />
-                            </div> -->
+                            </div>
                         </div>
-                    </section>
+                    </section> -->
                     <!-- animation-->
                     <section id="drop-desktop">
+                        <div class="text-center">
                         <!-- lottie orange drop animation -->
                         <div id="dropAnim" class="animation"></div>
+                    </div>
+                    </section>
+                    <section id="drop-mobile">
+                        <h2 class="sub-header text-center">FOUR CORE VALUES</h2>
+                        <!-- lottie orange drop animation -->
+                        <div id="dropMobileAnim" class="animation"></div>
                     </section>
                     <!-- HOW!?-->
                     <section class="section-card how orange" id="how">
@@ -714,46 +724,7 @@
                                               </div>
                                         </div>
                                     </div>
-                                    <!-- <div class="popup_body">
-                                        <div class="popup_back"></div>
-                                          <div class="popup_contain Pop-container">
-                                            <div class="popup_close close-btn"><i ><img class="fas fa-times" src="./images/close-icon.svg" /></i></div>
-                                            <div class="job-header blue">
-                                              <h1 class="strike">Analyst Programmer</h1>
-                                              <h3>Job Highlights</h3>
-                                              <p>
-                                                  A Director at Orange Data owns the big picture of our design work, and is responsible for overall quality while ensuring the team executing the work is set up for success.
-                                                  Things in our world are constantly changing so you must be fast, highly adaptive, and comfortable with ambiguity……
-                                              </p>
-                                          </div>
-                                          <div class="Pop-detail">
-                                              <h3>Responsibilities</h3>
-                                              <ul>
-                                                  <li>Co-Manage a +50-person design team and mentor our Design Leads.</li>
-                                                  <li>Drive the overall Design team’s operations and strategy.</li>
-                                                  <li>Collaborate with the Client Partnerships team to pitch engagements to clients.</li>
-                                                  <li>Assist in scoping out the timeline and requirements of design engagements.</li>
-                                              </ul>
-                                              <h3>What we’re looking for</h3>
-                                              <ul>
-                                                  <li>Communicate design direction, decisions</li>
-                                                  <li>Fluency in design and prototyping tools</li>
-                                                  <li>Experience working in collaborative environment</li>
-                                                  <li>Preferably background in agency/consultancy</li>
-                                              </ul>
-                                              <h3>Requirements</h3>
-                                              <ul>
-                                                  <li>University fresh graduate</li>
-                                                  <li>Strong client skills with ability to deliver solutions</li>
-                                                  <li>Proven organization skills and attention to details</li>
-                                                  <li>Strong self-motivation with good analytical skills</li>
-                                              </ul>
-                                              <div class="d-flex justify-content-center apply-btn">
-                                                  <button type="button" class="btn"><a href = "mailto: hr@orangedata.info">Apply</a></button>
-                                              </div>
-                                          </div>
-                                          </div>
-                                      </div> -->
+                                    
                                 </div>
                             </div>
                         </div>
@@ -810,11 +781,49 @@
                                 <textarea required=""></textarea>
                                 <label>Message</label>
                             </div>
-                            <!-- /.form input box -->
                             <h6 class="text-center p-4">* Personal data collected will be used for recruitment purpose only.</h6>
                             <div class="text-center">
                                 <button type="button" class="custom-btn btn btn-light text-center" id="contactBtn">Send Message</button>
                             </div>
+                           
+                            <!-- Start Contact Form -->
+                            <!-- <form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
+                                <div class="d-lg-flex flex-row" id="inputName">
+                                    <div class="form form-group" id="nameInput">
+                                        <div class="contact-input controls">
+                                            <input id="name"  type="text" autocomplete="off" class="form-control" required data-error="Please enter your name">
+                                            <label for="name" class="label-name">
+                                                <span class="content-name">Name</span>
+                                            </label>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form form-group" id="emailInput">
+                                        <div class="contact-input controls">
+                                            <input type="email" id="email" autocomplete="off" class="form-control" required data-error="Please enter your email">
+                                            <label for="email" class="label-name">
+                                                <span class="content-name" id="emailText">Email</span>
+                                            </label>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="controls" id="messageInput">
+                                        <textarea id="message" class="form-control" required data-error="Write your message"></textarea>
+                                        <label>Message</label>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <h6 class="text-center p-4">* Personal data collected will be used for recruitment purpose only.</h6>
+                                <div class="text-center">
+                                    <button type="submit" class="custom-btn btn btn-light text-center" id="contactBtn submit">Send Message</button>
+                                    <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                                    
+                                </div>
+                            </form> -->
+                            <!-- End Contact Form -->
+                            <!-- /.form input box -->
                             <div class="company-info">
                                 <div class="logo-hor">
                                     <img src="images/logo.svg" />
@@ -843,21 +852,23 @@
                 </div>
             </main>
         </div>
-
+        
         <footer></footer>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-        
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js" integrity="sha512-FOw+bgWRx/Kk1SAVkNO8CiXx9FFP7kFq+hcYWruJRdqjhzB39Yt/CVFgcFIXfTH0+oSZNUMEQNq1XI9+nMAW0Q==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/ScrollTrigger.min.js" integrity="sha512-vu5YjaFVfKZxQ1SZ5LGRlOfK6XmZIT1whWgpBYKu5kMXzkY/TdABJGLUJHHNsEpYaahxRnuhkjItCQFBEJagHg==" crossorigin="anonymous"></script>
-
+        <!-- bootstrap-validator -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha512-dTu0vJs5ndrd3kPwnYixvOCsvef5SGYW/zSSK4bcjRBcZHzqThq7pt7PmCv55yb8iBvni0TSeIDV8RYKjZL36A==" crossorigin="anonymous"></script>
         <script src="js/jquery.fancybox.min.js"></script>
         <script src="js/ScrollLottie.js" type="text/javascript"></script>
         <script src="js/lottie.js" type="text/javascript"></script>
@@ -866,5 +877,6 @@
         <script>
              sal();
         </script>
+        
     </body>
 </html>

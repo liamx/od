@@ -42,6 +42,9 @@
     padding-bottom: 3rem;
     cursor: pointer;
 }
+.job-title:hover{
+    color: #ef6624;
+}
 .job-wrap {
     align-items: center;
     color: #233e97;
@@ -214,6 +217,7 @@
 
 .fancybox-can-pan .fancybox-content, .fancybox-can-swipe .fancybox-content {
     cursor: inherit;
+    border-radius: 3rem;
 }
 .fancybox-slide--current{
     position: relative!important;

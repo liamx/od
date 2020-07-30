@@ -40,9 +40,6 @@ html {
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -415,7 +412,7 @@ img {
     display: block;
   }
   .spaceship-2 {
-    display: block;
+    display: none;
     right: 47%;
     top: 0px;
   }
@@ -682,7 +679,7 @@ nav .open .nav-item {
 @media all and (min-width: 1201px) {
   #logo {
     margin-left: 5vw;
-    width: 130px;
+    width: 188px;
     margin-top: 6px;
   }
   nav {
@@ -1029,7 +1026,7 @@ nav .open .nav-item {
     height: 110px;
   }
   .deco-wrap-2 {
-    bottom: -30rem;
+    bottom: -6rem;
     right: 5%;
     width: 132px;
     height: 110px;
@@ -1072,7 +1069,7 @@ nav .open .nav-item {
     width: 80%;
   }
   .card-content {
-    width: 90vw;
+    width: 90%;
     max-width: 1920px;
     padding: 0;
   }
@@ -1212,6 +1209,10 @@ nav .open .nav-item {
   text-align: left;
   padding-bottom: 3rem;
   cursor: pointer;
+}
+
+.job-title:hover {
+  color: #ef6624;
 }
 
 .job-wrap {
@@ -1404,6 +1405,7 @@ nav .open .nav-item {
 
 .fancybox-can-pan .fancybox-content, .fancybox-can-swipe .fancybox-content {
   cursor: inherit;
+  border-radius: 3rem;
 }
 
 .fancybox-slide--current {
@@ -1692,21 +1694,16 @@ nav .open .nav-item {
   display: block;
 }
 
-.fourValues-m {
-  padding: 10rem 4rem;
-  display: block;
-  width: 90%;
-  margin: auto;
-}
-
 .section-value {
   display: block;
 }
 
-.fourValues-m img,
-.fourValues-t img {
-  width: 100%;
-  height: 100%;
+#drop-mobile {
+  display: block;
+}
+
+#drop-mobile .sub-header {
+  padding-top: 10rem;
 }
 
 #wrapper .section-value {
@@ -1715,9 +1712,6 @@ nav .open .nav-item {
 
 /* Tablet */
 @media all and (max-width: 1200px) and (min-width: 700px) {
-  .fourValues {
-    display: block;
-  }
   .fourValues-m {
     display: block;
     width: 80%;
@@ -1731,17 +1725,19 @@ nav .open .nav-item {
   #drop-desktop {
     display: none;
   }
+  #drop-mobile {
+    display: block;
+  }
   #wrapper .section-value {
     height: 150rem;
   }
 }
 
 @media all and (min-width: 1201px) {
-  .fourValues {
-    padding: 5rem;
+  #drop-desktop {
     display: block;
   }
-  .fourValues-m {
+  #drop-mobile {
     display: none;
   }
   .section-value {
@@ -2199,37 +2195,6 @@ nav .open .nav-item {
 
 #messageInput, #nameInput, #emailInput {
   margin-top: 5rem;
-}
-
-.contact-input {
-  position: relative;
-  z-index: 0;
-}
-
-.invalid .contact-input:before {
-  position: absolute;
-  content: '';
-  right: 12px;
-  top: 12px;
-  width: 24px;
-  height: 24px;
-  color: red;
-  border-radius: 50%;
-  background: url(../images/invalid.svg);
-  background-size: cover;
-}
-
-.valid .contact-input:before {
-  position: absolute;
-  content: '';
-  right: 12px;
-  top: 12px;
-  width: 24px;
-  height: 24px;
-  color: red;
-  border-radius: 50%;
-  background: url(../images/valid.svg);
-  background-size: cover;
 }
 
 .content-name {

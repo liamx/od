@@ -7,23 +7,6 @@ const links = document.querySelector(".nav-item");
 
 //scroll up hidden menu
 
-// var lastScrollTop = 0;
-//     navbar = document.getElementById("navbar");
-    
-//     window.addEventListener("scroll", function scrollUp(){
-//         var scrollTop = window.pageYOffset || document
-//         .documentElement.scrollTop;
-//         if (scrollTop > lastScrollTop){
-//             navbar.style.top = "-80px";
-//             navLinks.style.top = "0px";
-            
-//         } else {
-//             navbar.style.top = "0";
-//         }
-//         lastScrollTop = scrollTop;
-
-//     })
-
 
   
 
@@ -162,6 +145,12 @@ ScrollLottie({
   duration: 3, 
   speed: 'medium'
  })
+ ScrollLottie({
+  target: '#dropMobileAnim',
+  path: 'animation/dropMobileAnim/dropMobileAnim.json', 
+  duration: 3, 
+  speed: 'medium'
+ })
 
 
 
@@ -190,35 +179,169 @@ LottieInteractivity.create({
 
 // Email validation
 
-function validation()
-{
-  var form = document.getElementById("emailInput");
-  var email = document.getElementById("email").value;
-  var text = document.getElementById("emailText");
-  var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
-  if (email.match(pattern))
-  {
-    form.classList.add("valid");
-    form.classList.remove("invalid");
-    text.innerHTML = "Your Email address is valid";
-    text.style.color = "#fff";
-    console.log("valid")
-  }
-  else 
-  {
-    form.classList.remove("valid");
-    form.classList.add("invalid");
-    text.innerHTML = "Please enter valid Email address";
-    text.style.color = "#fff";
-    console.log("invalid")
-  }
-  if (email == "")
-  {
-    form.classList.remove("valid");
-    form.classList.remove("invalid");
-    text.innerHTML = "Email";
-    text.style.color = "#fff";
-  }
+// $(document).ready(function(){
+//     $(".myForm").sumbit(function(event){
+//         event.preventDefault();
+//         var name = $("#mail-name").val();
+//         var email = $("#mail-email").val();
+//         var message = $("#mail-message").val();
+//         var submit = $("#mail-submit").val();
+//         $(".form-message").load("mail.php",{
+//             name: name,
+//             email: email,
+//             message: message,
+//             submit: submit
+//         })
+//     });
+// });
 
-}
+// const Name = document.getElementById('name');
+// const email = document.getElementById('email');
+// const message = document.getElementById('message');
+
+// //form
+// const form = document.getElementById('myForm');
+// //Validation colors
+// const green = '#4CAF50';
+// const red = '#F44336';
+
+
+// //Validators
+// function validateName(){
+//     //check if is empty
+//     if(checkIfEmpty(Name)) return;
+//     //is if it has only letters
+//     if(!checkIfOnlyLetters(Name)) return;
+//     return true;
+// }
+// function validateMessage(){
+//     //check if is empty
+//     if(checkIfEmpty(message)) return;
+//     //is if it has only letters
+//     if(!checkIfOnlyLetters(message)) return;
+//     return true;
+// }
+// function validateEmail(){
+//     //check if is empty
+//     if(checkIfEmpty(email)) return;
+//     if(!containsCharaters(email, 2)) return;
+//     return true;
+// }
+// // handle form
+// form.addEventListener('submit', function(event) {
+//     //prevent default behaviour
+//     event.preventDefault();
+//     if (
+//       validateName() &&
+//       validateMessage() &&
+//       validateEmail() 
+//       ) {
+//       const container = document.querySelector('div.container');
+//       const panel = document.createElement('div');
+//       panel.className = 'card-panel orange';
+//       const text = document.createElement('span');
+//       text.appendChild(document.createTextNode('message sent!'));
+//       panel.appendChild(text);
+//       console.log("success");
+//     }
+// });
+
+// // Utillity functions
+// function checkIfEmpty(field){
+//     if(isEmpty(field.value.trim())){
+//       // set field invalid
+//       setInvalid(field, `${field.name}must not be empty`);
+//       return true;
+//     } else {
+//       //set field valid
+//       setValid(field);
+//       return false;
+//     }
+// }
+// function isEmpty(value){
+//     if(value === '') return true;
+//     return false;
+// }
+// function setInvalid(field, message){
+//     field.className = 'invalid';
+//     field.nextElementSibling.innerHTML = message;
+//     field.nextElementSibling.style.color = red;
+//     // field.insertAdjacentHTML("afterend", "<p>My new paragraph</p>");
+
+// }
+// function setValid(field, message){
+//     field.className = 'valid';
+//     field.nextElementSibling.innerHTML = '';
+//     field.nextElementSibling.style.color = green;
+
+// }
+// function checkIfOnlyLetters(field){
+//     if(/^[a-zA-Z ]+$/.test(field.name)){
+//         setValid(field);
+//         return true;
+//     } else{
+//         setInvalid(field, `${field.name} must contain only letters`)
+//         return false;
+//     }
+// }
+
+// function containsCharaters(field, code){
+//     let regEx;
+//     switch(code){
+//         case 1:
+//           // letters
+//           regEx = /(?=.*[a-zA-Z])/;
+//           matchWithRegEx(regEx, field, 'Must container at least one letter');
+//         case 2:
+//           // email
+//           regEx = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+//           return matchWidthRegEx(regEX, field, 'Must be a validate email address');
+//         default:
+//           return false;
+//     }
+// }
+// function matchWithRegEx(regEX, field, message){
+//     if(field.value.match(regEx)){
+//         setValid(field);
+//         return true;
+//     } else{
+//         setInvalid(field, message);
+//         return false;
+//     }
+// }
+
+
+
+// function validation()
+// {
+//   var form = document.getElementById("emailInput");
+//   var email = document.getElementById("email").value;
+//   var text = document.getElementById("emailText");
+//   var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+//   if (email.match(pattern))
+//   {
+//     form.classList.add("valid");
+//     form.classList.remove("invalid");
+//     text.innerHTML = "Your Email address is valid";
+//     text.style.color = "#fff";
+//     console.log("valid")
+//   }
+//   else 
+//   {
+//     form.classList.remove("valid");
+//     form.classList.add("invalid");
+//     text.innerHTML = "Please enter valid Email address";
+//     text.style.color = "#fff";
+//     console.log("invalid")
+//   }
+//   if (email == "")
+//   {
+//     form.classList.remove("valid");
+//     form.classList.remove("invalid");
+//     text.innerHTML = "Email";
+//     text.style.color = "#fff";
+//   }
+
+// }
