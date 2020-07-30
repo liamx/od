@@ -135,24 +135,22 @@ var animation8 = bodymovin.loadAnimation({
 ScrollLottie({
   target: '#introAnim',
   path: 'animation/introAnim/introAnim.json', 
-  duration: 3, 
-  speed: 'medium'
+  duration: 8, 
+  speed: 'slow'
  })
 
  ScrollLottie({
   target: '#dropAnim',
   path: 'animation/dropAnim/dropAnim.json', 
-  duration: 3, 
-  speed: 'medium'
+  duration: 8, 
+  speed: 'slow'
  })
  ScrollLottie({
   target: '#dropMobileAnim',
   path: 'animation/dropMobileAnim/dropMobileAnim.json', 
-  duration: 3, 
-  speed: 'medium'
+  duration: 8, 
+  speed: 'slow'
  })
-
-
 
 // Way To Go lottie
 LottieInteractivity.create({
