@@ -1702,6 +1702,11 @@ nav .open .nav-item {
   display: block;
 }
 
+#drop-mobile {
+  width: 100%;
+}
+
+
 #drop-mobile .sub-header {
   padding-top: 10rem;
 }
