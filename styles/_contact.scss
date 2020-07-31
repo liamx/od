@@ -294,17 +294,35 @@ label {
 }
 .copyright {
     padding: 5rem 0 2rem 0;
+    opacity: 0.6;
 }
 .shake #msgSubmit {
-    color: #ff0000 !important;
+    color: #ff0000;
     width: 100%;
     height: 60px;
     font-family: "Muli", sans-serif, Arial, Helvetica !important;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
-    padding: 19px 0;
-    background-color: #fff7f1d9 !important;
+    padding: 20px 0;
+    background-color: #fff7f1d9;
+    border-radius: 40px;
 }
+
+.text-success{
+    color: #BFFFEE !important;
+    width: 100%;
+    height: 60px;
+    font-family: "Muli", sans-serif, Arial, Helvetica !important;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 0;
+    background-color: #04B989 !important;
+    border-radius: 40px;
+}
+.text-danger{
+
+}
+
 #mess .message-warn {
     margin-top: 5rem;
 }

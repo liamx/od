@@ -46,27 +46,27 @@
     background-color: #fff;
     position: absolute;
     z-index: 0;
-    -webkit-transition: width 0.5s;
-    -moz-transition: width 0.5s;
-    -o-transition: width 0.5s;
-    transition: width 0.5s;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s;
 }
 .action a:hover {
     text-decoration: transparent;
     color: #fff;
     opacity: 1;
-    -webkit-transition: width 0.5s;
-    -moz-transition: width 0.5s;
-    -o-transition: width 0.5s;
-    transition: width 0.5s;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s;
 }
 
 /* neon light text */
 .action a span {
-    -webkit-transition: width 0.5s;
-    -moz-transition: width 0.5s;
-    -o-transition: width 0.5s;
-    transition: width 0.5s;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s;
 }
 
 .action a:hover span {
@@ -79,7 +79,8 @@
 .nav-pills .show > .nav-link {
     background-color: #f16522;
     border-radius: 0.8rem;
-    transition: 0.5s;
+    transition: 0.3s;
+    font-family: "GOTHAM Book", Arial, Helvetica, sans-serif;
 }
 #servicesTab .nav-link:hover {
     background-color: #fdeb95;
@@ -89,7 +90,7 @@
     font-size: 1.8rem;
     line-height: 1.2;
     padding: 1rem 2rem;
-    font-family: "GOTHAM Medium", Arial, Helvetica, sans-serif;
+    font-family: "GOTHAM Book", Arial, Helvetica, sans-serif;
 }
 #servicesTab #animation ul li {
     list-style-type: disc;
@@ -128,7 +129,7 @@
 }
 #animation .slide-text,
 #animation li {
-    font-family: "Muli regular", Arial, Helvetica, sans-serif;
+    font-family: "Muli Light", Arial, Helvetica, sans-serif;
     font-size: 17px;
     line-height: 1.47059;
     font-weight: 400;
@@ -163,6 +164,7 @@
         font-size: 7.5rem;
         padding-bottom: 2rem;
     }
+
 }
 /* Tablet */
 @media all and (max-width: 1200px) and (min-width: 700px) {

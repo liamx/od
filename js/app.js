@@ -92,44 +92,59 @@ ScrollLottie({
   target: '#introAnim',
   path: 'animation/introAnim/introAnim.json', 
   duration: 3, 
-  speed: 'medium'
+  speed: 'slow'
  })
 
  ScrollLottie({
   target: '#dropAnim',
   path: 'animation/dropAnim/dropAnim.json', 
-  duration: 3, 
-  speed: 'medium'
+  duration: 6, 
+  speed: 'slow'
  })
  ScrollLottie({
   target: '#dropMobileAnim',
   path: 'animation/dropMobileAnim/dropMobileAnim.json', 
   duration: 3, 
-  speed: 'medium'
+  speed: 'slow'
  })
 
-
+//  LottieInteractivity.create({
+//   mode:"scroll",
+//   player:'#wayToGoAnim',
+//   actions: [
+//     {
+//       visibility:[0,1],
+//       type: "seek",
+//       frames: [0, 200]
+//     },
+//     {
+//       visibility:[1,1],
+//       type: "loop",
+//       frames: [199, 201]
+//     }
+//   ]
+// });
 
 // Way To Go lottie
 LottieInteractivity.create({
   mode:"scroll",
   player:'#wayToGoAnim',
   actions: [
+    // {
+    //   visibility:[0, 0.1],
+    //   type: "stop",
+    //   frames: [0]
+    // },
     {
-      visibility:[0, 0.3],
-      type: "stop",
-      frames: [0]
-    },
-    {
-      visibility:[0.3, 0.5],
+      visibility:[0.1, 0.8],
       type: "seek",
-      frames: [0,130]
-    },
-    {
-      visibility:[ 0.5,1],
-      type: "stop",
-      frames: [130,180]
+      frames: [1,130]
     }
+    // {
+    //   visibility:[ 0.1,1],
+    //   type: "stop",
+    //   frames: [130]
+    // }
   ]  
 });
 
