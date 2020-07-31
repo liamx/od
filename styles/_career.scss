@@ -42,7 +42,7 @@
     padding-bottom: 3rem;
     cursor: pointer;
 }
-.job-title:hover{
+.job-title:hover {
     color: #ef6624;
 }
 .job-wrap {
@@ -54,7 +54,7 @@
     z-index: 0;
 }
 
-.arrow45{
+.arrow45 {
     background-image: url(../images/arrow45.svg);
     background-repeat: no-repeat;
     width: 28px;
@@ -64,16 +64,14 @@
     color: #233e97;
     background-color: transparent;
 }
-.arrow45:hover{
+.arrow45:hover {
     background-image: url(../images/arrow45-o.svg);
 }
-.arrow45:focus{
+.arrow45:focus {
     outline: none;
 }
 
 /* pop up */
-
-
 
 /* popup box style */
 
@@ -97,19 +95,19 @@
     width: 100%;
     background: #ef6624;
 }
-#Programmer .strike::after{
+#Programmer .strike::after {
     width: 297px;
 }
-#UIDesigner .strike::after{
+#UIDesigner .strike::after {
     width: 175px;
 }
-#WebDesigner .strike::after{
+#WebDesigner .strike::after {
     width: 207px;
 }
-#Marketing .strike::after{
+#Marketing .strike::after {
     width: 147px;
 }
-.strike-sub{
+.strike-sub {
     padding: 5rem 0;
 }
 .popup_body h3 {
@@ -141,11 +139,15 @@
     color: #000000;
     padding: 0 12rem;
 }
+.apply-wrap {
+    padding: 7rem 0;
+}
 .apply-btn .btn {
     background-color: #f16522;
     color: #fff;
     border-radius: 15px;
-    margin: 7rem 0 4rem 0;
+    margin: 0;
+    padding: 0;
     font-size: 2rem;
     width: 20rem;
     height: 7rem;
@@ -153,19 +155,26 @@
     border: transparent;
     box-shadow: none;
 }
-.apply-btn:focus .btn,
-.apply-btn:hover .btn {
-    background-color: #233E97;
-    color: #fff;
-    border: transparent;
-    box-shadow: none;
-}
-.apply-btn:focus .btn a,
-.apply-btn:hover .btn a{
+// .apply-btn:focus .btn,
+// .apply-btn:hover .btn {
+//     background-color: #233e97;
+//     color: #fff;
+//     border: transparent;
+//     box-shadow: none;
+// }
+.apply-btn a:focus .btn,
+.apply-btn a:hover .btn{
     color: #fff;
     text-decoration: none;
 }
-.Pop-container{
+.apply-wrap a:hover .btn{
+    background-color: #233e97;
+}
+.apply-wrap a{
+    outline-color: transparent;
+    outline: none;
+}
+.Pop-container {
     padding: 0;
     margin: 0rem;
 }
@@ -183,10 +192,8 @@
     text-align: center;
 }
 
-
-
 /* fancy box */
-.fancybox-button svg{
+.fancybox-button svg {
     display: none;
 }
 .fancybox-button {
@@ -200,7 +207,7 @@
     border: none;
     background-color: transparent;
 }
-.Pop-container{
+.Pop-container {
     position: relative;
 }
 .fancybox-slide--html .fancybox-close-small {
@@ -209,62 +216,67 @@
     height: 45px;
     right: 8vw;
     top: 6vh;
-    position: fixed!important;
+    position: fixed !important;
     z-index: 0;
     border-radius: 50%;
     background-color: #233e97;
 }
 
-.fancybox-can-pan .fancybox-content, .fancybox-can-swipe .fancybox-content {
+.fancybox-can-pan .fancybox-content,
+.fancybox-can-swipe .fancybox-content {
     cursor: inherit;
-    border-radius: 3rem;
+    
 }
-.fancybox-slide--current{
-    position: relative!important;
+.fancybox-slide--current {
+    position: relative !important;
     z-index: 0;
 }
 /* pop up test */
-.popup{
+.popup {
     align-items: center;
 }
-  .popup_body{
-    display:none;
-    position:fixed;
-    z-index: 99999!important;
-    top:0;left:0;right:0;bottom:0;
-    -webkit-transition: 300ms;
-      -moz-transition: 300ms;
-      -o-transition: 300ms;
-      -ms-transition: 300ms;
-      transition: 300ms;
-  }
-  .popup_body_show{
-    display:block;
-    
-    -webkit-transition: 300ms;
-      -moz-transition: 300ms;
-      -o-transition: 300ms;
-      -ms-transition: 300ms;
-      transition: 300ms;
-  }
-  .popup_back{
-    background: rgba(0,0,0,0.4);
+.popup_body {
+    display: none;
     position: fixed;
-    left:0;right:0;top:0;bottom:0;
-  }
-  .popup_contain{
-    position:relative;
-    background:#fff;
-    min-width:300px;
-    max-width:80%;
-    margin:100px auto 50px;
-    min-height:150px;
+    z-index: 99999 !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    -ms-transition: 300ms;
+    transition: 300ms;
+}
+.popup_body_show {
+    display: block;
+
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    -ms-transition: 300ms;
+    transition: 300ms;
+}
+.popup_back {
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.popup_contain {
+    position: relative;
+    background: #fff;
+    min-width: 300px;
+    max-width: 80%;
+    margin: 100px auto 50px;
+    min-height: 150px;
     height: 80vh;
     overflow-y: scroll;
-  }
+}
 
-
- 
 .section-career .send-cv p {
     font-size: 1.85rem;
 }
@@ -278,7 +290,7 @@
     background-repeat: no-repeat;
     margin: 0 auto;
 }
-.custom-btn  a:hover {
+.custom-btn a:hover {
     color: #fff;
     text-decoration: none;
 }
@@ -288,7 +300,7 @@
     height: 7rem;
     border-radius: 15px;
     margin: 7rem;
-    background-color: #263C95;
+    background-color: #263c95;
     color: #fff;
     font-weight: 600;
 }
@@ -304,22 +316,22 @@
 
 /* Tablet */
 @media all and (max-width: 388px) {
-    #Programmer .strike::after{
+    #Programmer .strike::after {
         width: 184px;
         bottom: 29px;
     }
-    #WebDesigner .strike::after{
+    #WebDesigner .strike::after {
         width: 133px;
         bottom: 29px;
     }
 }
 /* Tablet */
 @media all and (max-width: 456px) {
-    #Programmer .strike::after{
+    #Programmer .strike::after {
         width: 173px;
         bottom: 28px;
     }
-    #WebDesigner .strike::after{
+    #WebDesigner .strike::after {
         width: 204px;
         bottom: 28px;
     }
@@ -361,26 +373,23 @@
     .strike {
         font-size: 6.375rem;
     }
-    #Programmer .strike::after{
+    #Programmer .strike::after {
         width: 427px;
     }
-    #UIDesigner .strike::after{
+    #UIDesigner .strike::after {
         width: 244px;
     }
-    #WebDesigner .strike::after{
-        width: 300px
+    #WebDesigner .strike::after {
+        width: 300px;
     }
-    #Marketing .strike::after{
+    #Marketing .strike::after {
         width: 215px;
     }
-    .Pop-container{
+    .Pop-container {
         max-width: 798px;
         padding: 0;
         margin: 5rem;
-        
     }
-    
-    
 }
 
 /* Desktop */
@@ -411,25 +420,25 @@
     .popup .Pop-container ul li {
         line-height: 1.8;
     }
-    .job-header{
+    .job-header {
         padding: 12rem;
     }
     .strike {
         font-size: 6rem;
     }
-    .strike::after{
+    .strike::after {
         height: 21px;
     }
-    #Programmer .strike::after{
+    #Programmer .strike::after {
         width: 96%;
     }
-    #UIDesigner .strike::after{
+    #UIDesigner .strike::after {
         width: 372px;
     }
-    #WebDesigner .strike::after{
+    #WebDesigner .strike::after {
         width: 435px;
     }
-    #Marketing .strike::after{
+    #Marketing .strike::after {
         width: 315px;
     }
     .popup .close-btn {
@@ -443,15 +452,15 @@
     .job-opport {
         padding-top: 15rem;
     }
-    .Pop-container{
+    .Pop-container {
         max-width: 900px;
     }
     .fancybox-slide--html .fancybox-close-small {
         right: 9vw;
         top: 8vh;
     }
-    .fancybox-slide--html{
-        padding-top:44px
+    .fancybox-slide--html {
+        padding-top: 44px;
     }
 }
 /* Large Desktop */
@@ -470,20 +479,20 @@
     .job-opport {
         padding-top: 15rem;
     }
-    .Pop-container{
+    .Pop-container {
         max-width: 1140px;
     }
     .fancybox-slide--html .fancybox-close-small {
         right: 6vw;
         top: 8vh;
     }
-    .strike::after{
+    .strike::after {
         height: 20px;
     }
-    #Programmer .strike::after{
+    #Programmer .strike::after {
         width: 71%;
     }
-    #WebDesigner .strike::after{
+    #WebDesigner .strike::after {
         width: 430px;
     }
 }
