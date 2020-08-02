@@ -113,7 +113,7 @@ img {
 }
 
 #notTooBig h2 {
-  font-size: 3.5rem;
+  font-size: 7.25rem;
 }
 
 #wholeTeam h2 {
@@ -218,7 +218,7 @@ img {
     font-size: 12rem;
   }
   #notTooBig h2 {
-    font-size: 8rem;
+    font-size: 7.25rem;
   }
   #wholeTeam h2 {
     font-size: 9rem;
@@ -257,7 +257,7 @@ img {
     font-size: 12rem;
   }
   #notTooBig h2 {
-    font-size: 6rem;
+    font-size: 7.25rem;
   }
   #wholeTeam h2 {
     font-size: 10rem;
@@ -763,13 +763,11 @@ nav .open .nav-item {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 5rem 0;
 }
 
 #nav1 {
   position: relative;
   z-index: 0;
-  padding-top: 10rem;
 }
 
 .deco-wrap {
@@ -960,7 +958,7 @@ nav .open .nav-item {
 }
 
 #notTooBig .card-content h2 {
-  padding: 5rem 0;
+  padding: 1rem 0;
 }
 
 .center {
@@ -1973,6 +1971,12 @@ nav .open .nav-item {
     font-size: 7.5rem;
     padding-bottom: 2rem;
   }
+  #servicesTab .nav-link {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    padding: 1rem 1rem;
+    font-family: "GOTHAM Book", Arial, Helvetica, sans-serif;
+  }
 }
 
 /* Tablet */
@@ -2031,9 +2035,6 @@ nav .open .nav-item {
   }
   #animation .slide-right {
     margin-top: 20rem;
-  }
-  #wholeTeam .sub-header {
-    padding-top: 20rem;
   }
   #servicesTab .nav-item {
     width: inherit;
