@@ -261,6 +261,7 @@ img {
   }
   #wholeTeam h2 {
     font-size: 10rem;
+    padding-top: 5rem;
   }
   #wrapper section {
     height: 100%;
@@ -306,6 +307,13 @@ img {
   .section-career,
   .section-contact {
     padding: 0 4rem;
+  }
+}
+
+/* mobile only */
+@media all and (max-width: 700px) {
+  #wholeTeam .sub-header {
+    padding-top: 5rem;
   }
 }
 
@@ -1977,6 +1985,9 @@ nav .open .nav-item {
     padding: 1rem 1rem;
     font-family: "GOTHAM Book", Arial, Helvetica, sans-serif;
   }
+  #wholeTeam .sub-header {
+    padding-top: 20rem;
+  }
 }
 
 /* Tablet */
@@ -1992,7 +2003,7 @@ nav .open .nav-item {
     width: inherit;
   }
   #wholeTeam .sub-header {
-    padding-top: 20rem;
+    padding-top: 10rem;
   }
   #animation .slide-right {
     margin-top: 10rem;
@@ -2035,6 +2046,9 @@ nav .open .nav-item {
   }
   #animation .slide-right {
     margin-top: 20rem;
+  }
+  #wholeTeam .sub-header {
+    padding-top: 10rem;
   }
   #servicesTab .nav-item {
     width: inherit;

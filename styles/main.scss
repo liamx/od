@@ -243,6 +243,7 @@ img {
     }
     #wholeTeam h2 {
         font-size: 10rem;
+        padding-top: 5rem;
     }
     #wrapper section {
         height: 100%;
@@ -290,6 +291,14 @@ img {
         padding: 0 4rem;
     }
 }
+
+/* mobile only */
+@media all and (max-width: 700px) {
+    #wholeTeam .sub-header {
+        padding-top: 5rem;
+    }
+}
+
 
 @import "home";
 @import "navbar";
