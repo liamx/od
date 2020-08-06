@@ -72,7 +72,9 @@
 .action a:hover span {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 120px #fff, 0 0 160px #fff;
 }
-
+.btn.focus, .btn:focus{
+    box-shadow: none;
+}
 /* Dynamic Tabs*/
 
 #servicesTab .nav-pills .nav-link.active,
@@ -122,14 +124,14 @@
 }
 #animation .slide-header {
     font-size: 4rem;
-    font-family: "GOTHAM black", Arial, Helvetica, sans-serif;
+    font-family: Gotham-Black, 'Montserrat',sans-serif, Arial, Helvetica;
     color: #8fe0e7;
     padding-bottom: 1rem;
     font-weight: 600;
 }
 #animation .slide-text,
 #animation li {
-    font-family: "Muli Light", Arial, Helvetica, sans-serif;
+    font-family: "Muli Light",sans-serif, Arial, Helvetica;
     font-size: 17px;
     line-height: 1.4;
     font-weight: 400;
@@ -156,6 +158,9 @@
     padding-bottom: 0;
 }
 .breakline {
+    display: none;
+}
+#actionBtnIE{
     display: none;
 }
 /* mobile only */

@@ -129,6 +129,7 @@ nav {
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
     opacity: 1;
+    display: block;
 }
 
 #nav-icon3.open span:nth-child(3) {
@@ -137,6 +138,7 @@ nav {
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
     opacity: 1;
+    display: block;
 }
 
 #nav-icon3.open span:nth-child(4) {
@@ -162,6 +164,7 @@ header {
 }
 .hamburger.open {
     opacity: 1;
+    display: block;
 }
 .nav-links.open {
     clip-path: circle(3000px at 90% -10%);
@@ -290,3 +293,4 @@ nav .open .nav-item {
         height: 90px;
     }
 }
+

@@ -14,7 +14,7 @@
 }
 .section-career .card-content .job-list {
     font-size: 2.25rem;
-    font-family: Gotham-Medium;
+    font-family: Gotham-Medium ;
     text-align: left;
     padding-bottom: 5rem;
 }
@@ -161,13 +161,6 @@
     border: transparent;
     box-shadow: none;
 }
-// .apply-btn:focus .btn,
-// .apply-btn:hover .btn {
-//     background-color: #233e97;
-//     color: #fff;
-//     border: transparent;
-//     box-shadow: none;
-// }
 .apply-btn a:focus .btn,
 .apply-btn a:hover .btn{
     color: #fff;
@@ -233,54 +226,11 @@
     cursor: inherit;
     
 }
-.fancybox-slide--current {
-    position: relative !important;
-    z-index: 0;
-}
+
+
 /* pop up test */
 .popup {
     align-items: center;
-}
-.popup_body {
-    display: none;
-    position: fixed;
-    z-index: 99999 !important;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    -webkit-transition: 300ms;
-    -moz-transition: 300ms;
-    -o-transition: 300ms;
-    -ms-transition: 300ms;
-    transition: 300ms;
-}
-.popup_body_show {
-    display: block;
-
-    -webkit-transition: 300ms;
-    -moz-transition: 300ms;
-    -o-transition: 300ms;
-    -ms-transition: 300ms;
-    transition: 300ms;
-}
-.popup_back {
-    background: rgba(0, 0, 0, 0.4);
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-.popup_contain {
-    position: relative;
-    background: #fff;
-    min-width: 300px;
-    max-width: 80%;
-    margin: 100px auto 50px;
-    min-height: 150px;
-    height: 80vh;
-    overflow-y: scroll;
 }
 
 .section-career .send-cv p {
