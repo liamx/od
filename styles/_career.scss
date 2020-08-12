@@ -4,8 +4,6 @@
 }
 .section-career .card-content .career-logo {
     padding-top: 0rem;
-    width: 51rem;
-    height: 54rem;
     margin: 0 auto;
 }
 .section-career .card-content p {
@@ -18,6 +16,25 @@
     text-align: left;
     padding-bottom: 5rem;
 }
+.way-wrapper{
+    width: 50rem;
+    height: 40rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+.wayToGo-IE{
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/IE/IE_WayToGoTeam.png);
+}
+
+#wayToGoAnim{
+    padding-top: 10rem;
+}
+
 /* Job Offer style */
 .job-list {
     padding: 5rem 0rem;
@@ -25,14 +42,11 @@
     z-index: 0;
 }
 
-#wayToGoAnim{
-    padding-top: 10rem;
-}
-
 .job-opport {
     font-size: 5rem;
     font-family: Gotham-Medium;
     padding-top: 2rem !important;
+    margin-bottom: 3rem;
 }
 .job-link {
     display: flex;
@@ -65,7 +79,7 @@
     background-repeat: no-repeat;
     width: 28px;
     height: 25px;
-    margin: 0em;
+    margin-top: 5px;
     border: none;
     color: #233e97;
     background-color: transparent;
@@ -82,7 +96,7 @@
 /* popup box style */
 
 .job-header {
-    padding: 8rem 12rem;
+    padding: 10rem 6rem 5rem;
 }
 .strike {
     font-size: 4.375rem;
@@ -114,7 +128,7 @@
     width: 147px;
 }
 .strike-sub {
-    padding: 5rem 0;
+    padding: 3rem 2rem 0 0;
 }
 .popup_body h3 {
     font-size: 2.25rem;
@@ -143,7 +157,7 @@
 .Pop-detail {
     background-color: #fff;
     color: #000000;
-    padding: 0 12rem;
+    padding: 0 6rem;
 }
 .apply-wrap {
     padding: 7rem 0;
@@ -209,17 +223,6 @@
 .Pop-container {
     position: relative;
 }
-.fancybox-slide--html .fancybox-close-small {
-    z-index: 0;
-    width: 45px;
-    height: 45px;
-    right: 8vw;
-    top: 6vh;
-    position: fixed !important;
-    z-index: 0;
-    border-radius: 50%;
-    background-color: #233e97;
-}
 
 .fancybox-can-pan .fancybox-content,
 .fancybox-can-swipe .fancybox-content {
@@ -269,6 +272,53 @@
     background-color: #ffa67a;
     color: #fff;
 }
+// bootstrap
+.job-wrapper .modal-content{
+    background-color: transparent;
+    border: none;
+}
+.close-small{
+    z-index: 0;
+    width: 45px;
+    height: 45px;
+    right: 8vw;
+    top: 6vh;
+    position: fixed !important;
+    z-index: 3;
+    border-radius: 50%;
+    background-color: #233e97;
+    cursor: pointer !important;
+}
+.job-header{
+    color:#fff;
+}
+.job-padding{
+    padding-top: 10rem;
+}
+.job-wrapper{
+    padding-top: 3rem;
+    text-decoration: none;
+    border-bottom: 0.5px solid #212e60;
+}
+.job-wrapper .modal-title{
+    cursor: pointer;
+    margin: 0;
+    border: none;
+    font-size: 2.25rem;
+    font-family: Gotham-Medium;
+    text-align: left;
+    padding-bottom: 3rem;
+    cursor: pointer;
+}
+.job-wrapper .modal-title:hover {
+    color: #ef6624;
+}
+.job-wrapper .show{
+    padding-right: 0!important;
+}
+button.close{
+    background-color: #233e97;
+}
 
 /* Tablet */
 @media all and (max-width: 388px) {
@@ -284,7 +334,7 @@
 /* Tablet */
 @media all and (max-width: 456px) {
     #Programmer .strike::after {
-        width: 173px;
+        width: 289px;
         bottom: 28px;
     }
     #WebDesigner .strike::after {
@@ -298,19 +348,26 @@
         right: 9vw;
         top: 8vh;
     }
+    .close-small{
+        right: 12vw;
+        top: 9vh;
+    }
 }
 /* Tablet */
 @media all and (min-width: 900px) {
     .fancybox-slide--html .fancybox-close-small {
         right: 5%;
-        top: 8vh;
+        top: 9vh;
+    }
+    .close-small{
+        right: 18vw;
+        top: 9vh;
     }
 }
 /* Tablet */
 @media all and (max-width: 1200px) and (min-width: 700px) {
     .section-career .card-content .career-logo {
         width: 70rem;
-        height: 63rem;
     }
     .section-career .send-cv p {
         font-size: 2.85rem;
@@ -346,13 +403,20 @@
         padding: 0;
         margin: 5rem;
     }
+    .job-modal .modal-dialog{
+        max-width: 798px;
+    }
 }
 
 /* Desktop */
 @media all and (min-width: 1201px) {
     .section-career .card-content .career-logo {
-        width: 64rem;
-        height: 58rem;
+        width: 100%;
+        height: 100%;
+        max-width: 700px;
+    }
+    .career-wrap{
+        margin: 0 auto;
     }
     .section-career .send-cv h2 {
         font-size: 7.25rem;
@@ -376,9 +440,6 @@
     .popup .Pop-container ul li {
         line-height: 1.8;
     }
-    .job-header {
-        padding: 12rem;
-    }
     .strike {
         font-size: 6rem;
     }
@@ -386,7 +447,7 @@
         height: 21px;
     }
     #Programmer .strike::after {
-        width: 96%;
+        width: 84%;
     }
     #UIDesigner .strike::after {
         width: 372px;
@@ -418,6 +479,17 @@
     .fancybox-slide--html {
         padding-top: 44px;
     }
+    .job-modal .modal-dialog{
+        max-width: 900px;
+    }
+    .close-small {
+        right: 9vw;
+        top: 8vh;
+    }
+    .way-wrapper{
+        width: 70rem;
+        height: 60rem;
+    }
 }
 /* Large Desktop */
 @media all and (min-width: 1501px) {
@@ -427,6 +499,9 @@
     }
     .Pop-detail {
         padding: 0 12rem;
+    }
+    .job-header {
+        padding: 10rem 6rem 5rem;
     }
     .strike::after {
         width: 57%;
@@ -442,13 +517,23 @@
         right: 6vw;
         top: 8vh;
     }
+    .close-small {
+        right: 6vw;
+        top: 8vh;
+    }
     .strike::after {
         height: 20px;
     }
     #Programmer .strike::after {
-        width: 71%;
+        width: 95%;
     }
     #WebDesigner .strike::after {
         width: 430px;
+    }
+}
+/* Large Desktop */
+@media all and (min-width: 1920px) {
+    #Programmer .strike::after {
+        width: 95%;
     }
 }

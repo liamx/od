@@ -221,7 +221,7 @@ img {
     height: 100rem;
   }
   #wrapper .section-value {
-    height: 100vh;
+    height: 100rem;
   }
   .card-content h2 {
     font-size: 16rem;
@@ -288,7 +288,7 @@ img {
     height: 90rem;
   }
   #wrapper .section-value {
-    height: 100vh;
+    height: 90rem;
   }
   #wrapper #how {
     height: 88rem;
@@ -329,7 +329,6 @@ img {
   }
 }
 
-/* mobile */
 .heading-m {
   position: absolute;
   z-index: 1;
@@ -357,10 +356,6 @@ img {
   z-index: 0;
 }
 
-.intro-video {
-  display: none;
-}
-
 img {
   width: 100%;
   height: 100%;
@@ -377,6 +372,16 @@ img {
 #nav1 {
   position: relative;
   z-index: 0;
+}
+
+.intro-desktop {
+  display: none;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 90rem;
+  background-image: url(../images/IE/IE_homepage.jpg);
 }
 
 .spaceship-2 {
@@ -398,9 +403,6 @@ img {
     display: block;
     height: 266rem;
   }
-  .intro-video {
-    display: none;
-  }
   .spaceship-2 {
     display: block;
     right: 47%;
@@ -420,7 +422,7 @@ img {
     display: none;
   }
   .intro-wrapper {
-    display: none;
+    display: block;
   }
   .heading-m {
     top: 20%;
@@ -432,7 +434,7 @@ img {
   .mars-container {
     display: none;
   }
-  .intro-video {
+  .intro-desktop {
     display: block;
   }
   .spaceship-2 {
@@ -451,9 +453,6 @@ img {
   }
 }
 
-/*-------------------------------*/
-/*           navbar              */
-/*-------------------------------*/
 .nav-contianer {
   position: relative;
   z-index: 2;
@@ -774,7 +773,6 @@ nav .open .nav-item {
   }
 }
 
-/* mobile */
 .card-content h2 {
   padding-bottom: 2rem;
   padding-top: 10rem;
@@ -992,7 +990,7 @@ nav .open .nav-item {
 
 @media all and (max-width: 523px) {
   .deco-wrap-2 {
-    bottom: -18%;
+    bottom: -33%;
   }
 }
 
@@ -1220,8 +1218,6 @@ nav .open .nav-item {
 
 .section-career .card-content .career-logo {
   padding-top: 0rem;
-  width: 51rem;
-  height: 54rem;
   margin: 0 auto;
 }
 
@@ -1237,6 +1233,26 @@ nav .open .nav-item {
   padding-bottom: 5rem;
 }
 
+.way-wrapper {
+  width: 50rem;
+  height: 40rem;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.wayToGo-IE {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/IE/IE_WayToGoTeam.png);
+}
+
+#wayToGoAnim {
+  padding-top: 10rem;
+}
+
 /* Job Offer style */
 .job-list {
   padding: 5rem 0rem;
@@ -1244,14 +1260,11 @@ nav .open .nav-item {
   z-index: 0;
 }
 
-#wayToGoAnim {
-  padding-top: 10rem;
-}
-
 .job-opport {
   font-size: 5rem;
   font-family: Gotham-Medium;
   padding-top: 2rem !important;
+  margin-bottom: 3rem;
 }
 
 .job-link {
@@ -1295,7 +1308,7 @@ nav .open .nav-item {
   background-repeat: no-repeat;
   width: 28px;
   height: 25px;
-  margin: 0em;
+  margin-top: 5px;
   border: none;
   color: #233e97;
   background-color: transparent;
@@ -1312,7 +1325,7 @@ nav .open .nav-item {
 /* pop up */
 /* popup box style */
 .job-header {
-  padding: 8rem 12rem;
+  padding: 10rem 6rem 5rem;
 }
 
 .strike {
@@ -1351,7 +1364,7 @@ nav .open .nav-item {
 }
 
 .strike-sub {
-  padding: 5rem 0;
+  padding: 3rem 2rem 0 0;
 }
 
 .popup_body h3 {
@@ -1384,7 +1397,7 @@ nav .open .nav-item {
 .Pop-detail {
   background-color: #fff;
   color: #000000;
-  padding: 0 12rem;
+  padding: 0 6rem;
 }
 
 .apply-wrap {
@@ -1460,18 +1473,6 @@ nav .open .nav-item {
   position: relative;
 }
 
-.fancybox-slide--html .fancybox-close-small {
-  z-index: 0;
-  width: 45px;
-  height: 45px;
-  right: 8vw;
-  top: 6vh;
-  position: fixed !important;
-  z-index: 0;
-  border-radius: 50%;
-  background-color: #233e97;
-}
-
 .fancybox-can-pan .fancybox-content,
 .fancybox-can-swipe .fancybox-content {
   cursor: inherit;
@@ -1527,6 +1528,61 @@ nav .open .nav-item {
   color: #fff;
 }
 
+.job-wrapper .modal-content {
+  background-color: transparent;
+  border: none;
+}
+
+.close-small {
+  z-index: 0;
+  width: 45px;
+  height: 45px;
+  right: 8vw;
+  top: 6vh;
+  position: fixed !important;
+  z-index: 3;
+  border-radius: 50%;
+  background-color: #233e97;
+  cursor: pointer !important;
+}
+
+.job-header {
+  color: #fff;
+}
+
+.job-padding {
+  padding-top: 10rem;
+}
+
+.job-wrapper {
+  padding-top: 3rem;
+  text-decoration: none;
+  border-bottom: 0.5px solid #212e60;
+}
+
+.job-wrapper .modal-title {
+  cursor: pointer;
+  margin: 0;
+  border: none;
+  font-size: 2.25rem;
+  font-family: Gotham-Medium;
+  text-align: left;
+  padding-bottom: 3rem;
+  cursor: pointer;
+}
+
+.job-wrapper .modal-title:hover {
+  color: #ef6624;
+}
+
+.job-wrapper .show {
+  padding-right: 0 !important;
+}
+
+button.close {
+  background-color: #233e97;
+}
+
 /* Tablet */
 @media all and (max-width: 388px) {
   #Programmer .strike::after {
@@ -1542,7 +1598,7 @@ nav .open .nav-item {
 /* Tablet */
 @media all and (max-width: 456px) {
   #Programmer .strike::after {
-    width: 173px;
+    width: 289px;
     bottom: 28px;
   }
   #WebDesigner .strike::after {
@@ -1557,13 +1613,21 @@ nav .open .nav-item {
     right: 9vw;
     top: 8vh;
   }
+  .close-small {
+    right: 12vw;
+    top: 9vh;
+  }
 }
 
 /* Tablet */
 @media all and (min-width: 900px) {
   .fancybox-slide--html .fancybox-close-small {
     right: 5%;
-    top: 8vh;
+    top: 9vh;
+  }
+  .close-small {
+    right: 18vw;
+    top: 9vh;
   }
 }
 
@@ -1571,7 +1635,6 @@ nav .open .nav-item {
 @media all and (max-width: 1200px) and (min-width: 700px) {
   .section-career .card-content .career-logo {
     width: 70rem;
-    height: 63rem;
   }
   .section-career .send-cv p {
     font-size: 2.85rem;
@@ -1607,13 +1670,20 @@ nav .open .nav-item {
     padding: 0;
     margin: 5rem;
   }
+  .job-modal .modal-dialog {
+    max-width: 798px;
+  }
 }
 
 /* Desktop */
 @media all and (min-width: 1201px) {
   .section-career .card-content .career-logo {
-    width: 64rem;
-    height: 58rem;
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+  }
+  .career-wrap {
+    margin: 0 auto;
   }
   .section-career .send-cv h2 {
     font-size: 7.25rem;
@@ -1637,9 +1707,6 @@ nav .open .nav-item {
   .popup .Pop-container ul li {
     line-height: 1.8;
   }
-  .job-header {
-    padding: 12rem;
-  }
   .strike {
     font-size: 6rem;
   }
@@ -1647,7 +1714,7 @@ nav .open .nav-item {
     height: 21px;
   }
   #Programmer .strike::after {
-    width: 96%;
+    width: 84%;
   }
   #UIDesigner .strike::after {
     width: 372px;
@@ -1679,6 +1746,17 @@ nav .open .nav-item {
   .fancybox-slide--html {
     padding-top: 44px;
   }
+  .job-modal .modal-dialog {
+    max-width: 900px;
+  }
+  .close-small {
+    right: 9vw;
+    top: 8vh;
+  }
+  .way-wrapper {
+    width: 70rem;
+    height: 60rem;
+  }
 }
 
 /* Large Desktop */
@@ -1689,6 +1767,9 @@ nav .open .nav-item {
   }
   .Pop-detail {
     padding: 0 12rem;
+  }
+  .job-header {
+    padding: 10rem 6rem 5rem;
   }
   .strike::after {
     width: 57%;
@@ -1704,74 +1785,111 @@ nav .open .nav-item {
     right: 6vw;
     top: 8vh;
   }
+  .close-small {
+    right: 6vw;
+    top: 8vh;
+  }
   .strike::after {
     height: 20px;
   }
   #Programmer .strike::after {
-    width: 71%;
+    width: 95%;
   }
   #WebDesigner .strike::after {
     width: 430px;
   }
 }
 
-/* Mobile */
-.section-value {
-  display: block;
+/* Large Desktop */
+@media all and (min-width: 1920px) {
+  #Programmer .strike::after {
+    width: 95%;
+  }
+}
+
+.section-value .container,
+.col-6 {
+  padding: 0;
+  margin: 0;
 }
 
 .section-value {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90rem;
 }
 
-#drop-mobile {
-  display: block;
+.center {
+  margin: 0  auto;
 }
 
-#drop-mobile .sub-header {
-  padding-top: 10rem;
+.values {
+  width: 25rem;
+  height: 25rem;
+  margin: 0 auto;
 }
 
-#wrapper .section-value {
-  height: 120rem;
+.values img {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+.core-value h2 {
+  font-size: 7.5rem;
+  margin-bottom: 5rem;
+}
+
+.core-value h6 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.core-value .col-6 {
+  margin-bottom: 3rem;
+}
+
+@media all and (min-width: 600px) {
+  .section-value {
+    height: 166rem;
+  }
 }
 
 /* Tablet */
 @media all and (max-width: 1200px) and (min-width: 768px) {
-  .fourValues-m {
-    display: block;
-    width: 80%;
+  .values {
+    width: 25rem;
+    height: 25rem;
+  }
+  .core-value h2 {
+    font-size: 12rem;
+  }
+  .core-value h6 {
+    font-size: 2.5rem;
   }
   .section-value {
-    display: block;
-  }
-  .section-value {
-    display: block;
-  }
-  #drop-desktop {
-    display: block;
-  }
-  #drop-mobile {
-    display: none;
-  }
-  #wrapper .section-value {
     height: 150rem;
   }
 }
 
 @media all and (min-width: 1201px) {
-  #drop-desktop {
-    display: block;
-  }
-  #drop-mobile {
-    display: none;
-  }
   .section-value {
-    display: none;
+    height: 100rem;
+  }
+  .values {
+    height: 28rem;
+    width: 28rem;
+  }
+  .core-value h2 {
+    font-size: 9.5rem;
+    padding-bottom: 2rem;
+  }
+  .core-value .container {
+    max-width: 1200px;
   }
 }
 
-/* Mobile */
 .section-services {
   position: relative;
   z-index: 0;
@@ -2079,9 +2197,9 @@ nav .open .nav-item {
     width: 40%;
   }
   .service-wrap .clip {
-    height: 68rem;
+    height: 78rem;
     margin-right: -20rem;
-    margin-top: -3rem;
+    margin-top: -8rem;
   }
   .service-wrap .description {
     margin-top: 8rem;
@@ -2099,7 +2217,6 @@ nav .open .nav-item {
   }
 }
 
-/* Mobile */
 #contact {
   position: relative;
   z-index: 0;
@@ -2382,6 +2499,7 @@ label {
   -webkit-box-shadow: transparent;
           box-shadow: transparent;
   opacity: 1 !important;
+  margin: 0 auto;
 }
 
 #contact .custom-btn:hover {
@@ -2572,10 +2690,8 @@ label {
   }
 }
 
-/* IE10+ CSS styles go here */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .intro-video,
-  .intro-IE,
   #notTooBig .clip,
   #drop-desktop,
   #dropMobileAnim,
@@ -2585,25 +2701,18 @@ label {
     display: none;
   }
   .notTooBig-IE,
-  .drop-IE,
   .service-IE,
   .wayToGo-IE,
   .deco-wrap-IE,
   .deco-wrap2-IE {
     display: block;
   }
-  .intro-IE,
-  .notTooBig-IE,
-  .drop-IE,
-  .wayToGo-IE {
-    width: auto;
+  .notTooBig-IE {
     background-repeat: no-repeat;
     background-size: 100%;
   }
-  .intro-IE {
-    width: 100%;
-    height: 90rem;
-    background-image: url(../images/IE/IE_homepage.jpg);
+  .notTooBig-IE {
+    height: 56rem;
   }
   #notTooBigIE {
     width: 100%;
@@ -2611,16 +2720,6 @@ label {
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url(../images/IE/IE_NotTooBig.png);
-  }
-  .wayToGo-IE {
-    width: 63rem;
-    height: 50rem;
-    background-image: url(../images/IE/IE_WayToGoTeam.png);
-  }
-  #wayToGo-IE {
-    width: 63rem;
-    height: 50rem;
-    background-image: url(../images/IE/IE_WayToGoTeam.png);
   }
   #nav1 {
     position: relative;
@@ -2652,11 +2751,6 @@ label {
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url(../images/deco-4.svg);
-  }
-  .drop-IE {
-    width: 100%;
-    height: 120rem;
-    background-image: url(../images/IE/IE_CoreValues_M.png);
   }
   #drop-mobile .sub-header {
     padding-top: 0;
@@ -2723,14 +2817,16 @@ label {
   .deco-wrap2-IE {
     bottom: -50%;
   }
+  .notTooBig-IE {
+    height: 74rem;
+  }
 }
 
 @media all and (-ms-high-contrast: none) and (min-width: 600px), all and (-ms-high-contrast: active) and (min-width: 600px) {
-  .drop-IE {
-    height: 166rem;
-  }
   .service-IE {
     height: 90rem;
+    width: 60rem;
+    margin: auto;
   }
 }
 
@@ -2738,9 +2834,8 @@ label {
   .notTooBig-IE {
     height: 80rem;
   }
-  .drop-IE {
-    height: 86rem;
-    background-image: url(../images/IE/IE_CoreValues.png);
+  .service-wrap {
+    margin: auto;
   }
   .service-IE {
     min-height: 66rem;
@@ -2758,14 +2853,8 @@ label {
 }
 
 @media all and (-ms-high-contrast: none) and (min-width: 1201px), all and (-ms-high-contrast: active) and (min-width: 1201px) {
-  .intro-IE {
-    display: block;
-  }
   .notTooBig-IE {
     height: 40rem;
-  }
-  .drop-IE {
-    height: 100rem;
   }
   .service-IE {
     width: 58rem;
@@ -2780,6 +2869,10 @@ label {
   .deco-wrap2-IE {
     right: 3%;
     bottom: -25%;
+  }
+  .way-wrapper {
+    width: 70rem;
+    height: 60rem;
   }
 }
 

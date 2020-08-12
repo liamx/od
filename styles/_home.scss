@@ -1,35 +1,30 @@
-/* mobile */
-.heading-m{
+.heading-m {
     position: absolute;
     z-index: 1;
     top: 140px;
     left: 8%;
     display: block;
 }
-.heading-d{
+.heading-d {
     display: none;
 }
-.intro-wrapper{
+.intro-wrapper {
     text-align: left;
     padding: 0rem 0rem;
     padding-top: 30vh;
     z-index: 1;
     display: none;
 }
-.mars-container{
+.mars-container {
     display: block;
     height: 1000px;
     position: relative;
     z-index: 0;
 }
-.intro-video{
-    display: none;
-}
-img{
+img {
     width: 100%;
     height: 100%;
 }
-
 .intro-space {
     height: 200rem;
     width: auto;
@@ -37,12 +32,20 @@ img{
     background-repeat: no-repeat;
     background-size: 100%;
 }
-#nav1{
+#nav1 {
     position: relative;
     z-index: 0;
 }
-
-.spaceship-2{
+.intro-desktop {
+    display: none;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 90rem;
+    background-image: url(../images/IE/IE_homepage.jpg);
+}
+.spaceship-2 {
     display: block;
     position: absolute;
     right: 45vw;
@@ -57,14 +60,11 @@ img{
 
 /* Tablet */
 @media all and (max-width: 1200px) and (min-width: 700px) {
-    .mars-container{
+    .mars-container {
         display: block;
         height: 266rem;
     }
-    .intro-video{
-        display: none;
-    }
-    .spaceship-2{
+    .spaceship-2 {
         display: block;
         right: 47%;
         top: -140px;
@@ -76,14 +76,14 @@ img{
         background-repeat: no-repeat;
         background-size: 100%;
     }
-    .heading-m{
+    .heading-m {
         display: block;
     }
-    .heading-d{
+    .heading-d {
         display: none;
     }
-    .intro-wrapper{
-        display: none;
+    .intro-wrapper {
+        display: block;
     }
     .heading-m {
         top: 20%;
@@ -92,24 +92,24 @@ img{
 
 /* Desktop */
 @media all and (min-width: 1201px) {
-    .mars-container{
+    .mars-container {
         display: none;
     }
-    .intro-video{
+    .intro-desktop {
         display: block;
     }
-    .spaceship-2{
+    .spaceship-2 {
         display: none;
         right: 47%;
         top: 0px;
     }
-    .heading-m{
+    .heading-m {
         display: none;
     }
-    .heading-d{
+    .heading-d {
         display: block;
     }
-    .intro-wrapper{
+    .intro-wrapper {
         display: block;
     }
 }

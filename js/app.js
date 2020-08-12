@@ -89,38 +89,5 @@ var animation8 = bodymovin.loadAnimation({
 });
 
 
-ScrollLottie({
-  target: '#introAnim',
-  path: 'https://assets7.lottiefiles.com/packages/lf20_W6HJdT/introAnim/introAnim.json', 
-  duration: 3, 
-  speed: 'slow'
- })
-
- ScrollLottie({
-  target: '#dropAnim',
-  path: 'https://assets4.lottiefiles.com/packages/lf20_rV8sNn/dropAnim/dropAnim.json', 
-  duration: 6, 
-  speed: 'slow'
- })
- ScrollLottie({
-  target: '#dropMobileAnim',
-  path: 'animation/dropMobileAnim/dropMobileAnim.json', 
-  duration: 3, 
-  speed: 'slow'
- })
-
-// Way To Go lottie
-LottieInteractivity.create({
-  mode:"scroll",
-  player:'#wayToGoAnim',
-  actions: [
-    {
-      visibility:[0.1, 0.8],
-      type: "seek",
-      frames: [1,130]
-    }
-  ]  
-});
 
 
- 

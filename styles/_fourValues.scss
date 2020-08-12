@@ -1,51 +1,70 @@
-/* Mobile */
-.section-value {
-    display: block;
+.section-value .container,
+.col-6{
+    padding: 0;
+    margin: 0;
 }
 .section-value {
-    display: block;
+    display: flex;
+    height: 90rem;
 }
-#drop-mobile {
-    display: block;
+.center{
+    margin:0  auto;
 }
-#drop-mobile .sub-header {
-    padding-top: 10rem;
+.values{
+    width: 25rem;
+    height: 25rem;
+    margin: 0 auto;
 }
-
-#wrapper .section-value {
-    height: 120rem;
+.values img{
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
 }
-
+.core-value h2{
+    font-size: 7.5rem;
+    margin-bottom: 5rem;
+}
+.core-value h6{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.core-value .col-6{
+    margin-bottom: 3rem;
+}
+@media all and (min-width: 600px) {
+    .section-value{
+        height: 166rem;
+    }
+}
 /* Tablet */
 @media all and (max-width: 1200px) and (min-width: 768px) {
-    .fourValues-m {
-        display: block;
-        width: 80%;
+    .values{
+        width: 25rem;
+        height: 25rem;
+    }
+    .core-value h2{
+        font-size: 12rem;
+    }
+    .core-value h6{
+        font-size: 2.5rem;
     }
     .section-value {
-        display: block;
-    }
-    .section-value {
-        display: block;
-    }
-    #drop-desktop {
-        display: block;
-    }
-    #drop-mobile {
-        display: none;
-    }
-    #wrapper .section-value {
         height: 150rem;
     }
 }
 @media all and (min-width: 1201px) {
-    #drop-desktop {
-        display: block;
+    .section-value{
+        height: 100rem;
     }
-    #drop-mobile {
-        display: none;
+    .values{
+        height: 28rem;
+        width: 28rem;
     }
-    .section-value {
-        display: none;
+    .core-value h2{
+        font-size: 9.5rem;
+        padding-bottom: 2rem;
+    }
+    .core-value .container{
+        max-width: 1200px;
     }
 }

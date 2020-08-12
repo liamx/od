@@ -1,7 +1,6 @@
-/* IE10+ CSS styles go here */
+
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .intro-video,
-    .intro-IE,
     #notTooBig .clip,
     #drop-desktop,
     #dropMobileAnim,
@@ -11,43 +10,28 @@
         display: none;
     }
     .notTooBig-IE,
-    .drop-IE,
     .service-IE,
     .wayToGo-IE,
     .deco-wrap-IE,
     .deco-wrap2-IE{
         display: block;
     }
-    .intro-IE,
-    .notTooBig-IE,
-    .drop-IE,
-    .wayToGo-IE{
-        width: auto;
+    .notTooBig-IE{
         background-repeat: no-repeat;
         background-size: 100%;
     }
-    .intro-IE{
-        width: 100%;
-        height: 90rem;
-        background-image: url(../images/IE/IE_homepage.jpg);
+    .notTooBig-IE{
+        height: 56rem;
     }
     #notTooBigIE{
-        width: 100%;
+        width: 100%;    
         height: 100%;
         background-repeat: no-repeat;
         background-size: 100%;
         background-image: url(../images/IE/IE_NotTooBig.png);
     }
-    .wayToGo-IE{
-        width: 63rem;
-        height: 50rem;
-        background-image: url(../images/IE/IE_WayToGoTeam.png);
-    }
-    #wayToGo-IE{
-        width: 63rem;
-        height: 50rem;
-        background-image: url(../images/IE/IE_WayToGoTeam.png);
-    }
+
+    
     #nav1{
         position: relative;
         z-index: 0;
@@ -78,11 +62,6 @@
         background-repeat: no-repeat;
         background-size: 100%;
         background-image: url(../images/deco-4.svg);
-    }
-    .drop-IE{
-        width: 100%;
-        height: 120rem;
-        background-image: url(../images/IE/IE_CoreValues_M.png);
     }
     #drop-mobile .sub-header {
         padding-top: 0;
@@ -138,9 +117,6 @@
     #msgSubmit{
         background-color: #fff;
     }
-    // .nav-links{
-    //     display: none;
-    // }
     @media all and (min-width: 500px) {
         .service-IE{
             height: 80rem;
@@ -148,22 +124,23 @@
         .deco-wrap2-IE{
             bottom: -50%;
         }
+        .notTooBig-IE{
+            height: 74rem;
+        }
     }
     @media all and (min-width: 600px) {
-        .drop-IE{
-            height: 166rem;
-        }
         .service-IE{
             height: 90rem;
+            width:60rem;
+            margin: auto;
         }
     }
     @media all and (min-width: 700px) {
         .notTooBig-IE{
             height: 80rem;
         }
-        .drop-IE{
-            height: 86rem;
-            background-image: url(../images/IE/IE_CoreValues.png);
+        .service-wrap{
+            margin: auto;
         }
         .service-IE{
             min-height: 66rem;
@@ -180,14 +157,8 @@
         }
     }
     @media all and (min-width: 1201px) {
-        .intro-IE{
-            display: block;
-        }
         .notTooBig-IE{
             height: 40rem;
-        }
-        .drop-IE{
-            height: 100rem;
         }
         .service-IE{
             width: 58rem;
@@ -203,6 +174,10 @@
             right: 3%;
             bottom: -25%;
         }
+        .way-wrapper{
+            width: 70rem;
+            height: 60rem;
+        }
         
     }
     @media all and (min-width: 1920px) {
@@ -214,3 +189,5 @@
         
     }
 }
+
+
